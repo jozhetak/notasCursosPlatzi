@@ -1,2 +1,2 @@
 # notasCursosPlatzi
-Estas son mis notas de mis cursos hechos en platzi
+Estas son mis notas importantes de los cursos que he tomado en Platzi :D
