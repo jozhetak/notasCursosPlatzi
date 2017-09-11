@@ -1,7 +1,7 @@
 # notasCursosPlatzi
 Estas son mis notas importantes de los cursos que he tomado en Platzi :D
 
-Comandos importantes de git
+Comandos importantes de git\n
 git init  	  		-> Inicializa un repositorio local (Debe hacerse solo una vez).
 git add .         		-> Agrega los cambios de todos los archivos al repositorio local.
 git clone url.git 		-> Clona un repositorio de la url indicada (Solo una vez).
