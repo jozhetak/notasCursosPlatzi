@@ -1,5 +1,4 @@
-# notasCursosPlatzi
-Estas son mis notas importantes de los cursos que he tomado en Platzi :D
+# Estas son mis notas importantes de los cursos que he tomado en Platzi :D
 
 Comandos importantes de git
 
