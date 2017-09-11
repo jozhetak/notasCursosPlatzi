@@ -1,9 +1,6 @@
-# Estas son mis notas importantes de los cursos que he tomado en Platzi :D
+# Comandos git para hacer deploy a github
 
-Comandos importantes de git
-
-'<git init>'
-                        -> Inicializa un repositorio local (Debe hacerse solo una vez).
+git init                        -> Inicializa un repositorio local (Debe hacerse solo una vez).
 
 git add .                       -> Agrega los cambios de todos los archivos al repositorio local.
 
