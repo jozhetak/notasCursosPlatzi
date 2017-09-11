@@ -19,7 +19,16 @@ git remote add origin url.git 	-> Establece un enlace entre el repositorio local
 git push -u origin master 	-> Puja todo el contenido del repositorio local al remoto.
 
 Nota: Se recomienda en gran medida usar conexiones por SSH en vez de usuario y contraseña. Para mayor seguridad.
+
+Se debe iniciar un agente SSH
+
+eval"($ssh-agent -s)"
+ssh-add pathDelSSH
+
+
 Tutorial en: 
+
 https://www.youtube.com/watch?v=G69dfwG2DJ4
+
 http://github.com/guides/providing-your-ssh-key
 
