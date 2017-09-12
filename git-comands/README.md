@@ -1,6 +1,9 @@
 # Comandos git para hacer deploy a github
 
-git init                        -> Inicializa un repositorio local (Debe hacerse solo una vez).
+Inicializa un repositorio local (Debe hacerse solo una vez)
+'''
+git init
+'''
 
 git add .                       -> Agrega los cambios de todos los archivos al repositorio local.
 
