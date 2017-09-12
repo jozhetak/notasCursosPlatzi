@@ -1,6 +1,6 @@
 # Comandos git para hacer deploy a github
 
-Inicializa un repositorio local (Debe hacerse solo una vez)
+Inicializa un repositorio local
 
 ```
 git init
@@ -12,31 +12,44 @@ Agrega los cambios de todos los archivos al repositorio local.
 git add .
 ```
 
-git add -A archivoModificado    -> Agrega los cambios de un archivo en específico.
+Agrega los cambios de un archivo en específico
+```
+git add -A archivoModificado.extension
+```
 
-git clone url.git 		-> Clona un repositorio de la url indicada (Solo una vez).
+Clona un repositorio de la url indicada
+```
+git clone url.git
+```
 
-git status			-> Muestra el estado del repositrio local (Ej: Cambios no guardados).
+Muestra el estado del repositorio local (Ej: Cambios no guardados)
+```
+git status
+```
 
-git commit --m "Mensaje" 	-> Paso final para guardar los cambios (obligatorio),
-		            	  se recomienda dejar un mensaje con los cambios realizados.
+Paso final para guardar los cambios (obligatorio), se recomienda dejar un mensaje de los cambios realizados
+```
+git commit --m "Mensaje"
+```
 
-git remote add origin url.git 	-> Establece un enlace entre el repositorio local y
-			          el remoto (Debe hacerse solo una vez).
+Establece un enlace entre el repositorio local t el remoto (Debe hacerse solo una vez)
+```
+git remote add origin url.git
+```
 
-git push -u origin master 	-> Puja todo el contenido del repositorio local al remoto.
+Puja todo el contenido del repositorio local al remoto
+```
+git push -u origin master
+```
 
-Nota: Se recomienda en gran medida usar conexiones por SSH en vez de usuario y contraseña. Para mayor seguridad.
-
-Se debe iniciar un agente SSH
-
-eval"($ssh-agent -s)"
+Nota: Se recomienda en gran medida usar conexiones por SSH en vez de usuario y contraseña, para mayor seguridad.
+Una vez habilitada la conexión SSH del repositorio y subida la llave pública, en nuestro terminal
+```
+eval"$(ssh-agent -s)"
 ssh-add pathDelSSH
+```
 
 
-Tutorial en: 
-
-https://www.youtube.com/watch?v=G69dfwG2DJ4
-
-http://github.com/guides/providing-your-ssh-key
+[Tutorial 1](https://www.youtube.com/watch?v=G69dfwG2DJ4)
+[Tutorial 2](http://github.com/guides/providing-your-ssh-key)
 
