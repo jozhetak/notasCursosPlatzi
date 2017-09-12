@@ -42,12 +42,14 @@ Puja todo el contenido del repositorio local al remoto
 git push -u origin master
 ```
 
-Nota: Se recomienda en gran medida usar conexiones por SSH en vez de usuario y contraseña, para mayor seguridad.
+Nota 1: Se recomienda en gran medida usar conexiones por SSH en vez de usuario y contraseña, para mayor seguridad.
 Una vez habilitada la conexión SSH del repositorio y subida la llave pública, en nuestro terminal
 ```
 eval"$(ssh-agent -s)"
 ssh-add pathDelSSH
 ```
+
+Nota 2: He tenido problemas para hacer deploy desde una carpeta interna, pero todo bien cuando se realiza en la carpeta raíz.
 
 
 [Tutorial 1](https://www.youtube.com/watch?v=G69dfwG2DJ4)
