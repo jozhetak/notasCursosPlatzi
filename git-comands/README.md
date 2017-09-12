@@ -55,3 +55,11 @@ Nota 2: He tenido problemas para hacer deploy desde una carpeta interna, pero to
 [Tutorial 1](https://www.youtube.com/watch?v=G69dfwG2DJ4)
 [Tutorial 2](http://github.com/guides/providing-your-ssh-key)
 
+Creado ya el repositorio local, los pasos para hacer deploy son:
+```
+git add .
+git commit --m "Mensaje"
+eval"$(ssh-agent -s)"
+ssh-add pathDelSSHPrivada
+git push -u origin master
+```
