@@ -53,7 +53,7 @@ func readFile(nameFile string) {
 	if err != nil {
 		panic(err)
 	}
-
+	// Los ... es para decirle a Go que escriba byte por byte, de esa froma evitar hacer un ciclo for
 	content = append(content, []byte("Go!")...)
 
 	err2 := ioutil.WriteFile(nameFile, content, 0644)
