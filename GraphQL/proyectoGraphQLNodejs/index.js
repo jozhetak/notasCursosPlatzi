@@ -11,13 +11,13 @@ app.use(
 )
 
 app.use(
-  '/graphiql', // En qué endpintURL
+  '/graphiql', // Al usar localhost:5678/graphiql entrar en la herramienta
   graphiqlExpress({
     endpointURL: '/graphql'
   })
 )
 
-const PORT = 5678
+const PORT = 5678 // Puerto donde correrá el servidor local
 
 // Escuhar el puerto y una función
 // cuando responda

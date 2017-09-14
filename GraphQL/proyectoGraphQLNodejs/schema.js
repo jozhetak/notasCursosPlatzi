@@ -60,6 +60,12 @@ const resolvers = {
         nombre: 'Pablo'
       }
     }
+  },
+  Profesores: () => {
+    return [{
+
+    }]
+    }
   }
 }
 
