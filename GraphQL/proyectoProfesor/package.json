@@ -1,0 +1,25 @@
+{
+  "name": "server-graphql",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon index.js",
+    "db:migrate": "knex migrate:latest --knexfile=db/knexfile.js",
+    "db:seed": "knex seed:run --knexfile=db/knexfile.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "casual": "^1.5.14",
+    "express": "^4.15.3",
+    "graphql": "^0.10.1",
+    "graphql-server-express": "^0.8.3",
+    "graphql-tools": "^1.0.0",
+    "knex": "^0.13.0",
+    "objection": "^0.8.3",
+    "sqlite3": "^3.1.8"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
