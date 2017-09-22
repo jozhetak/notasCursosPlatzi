@@ -440,25 +440,25 @@ replace into users set name = 'juan', email='juan@hotmail.com'
 * Cifrar los registros
 
 ***¿Cómo puedo capturar los errores de la base de datos para que la validación no se haga en la App sino en la base de datos?***
-"MySQL más que estructuras de control no tiene nada smilar al try catch, hay varios eventos que se pueden catchar y está en la documentación.
+> "MySQL más que estructuras de control no tiene nada smilar al try catch, hay varios eventos que se pueden catchar y está en la documentación.
 
 ***Los modelos de cubos para hacer análisis de negocios, montar modelos financieros, supermecados, etc. ¿Ese tipo de cosas es posible en MySQL?***
-"No, pero hay maneras de exportar para hacer esos cubos"
+>"No, pero hay maneras de exportar para hacer esos cubos"
 
 ***¿Por qué hay que usar replace y en qué casos usar?***
-"Uno de los casos donde yo más uso replaces es cuando hago logs grandes a bases  de datos y no a archivos. No quiero tener un problema de que si existe un alif de mi sistema que haya mostrado algún error, simplemente quiero mostrar el último, quiero garantizar que eso utilice el menor tiempo de CPU posible y la lógica no me interesa, quiero que se ejecute sí o sí. Si dominan el ON DUPLICATE KEY UPDATE puedeb obviar completamente el REPLACE"
+> "Uno de los casos donde yo más uso replaces es cuando hago logs grandes a bases  de datos y no a archivos. No quiero tener un problema de que si existe un alif de mi sistema que haya mostrado algún error, simplemente quiero mostrar el último, quiero garantizar que eso utilice el menor tiempo de CPU posible y la lógica no me interesa, quiero que se ejecute sí o sí. Si dominan el ON DUPLICATE KEY UPDATE puedeb obviar completamente el REPLACE"
 
 > Los cubos normalmente se refieren al tema financiero en el que se tienen productos, ciudades y tiempo, es una forma de entender en múltiples variables ***qué producto se vende más en cada mercado***.
 
 ***¿Cómo guardo el registro de la fecha y la zona horaria en que se registra una tupla automáticamente?***
-No se debe usar TIMESTAMP porque dan errores al registrar una fecha que no ha pasado y porque la variable tendrá vigencia hasta el 2038. En su caso, usar DEAPTIME (lo siento, no sé cómo se escribe) quien permite un registro desde el año 0000 hasta 9999.
+> No se debe usar TIMESTAMP porque dan errores al registrar una fecha que no ha pasado y porque la variable tendrá vigencia hasta el 2038. En su caso, usar DEAPTIME (lo siento, no sé cómo se escribe) quien permite un registro desde el año 0000 hasta 9999.
 
 ***¿Está bien usar la sentencia like para búsquedas?***
-"Like es una sentencia válida para búsquedas siempre y cuando lo hafas contra algo que conozcas, si vas contra un TEXT (Se pueden almacenar libros enteros aquí)  vas a tardar siglos en encontrar. Una buena práctica es que el ¿wile shark? esté a la derecha del caracter, si está a la izquierda se duplica el tiempo en encontrar el match (resultado)"
-Nota: Usar varchar pequeños.
+> "Like es una sentencia válida para búsquedas siempre y cuando lo hafas contra algo que conozcas, si vas contra un TEXT (Se pueden almacenar libros enteros aquí)  vas a tardar siglos en encontrar. Una buena práctica es que el ¿wile shark? esté a la derecha del caracter, si está a la izquierda se duplica el tiempo en encontrar el match (resultado)"
+> Nota: Usar varchar pequeños.
 
 ***Si haces un ALTER TABLE y agregas un campo como índice ¿se indexan todos los datos ya ingresados en ese campo?***
-"Si".
+> "Si".
 
 > No todos los select llevan FROM
 
@@ -467,7 +467,7 @@ Nota: Usar varchar pequeños.
 > "La mayoría de los ORM van a la base de datos, traen la estructura de la base de datos, crean un objeto con la estructura de la base de datos pero crean un objeto con toda la estructura de la base de datos para modificar un dato y regresar a la base de datos haciendo un insert recorriendo todas y cada una de las columnas para insertar a la base de datos".
 
 ***¿Cuál es la diferencia entre una vista y una tabla temporal?***
-Las vistas vienen de un query. Beco prefiere usar tablas temporales.
+> Las vistas vienen de un query. Beco prefiere usar tablas temporales.
 
 > ***"Lo que yo les enseñé es menos del 2% de lo que es MySQL... Lo que más me gustaría es que tuvieran esa curiosidad de saber más. ir a romper bases de datos (en su computadora), ir a romper y perder información, repararlas, hacer querys complejísimos, no lleguen a un query de más de 200k porque estarían haciendo algo mal".***
 
