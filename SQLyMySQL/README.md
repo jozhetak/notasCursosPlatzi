@@ -328,6 +328,8 @@ if (b.book_id in (1,2,4,6,8),
 
 > Se pueden hacer operaciones matemáticas y subquerys en MySQL (algo avanzado).
 
+> La redundancia de código en programación si no está penado con la muertestá muy mal visto.
+
 > ***Redundancia de datos*** Ejemplo: El nombre de la persona a la que le prestaste el libro esté almacenada en dos lugares diferentes. El problema de ello es cuando vayas a cambiar los registros y debes hacerlo en múltiples tablas.
 
 > El motor ***MyISAM*** no es transaccional y por tal no emplea llaves foráneas, es más rápido que ***InoDB***, éste se puede usar llaves foráneas, es transaccional y se pueden recuperar datos aunque se vaya la luz. Ideal para sistemas bancarios.
@@ -376,3 +378,107 @@ sum (if(b.price < 15, 0, b.price*b.copies)) as total
 ```
 
 
+***¿Cuántos títulos por editorial estoy guardando***
+```
+select p.publisher_id as pid,
+	p.name,
+	count(b.book_id) as libros
+from books as b
+left join publishers as p
+	on p.publisher_id = b.publisher_id
+group by pid
+```
+Se pueden aplicar las siguientes columnas:
+```
+select 
+	p.publisher_id as pid,
+	p.name,
+	sum (if(b.price>=15,1,0)) as libros_mios
+	sum (if(b.price<15,0,b.price*b.copies)) as total
+	sum (if(b.price>15,0,1) as libros_por_vender
+	count(b.book_id) as libros
+from books as b
+join publishers as p
+	on b.publisher_id = p.publisher_id
+group by pid.
+```
+
+***Agregar columna active en la tabla users***
+```
+alter table users add column active tinyinit(1) not null default 1
+
+update users set active = 0 where user_id = 16
+```
+
+***Insertar una tupla con una columna UNIQUE duplicada***
+```
+insert into users (name, email) values ('rocio','sofia@gmail.com')
+	on duplicate key update active = 1, name = concat(name, ' - nuevo')
+```
+
+***Al actualizar una tupla marcar un límite de filas afectables***
+```
+update users set name='juan' where user_id=5 limit 1
+```
+
+***Usando replace***
+Hace la misma función de UPDATE, con la diferencia de que si al hacer un insert está duplicado, borra la tupla y la vuelve a insertar pero con otra key (si esta es autoincrementable.
+
+Hay dos maneras de usar REPLACE:
+```
+replace into users (name, email, active,) values ('lorena', 'lorena@gmail.com',1)
+
+replace into users set name = 'juan', email='juan@hotmail.com'
+```
+
+### Sensión de preguntas
+***¿Cómo hacer más seguras las bases de datos?***
+* Crear 3 usuarios:
+  * Completo acceso de lectura y escritura
+  * Solo que pueda leer información
+  * Solo pueda leer cierta información
+* Cifrar los registros
+
+***¿Cómo puedo capturar los errores de la base de datos para que la validación no se haga en la App sino en la base de datos?***
+"MySQL más que estructuras de control no tiene nada smilar al try catch, hay varios eventos que se pueden catchar y está en la documentación.
+
+***Los modelos de cubos para hacer análisis de negocios, montar modelos financieros, supermecados, etc. ¿Ese tipo de cosas es posible en MySQL?***
+"No, pero hay maneras de exportar para hacer esos cubos"
+
+***¿Por qué hay que usar replace y en qué casos usar?***
+"Uno de los casos donde yo más uso replaces es cuando hago logs grandes a bases  de datos y no a archivos. No quiero tener un problema de que si existe un alif de mi sistema que haya mostrado algún error, simplemente quiero mostrar el último, quiero garantizar que eso utilice el menor tiempo de CPU posible y la lógica no me interesa, quiero que se ejecute sí o sí. Si dominan el ON DUPLICATE KEY UPDATE puedeb obviar completamente el REPLACE"
+
+> Los cubos normalmente se refieren al tema financiero en el que se tienen productos, ciudades y tiempo, es una forma de entender en múltiples variables ***qué producto se vende más en cada mercado***.
+
+***¿Cómo guardo el registro de la fecha y la zona horaria en que se registra una tupla automáticamente?***
+No se debe usar TIMESTAMP porque dan errores al registrar una fecha que no ha pasado y porque la variable tendrá vigencia hasta el 2038. En su caso, usar DEAPTIME (lo siento, no sé cómo se escribe) quien permite un registro desde el año 0000 hasta 9999.
+
+***¿Está bien usar la sentencia like para búsquedas?***
+"Like es una sentencia válida para búsquedas siempre y cuando lo hafas contra algo que conozcas, si vas contra un TEXT (Se pueden almacenar libros enteros aquí)  vas a tardar siglos en encontrar. Una buena práctica es que el ¿wile shark? esté a la derecha del caracter, si está a la izquierda se duplica el tiempo en encontrar el match (resultado)"
+Nota: Usar varchar pequeños.
+
+***Si haces un ALTER TABLE y agregas un campo como índice ¿se indexan todos los datos ya ingresados en ese campo?***
+"Si".
+
+> No todos los select llevan FROM
+
+> "Juan Pablo tenía que cuando usaba una consulta a punta de ORM (mapeador de bases de datos como Hibernate y JPA en Java) se demoraba 17 segundos y cuando saltó el ORM e hizo la consulta con SQL tardó 0.9 segundos".
+
+> "La mayoría de los ORM van a la base de datos, traen la estructura de la base de datos, crean un objeto con la estructura de la base de datos pero crean un objeto con toda la estructura de la base de datos para modificar un dato y regresar a la base de datos haciendo un insert recorriendo todas y cada una de las columnas para insertar a la base de datos".
+
+***¿Cuál es la diferencia entre una vista y una tabla temporal?***
+Las vistas vienen de un query. Beco prefiere usar tablas temporales.
+
+> ***"Lo que yo les enseñé es menos del 2% de lo que es MySQL... Lo que más me gustaría es que tuvieran esa curiosidad de saber más. ir a romper bases de datos (en su computadora), ir a romper y perder información, repararlas, hacer querys complejísimos, no lleguen a un query de más de 200k porque estarían haciendo algo mal".***
+
+### Notas finales personales
+* Se recomienda usar 0 y 1 (tinyint) como booleanos ya que facilita la exportación de datos a otros sistemas.
+* La función TO_DAYS(x) devuelve la cantidad de días desde el año 0.
+* Las tablas temporales ayudan a agilizar la consultas pesadas, una vez creadas estas se eliminan cuando se cierra la conexión del usuario con la base de datos.
+* NUMERIC(x,y) y DECIMAL(x,y)
+  * x: Número total de enteros y decimales
+  * y: Número máximo de decimales
+* Eliminar datos y esquema se usa DROP
+* Elimnar solo datos se puede usar DELETE y TRUNCATE
+* El orden de los query son:
+  SELECT - FROM - JOIN - WHERE - GROUP - ORDER 
