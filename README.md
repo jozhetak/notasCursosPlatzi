@@ -4,4 +4,4 @@
 
 Nota: Github no recibe carpetas vacías.
 
-> "Oigan, nosostros llevamos 2 años haciendo esto (al 2017 serían 4) para muchos de ustedes que ahora llegan pero ya llevamos 2 años, los cursos son geniales. La lección es muy fácil, nunca se vayan de platzi y les prometemos que les traeremos educación profesional del nivel que ustedes merecen del nivel de no importar de donde nacieron. Ustedes van aprender el mismo tipo de tecnología que se enseñan en Silicon Valley... Europa New York. Esa es nuestra misión en Platzi". - ***Freddy Vega*** finalizanco la clase de SQL y MySQL.
+> "Oigan, nosostros llevamos 2 años haciendo esto (al 2017 serían 4) para muchos de ustedes que ahora llegan pero ya llevamos 2 años, los cursos son geniales. La lección es muy fácil, nunca se vayan de platzi y les prometemos que les traeremos educación profesional del nivel que ustedes merecen, del nivel de no importar de donde nacieron. Ustedes van aprender el mismo tipo de tecnología que se enseñan en Silicon Valley... Europa New York. Esa es nuestra misión en Platzi". - ***Freddy Vega*** finalizando la clase de SQL y MySQL.
