@@ -165,12 +165,59 @@ Hasta aquí es la normalización. En producción con la tercera forma normal es 
 ##DML:
 - join
 - insert
-- update
+- update (transforma toda una tabla)
 - delete
-- replace
+- replace (Solo cambia un registro)
+
+## Principios de ACID enfocado en lo no relacional
 
 
+- Atomicidad: Se usan en bases de datos distribuidas que cada nodo tenga un tiempo de respuesta definido.
 
+- Consistencia: Se usan sistemas de replicación pero no todas las veces serán consistentes.
+
+- Aislamiento: Se generan copias de cada uno de los diferentes archivos para cada usuario, por lo tanto es información parcial. No siempre las bases de datos no relacionales tienen aislamiento.
+
+- Durabilidad: Se utilizan nodos de replicación para mantener la durabilidad de la bases de datos no relacional.
+
+No todas las bases de datos no relacional cumplen todos los principios.
+
+Los NoSQL son muy buenos para manejar archivos e imágenes.
+
+## Principios CAP para NoSQL
+- Consistency (Consistencia)
+- Availability (Disponibilidad). Un dato debe estar replicado por lo menos en tres nodos.
+- Partition (Particionamiento). Cómo se parte la información por lo menos en 3 nodos. Para tolerar fallas en la comunicación.
+
+No podemos involucrar siempre los tres principios a la vez.
+
+Entonces:
+- CA
+- CP
+- AP (Aquí commit a dos fases, doble check)
+
+Estas bases de datos están hechas para proyectos grandes y pensar en otros aún más grandes ya que podemos evitar el aumento.
+
+Si quires hacer el próximo facebook, usa bases de datos NoSQL.
+
+Al final del día cuando varios usuarios acceden al mismo archivo se hace un merge.
+
+## Comparación
+- No relacional:
+    - Mayor tolerancia a fallos porque se puede ir un nodo, pero cuando se vaya el nodo vamos a perder consistenci de la información
+
+- Relacional:
+    - Mayor consistencia pero no voy a ser tan rápido. Porque va a empezar a buscar desde el primer índice hasta el último.
+    
+##Scale up: Crecimiento en el mismo sistema (crecimiento vertical), en la misma máquina, con el mismo core, el mismo servidor...
+
+##Scale out: Crecimiento horizontal con balanceo de carga. Evitar el embudo en esta parte. Puede ser síncrona (tiempo real) y asíncrona (la comunicación es en un lapso de tiempo definido). Hadoop hace eso. Se hacen en máquinas pequeñas que unidas pueden dar mayor eficiencia, usamos sistemas de Backup y replicación.
+
+Scale up: Bancos y reservación de vuelos
+Scale out: Redes sociales y BigData
+"Espero que no se les vaya a olvidar nunca"
+
+Con <<select column1, column2 from schema.tabla;>> Para hacer un query.
 
 
 
