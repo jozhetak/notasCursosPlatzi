@@ -162,6 +162,14 @@ Hasta aquí es la normalización. En producción con la tercera forma normal es 
     view
     procedure
 
+##DML:
+- join
+- insert
+- update
+- delete
+- replace
+
+
 
 
 
