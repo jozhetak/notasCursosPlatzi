@@ -221,7 +221,9 @@ Con <<select column1, column2 from schema.tabla;>> Para hacer un query.
 
 
 
+Si nuestra prioridad es la consistencia de datos entonces lo mejor es bases de datos relacional, pero si es rapidez y escalabilidad lo mejor es no relacional.
 
+"Las bases de datos se aprenden practicando"
 
 
 
