@@ -95,4 +95,61 @@ Este no es el final del proceso, se debe iterar hasta que en alguna de las itera
 Los features son donde más impacto hay en el rendimiento en Machine Learning
 
 # Configuración del ambiente de trabajo con Docker
+Vamos a configurar el ambiente de trabajo con Docker. Aquí se explica el proceso de instalación con Docker
+
+# Construcción de contenedores Docker
+***Datos Importantes***
+- Los contenedores de Docker son similares a una ballena virtual y se pueden crear de forma automática con DockerFile, que va a crear una imagen y desde esa imagen se generan todos los contenedores que necesitamos.
+- ararads - base Es un ambiente típico, muy fácil de usar de librerías PyData.
+- Antes de instanciar un contenedor hay que asegurarnos de crear un directorio que se llame vol, esto dentro de la carpeta. Esto es importante porque cada vez que se requiera disponibilizar archivos en el contenedor podamossolo hacer un drag and drop y llevarnos a vol.
+
+La url del Docker File en github es
+git clone https://github.com/JuanPabloMF/arara-docker-stacks.git
+
+Entrar en ararads-base
+sudo docker build -t base:1.0 .
+
+Creamos un directorio ***vol*** para conectar
+
+sudo docker run -ti --name ambiente-ml -v ~/paltzi-ml/vol:/home/juanpablo/work/vol -p 8889:8888 ds-tf:1.0 start-notebook.sh --NotebookApp.token=''
+
+Si ingresamos en 8889, debemos acceder ya a jupyter
+
+# Qué es y cómo se utiliza Numpy
+
+***Datos importantes***
+- ***Numpy*** Es una librería muy importante para el ecosistema de ***Python*** ya que es la base de todos los cálculos científicos y muchas de las librerías de ***Machine Learning***
+- ***Scikit-Learn*** Con sus modelos, cuando retorna un resultado, en general lo retorna en un formanto ***Numpy***
+- La API ***Numpy*** tiene muchas similitudes con ***Pandas***
+- ***Numpy*** Reemplaza de forma más eficiente lo que podría ser un tipo de lista. En las listas podemos tener conjuntos de elementos numéricos. Sin embargo las listas no logran manejar datos de dos dimensiones
+- Las listas no poseen métodos que sin prácticos para hacer aritmética.
+- Es importante saber que otros lenguajes de programación poseen librerías altamente optimizadas para hacer cálculos numéricos con vectores de datos. ***Numpy*** es esa librería para el lenguaje de programación ***Python***
+- np.linspace es una función que permite crear un array de una dimensión de números entre 0 y 1.
+- Los ***array*** a diferencia de otros objetos ***Python*** están fuertemente tipificados.Esta tipificación fuerte es necesaria porque es una de las cosas que permite que esta librería sea más rápida que ocupar listas, por ejemplo.
+
+***Instalación del entorno de trabajo***
+
+git clone https://github.com/JuanPabloMF/arara-docker-stacks.git
+cd arara-docker-stacks/ararads-base
+sudo docker build -t ararads-base:1.0 .
+cd ../ararads-tf-cpu
+sudo docker build -t ararads-tf-cpu:1.0 .
+
+
+En nuestra carpeta de trabajo
+mkdir vol
+sudo docker run -ti --name platzi-ml -v ~/platzi-ml/vol:/home/juanpablo/work/vol -p 9000:8888 ararads-tf-cpu:1.0 start-notebook.sh --NotebookApp.token=''
+
+Entender la creación de Array en Numpy. Tal parece que es muy importante dominar Numpy
+- Array de uno o más dimensiones
+- Se usa display(variable) para ver el resultado de la variable.
+- Comparar arrays => np.array_equal(array1,array2)
+- Los que parecen un texto en azul se hace con html
+
+***Creamos las imágenes de Docker y subásmolas a hub.docker.com***
+
+- Operaciones aritméticas con vectores en Numpy.
+- Leer a documentación de Numpy y practicar mucho.
+- Numpy corre en velocidad en ***C***
+
 
