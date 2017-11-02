@@ -151,5 +151,44 @@ Entender la creación de Array en Numpy. Tal parece que es muy importante domina
 - Operaciones aritméticas con vectores en Numpy.
 - Leer a documentación de Numpy y practicar mucho.
 - Numpy corre en velocidad en ***C***
+- Tratar ocupar funciones nativas de Numpy y no a bucles for para que corra a velocidad de **C**
+- Obtener la Media y Mediana con Numpy 
+
+> Al empezar el ciclo lo debemos hacer de la manera más sencilla posible para obtener feedback de los datos y verificar que nuestro algoritmo funcione correctamente.  
+
+# Vamos a resolver el problema como lo haría un Data Scientist en su lugar de trabajo
+
+## Cargar los datos necesarios para el proyecto
+- importar las librerías numpy, pandas, maltplotlib, seaborn
+
+## Inspección de los tipos de datos
+- La ***inspección de los datos***  se da para tener conocimiento de la salud de los datos que tenemos, saber si vienen limpios o no, y también porque se quiere tener un entendimiento cuantitativo de ellos. Parte de esto es mirar gráficos estadísticos y entender diferentes propiedades numéricas de las columnas.
+- A diferencia de Numpy, Pandas no solo permite cargar datos numéricos, sino también datos de texto.
+- El método info nos va a mostrar la cantidad completa de columnas con la cantidad de elementos no nulos que ha en esas columnas, y pot último muestra el tipo de cada columna.
+
+## Inspección cuantitativa y de salud de los datos
+
+Se detectó un problema. La BDD fue creada sin diferenciar: 
+- La moneda en la que se ingresaba el presupuesto y el ingreso
+- La zona del país en la se registró el ingreso
+
+***Es muy común recibir bases de datos con datos falsos***
+
+***La solución es buscar una base de datos con esos valores que nos interesan y mezclarlas***
+
+> Vale más tener ***Datos de calidad*** que tener datos sucios.
+
+> Los datos faltantes generan errores en los algoritmos de Machine Learning
+
+## Limpiar los datos
+
+## Manejo de datos faltanes
+
+## El objeto estimador de Scikit-Learn
+***Datos importantes***
+- Por como fue diseñado ***Scikit-Learn***, existe una API muy fácil de ocupar y muy unificada. Esta unificación se da por un objeto que se llama *estimador* que tiene en todos los casos y para el algoritmo de Machine que sea, una API que es común y 3 métodos que son clave.
+- ***Scikit-Learn*** posee muchos modelos, se pueden implementar tanto, regresiones lineales como regresiones regularizadas, árboles de decisión, SDMs, etc.
+- ***Scikit-Learn*** COntiene todos los modelos que son usados hoy en día, y una de las virtudes de esta librería es que sigue muy de cerca lo que pasa en a investigación.
+- ***Scikit-Learn*** Es la librería más usada de ***Machine Learning General***, no de ***Machine Learning Especializado***, para ello está la librería de ***Tensor FLow*** y sirve casi exclusivamente para modelos de ***Deep Learning***.
 
 
