@@ -217,3 +217,84 @@ de probabilidades. Un ejemplo es:
 
 ![](http://blog.revolutionanalytics.com/downloads/DataSaurus%20Dozen.gif)
 
+# Feature Engineering
+
+## Feedback del modelamiento
+> El diseño de feature puede llegar a ser más importante que la optimización en Machine Learning. Esto es porque al encodear de buena forma nuestro Feature podemos lograr un excelente rendimiento.
+
+Mejorar la performance de nuestros modelos no solo pasa por optimizar sus parámetros.
+Una de las partes clave  según algunos expertos la más importante, es la de ***diseñar la representación en la que se entregan los datos a los modelos para que estos los procesen***.
+Esto equivale, en palabras más simples, en definir de forma inteligente las features (columnas) de nuestras tablas de datos.
+
+***Ejemplo de feature engineerin***:
+El problema:
+Supongamos que estamos tratando de resolver el problema siguiente:
+- Tenemos un problema de reconocer si ciertos datos con una sola feature son de una clase 1 o de una clase 2 (por ejemplo "el producto está deficiente" o "el producto esta funcional").
+- Por tanto estamos resolviendo una ***clasificación***.
+- Para esta clasificación decimos tomar un SVM, que es un modelo poderoso que funciona buscando la "mejor" recta que separa los puntos de cada clase.
+
+> Cuando hablamos de ***diseñar feature*** estamos hablando de poder transformar y definir nuevas columnas de nuestra tabla de datos. Recuerden que una ***feature*** en nuestro caso va encodeada en una de las columnas de una tabla de datos X que estamos trabajando.
+
+--- Colocar imagen de clasificación ---
+
+> El diseño de feature no es una ciencia exacta.
+
+### Principios de diseño de Features
+Diseñar tus features es un arte más que una ciencia (por lo que en general te recomendamos ganar experiencia leyendo artículos científicos y viendo soluciones:
+1. ***Features Informativas***: Tus features son más útiles mientras más correlación tengan tu variable objetivo.
+2. ***Features Independientes***: Para no tener redundancias tus features deberían ser lo más independientes posibles entre ellas.
+3. ***Cantidad de Features controlada***: Nuestra intuición nos falla en dimensiones superiores a 3 (ver vídeo maldición de la dimensionalidad). En la que mayoría de los casos aumentar a cantidad de features afecta negativamente la performance si no contamos con una gran cantidad de datos. Por último pocas features aseguran una mejor interpretabilidad de los modelos. No usar 100 cuando nuestros datos no son más de 100.
+
+Ejemplo de Feature informativa y Feature no informativa
+
+- Predecir el precio de una casa en función de sus metros cuadrados.
+- Predecir el precio de una casa en función de a temperatura del mar.
+
+Es importante entender la correlación entre la feature y la variable objetivo. Más sobre esto en los siguientes vídeos.
+
+***Visualizar interdependencia entre variables***
+
+#### La maldición de la dimensión
+> Nuestras intuiciones no funcionan tan bien cuando vamos a una dimensión superior a 3.
+
+Datasaurus Dozen y Anscombe's quartet
+Utilidad de la capacidad de entender los datos en 1,2 y 3 dimensiones del ojo humano.
+
+Maldición de la dimensionalidad:
+En ***Dimensiń superior o igual a 4***, nuestra capacidad de entender los datos se pierde, ***y aún peor fenómenos extraños/contraproducentes ocurren***
+
+***Ejemplo 1:***
+Qué tan largo debe tener cada arista de un hypercubo de dimension p que capture 10% del volumen de un hypercubo de volumen 1 que lo contiene?
+
+> Mientras más crece la dimensión de los datos, más datos necesito para obtener una parte de la información de dichos datos. Esto es para cuando tenemos muchas Features.
+
+> No es bueno manejar muchas dimensiones a menos que tengamos un buen control.
+
+--- Ver Análisis exploratorio cuando lo arreglen ---
+
+## Continuación con el análisis exploratorio
+> Uno no se puede fiar de que los datos están limpios
+
+## Métodos de selección automática de feaures
+Sklearn posee una series de métodos para seleccionar las mejores features...
+
+Del análisis univariante obtenemos que las mejores fetaures son:
+- production_budget
+- cast_total_facebook_likes
+- budget
+
+### Creación de features
+> Una de las formas de crear features es con ***escalamiento de los datos***
+
+Diversos algoritmos son sensibles a la escala en la viene cada feature. ***Re-escalarios*** puede traer significativas mejoras de rendimiento.
+
+Existen distintas estrategias de escalamiento de tus features, pero ***la más común es la estandarización*** donde convertimos la variable para que la distribución de ésta siga una distribución que es Gausaiana de media 0 y de desvicación estándar 1.
+
+### Simplificar las transformaciones con pipelines
+
+> Las regresiones no necesita ***Re-escalamiento***. En Sciket-Learning es más fácil usar ***sklearn.pipeline.make_pipeline***. 
+
+### Creación de features de forma automática
+**PolynomialFeatures** transforma una matriz (A1,A2) a (1,A1,A2,A1^2 ,A1 * A2, A2^2)
+
+

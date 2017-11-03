@@ -217,4 +217,163 @@ model.score(X_test, y_test) # Estimar sobre datos nuevos
 
 residuals = y_test - predicted
 plt.scatter(y_test,residuals) # Aquí deben mantenerse unidos y no patrones
+ap_residuals = np.abs(residuals)/y_test # Conertirá a valores absolutos
+plt.scatter(y_test,ap_residuals)
+lap_residuals =np.log(ap_residuals) # El gráfico logaritmoco de mejor forma
+plt.hist(lap_residuals,bins=100, normed=1, histtype='step', cumulative=True); #Con el ; no muestra el output sino solo el gráfico
+
+
+# Esto es para mostrar "Tenemos un 50% de los datos a un -10$ de error"
+plt.hist(lap_residuals,bins=100, normed=1, histtype='step', cumulative=True); #Con el ; no muestra el output sino solo el gráfico
+plt.axis([-2,0,0,1])
+np.power(np.exp(1)*np.ones(5), np.linspace(-2,0,5))
+
+# Feature Engineering
+### Visualizar interdependencia entre variables
+import padas as pd
+X = pd.read_csv('../vol/intermediate_results/X.csv').drop('worldwode_gross', axis=1)
+import seaborn as sns
+%matploit inline
+X.corr()
+
+sns.heatmap(X.corr()) # Más bonito
+
+
+# Hypercubo es un cubo en dimensión superior
+import matploitlib.pyplot as plt
+import numpy as np
+
+x = np.arange(1,15)
+y = np.power(0.1,1/x)
+plt.plot(x,y) # Calcula las aristas en varios dimensiones
+
+########## Análisis exploratorio
+
+##### Continuando con el análisis exploratorio
+Z3 = pd.concat([X,y], axis=1)
+sns.heatmap(Z3.corr())
+
+# Métodos de selcción automática de features
+from sklearn.feature_selection import SelectKBest
+from sklearn.feature_selection import mutual_info_regression
+selector = SelectectKBest(mutual_info_regression, k=4)
+selector.fit(X,y)
+
+scores = selector.scores
+plt.rcParams["figure.figsize"] = [12,8] # Configurar para que el gráfico se vea mejor
+plt.xticks(np.arange(7),list(X.columns)); # Visalizar leyenda
+
+### Guardaremos las 5 features entregadas por la interpretacion de
+#### nuestra regresion Lasso
+X2 = X[['production_budget', 'title_year', 'duration.1' 'cast_total_faceook_likes', 'imdb_score']]
+X3 = X[['production_budget', 'cast_total_facebook_likes', 'imdb_score']]
+
+### Veamos los resultados del modelo con estas features
+X_train, X_test, y_train, y_test = train_test_split(X,y)
+
+cols2 = ['production_budget', 'title_year', 'duration.1', 'cast_total_facebook_likes', 'imdb_score']
+X2_train, X2_test, y2_train, y2_test = X_train[cols2], X_test[cols2], y_train, y_test
+cols3 = ['production_budget', 'cast_total_facebook_likes', 'imdb_score']
+X3_train, X3_test, y3_train, y3_test = X_train[cols3], X_test[cols3], y_train, y_test
+
+len(X_train)
+
+from sklearn.linear_model import Lasso
+model11 = Lasso()
+model12 = Lasso()
+model13 = Lasso()
+model11.fit(x_train,y_train)
+model12.fit(X2_train,y3_train)
+model13.fit(X2_train,y3_train)
+
+# Machine Learning es muy iterativo, hay que probar cada método de ataque
+## Nuesta unica forma de saber que las cosas están funcionando
+## es probando el modelo y viendo sus resultados
+## En este caso bajar las dimensiones (features) no fue muy
+## significativa pero si hubiesen sido 50 si lo hubiésemos
+## notado la diferecia
+print(model11.score(X_test,t_test))
+print(model12.score(X2_test,t_test))
+print(model13.score(X3_test,t_test))
+
+# ------------
+
+# Creación de features
+### Escalamiento de los datos
+%matplotlib inline
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+from sklearn.mode_selection import train_test_split
+X = pd.read_csv('../vol/intermediate_results/X.csv')
+y = X['worldwide_gross']
+X = x.drop('worldwindw_gross', axis=1)
+X_train, X_test, y_train, y_test = train_test_split(X,y)
+
+from sklearn.preprocessing import StandardScaler
+scaler = StandarScaler()
+scaler.fit(X_train)
+
+scaler.mean_
+
+scaler.scale_
+
+X
+
+X.values
+
+scaler.transform(X_train)
+
+X_train_scaled, X_test_scaled = (sclaer.transform(X_train), scaler.transfor(X_test))
+
+##### Entrenamos el modelo
+from sklearn.linear_model import Lasso
+model = Lasso()
+model_scaled = Lasso()
+model.fir(X_train, y_train)
+model_scaled.fit(X_train_scaled, y_train) # Saldrá un warning pero está bien
+### para que no salgan los warnings clocar al principio del notebook
+import warnings
+warnings.simplefilter("ignore")
+
+print(model.score(X_test, y_test)
+print(model_scaled.score(X_test_scaled,y_test)
+
+### Simplificando las transformaciones (Re-escalamiento) con pipelines
+from sklearn.pipeline import make_pipeline
+model_scaled = make_pipeline(StandardSclaer(),
+                            Lasso())
+model_scaled.fit(X_train, y_train)
+
+print (model_scaled.score(X_test, y_test))
+
+### Crear nuevas features de forma automática
+A = (np.arange(6).reshape(3,2)
+A
+
+### De 2 columnas tendremos 6 columnas
+from sklearn.preprocessing import PolynomialFeatures
+transformer = PolynomialFeatures(2)
+transformer.fit(A)
+transformer.transform(A)
+
+### Para hacerlo más rápido
+from sklearn.preprocessing import PolynomialFeatures
+transformer = PolynomialFeatures(2)
+transformer.fit_transform(A)
+
+X.shape
+transformer = PolynomialFeatures(2)
+transfomer.fit_transform(X).shape # De 7 pasamos a 36 features
+## lo que hace este transform es crear más features con polinomios
+## y mientras más features tenemos más combinaciones posibles podemos hacer
+## Tener cuidado con este polinomio porque podemos crear features muy grandes
+
+model_poly = make_pipeline(PolynomialFeatures(2),
+    Lasso())
+model_poly.fit(X_train, y_train)
+model_poly.score(X_test, y_test)
+# Para este caso no fue muy significativo el escalamiento de features. Pero en otros
+## en que el profesor estuvo trabajando en un proyecto que si fue muy util.
 
