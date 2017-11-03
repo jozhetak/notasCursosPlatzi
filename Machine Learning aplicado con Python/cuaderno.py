@@ -168,10 +168,48 @@ de conocimiento en Machine Learning llevado a software
 # Una structura de datos esencial en scikit-learn es el
 ## ESTIMADOR
 
+# Implementamos un modelo simple de regresion primero
+X = pd.read_csv('../vol/intermediate_results/X.csv')
+X
+y = X['worldwide_gross']
+X = X.drop('wordlwide_gross', axis=1)
+from sklearn.model_selection import train_test_split
+X_train, x_test,y_train, y_test = train_test_split(X,y,test_size=0.4) # 60% para entrenamiento y 40% para test
+print(len(X))
+print(len(X_train))
+print(len(X_test))
+x.head(1)
+
+# Nota, todas tablas son numéricas
+from sklearn.linear_model import Lasso
+model = Lasso()
+model.fit(X_train, y_train) # Sale un warning pero no hay problema
+predicted = model.predict(X_test)
+predicted
+predicted.shape
+import matploitlib.pyplot as plt
+%matplotlib inline
+plt.hist(predicted)
+plt.hist([predicted, y_test]); # Dibuja un histograma más fino
+
+# Evaluemos de forma mas fina el comportamiento de nuestro modelo
+'''
+Los estimadores y las funciones de sklearn vienen con el máximo
+de argumentos con valores por defecto que suelen ser las mejores
+opciones si no tenemos algún conocimiento particular del problema.
+En este caso particular la función estimador.score ya viene con
+una de las métricas de sklearn.metrics, que es la métrica sklearn.metric.r2_score
+'''
 
 
+'''
+EL score R2 de una regresión es una de las formas más comune de entender
+su poder predictivo. Este mientras másc cerca de 1 este, mejor es
+'''
 
+'''
+Los valores que puede tomar son de -infinito hasta 1. Un Score R2 negativo es,
+malo, ya que la regresión es peor que si simplemente eligiéramos
+un valor fijo como redicción para todos los puntos, la media.'''
 
-
-
-
+model.score(X_test, y_test) # Estimar sobre datos nuevos

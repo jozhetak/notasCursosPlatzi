@@ -194,3 +194,26 @@ Se detectó un problema. La BDD fue creada sin diferenciar:
 >Para poder escoger el estimador apropiado, una excelente guía es el ***cheatsheet*** siguiente, hecho por uno de los core-dev de scikit-learn. El que lo hizo es el que más aporta a la librería.
 
 ![](http://scikit-learn.org/stable/_static/ml_map.png)
+
+## Implementar un modelo de regresión (Lasso)
+
+
+## Overfitting y Underfitting
+
+Son dos factores que debemos tener muy en cuenta.
+- ***Unferfitting*** (Subajuste) Se presenta cuando un modelo no puede capturar la tendencia de los datos. Es generalmente el resultado de un modelo extremadamente simple.
+- ***Overfitting*** (Sobreajuste) Se presenta cuando un algoritmo está perfectamente adaptado a los datos con los que lo entrenamos, pero si trataran de predecir nuevos datos, lo más probable es que nos de error.
+
+Para saber si estamos bien, el error de entrenamiento y de test deben ser bajos. También su diferencia.
+
+--- Poner nota de coeficiente de correlación en evaluado modelo---
+--- Indicar recomendaciones de R^2 ---
+
+Un buen score R^2 es importante para una regresion. Pero no lo
+es todo. De esta forma general los scores hay que complementarlos
+con visualizaciones de los datos ya que una métrica no logra
+siempre encodear todas las caraceristísticas de una distribució
+de probabilidades. Un ejemplo es:
+
+!()[http://blog.revolutionanalytics.com/downloads/DataSaurus%20Dozen.gif]
+
