@@ -191,4 +191,6 @@ Se detectó un problema. La BDD fue creada sin diferenciar:
 - ***Scikit-Learn*** COntiene todos los modelos que son usados hoy en día, y una de las virtudes de esta librería es que sigue muy de cerca lo que pasa en a investigación.
 - ***Scikit-Learn*** Es la librería más usada de ***Machine Learning General***, no de ***Machine Learning Especializado***, para ello está la librería de ***Tensor FLow*** y sirve casi exclusivamente para modelos de ***Deep Learning***.
 
+>Para poder escoger el estimador apropiado, una excelente guía es el ***cheatsheet*** siguiente, hecho por uno de los core-dev de scikit-learn. El que lo hizo es el que más aporta a la librería.
 
+![](http://scikit-learn.org/stable/_static/ml_map.png)
