@@ -213,3 +213,8 @@ malo, ya que la regresión es peor que si simplemente eligiéramos
 un valor fijo como redicción para todos los puntos, la media.'''
 
 model.score(X_test, y_test) # Estimar sobre datos nuevos
+
+
+residuals = y_test - predicted
+plt.scatter(y_test,residuals) # Aquí deben mantenerse unidos y no patrones
+

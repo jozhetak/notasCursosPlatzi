@@ -215,5 +215,5 @@ con visualizaciones de los datos ya que una métrica no logra
 siempre encodear todas las caraceristísticas de una distribució
 de probabilidades. Un ejemplo es:
 
-!()[http://blog.revolutionanalytics.com/downloads/DataSaurus%20Dozen.gif]
+![](http://blog.revolutionanalytics.com/downloads/DataSaurus%20Dozen.gif)
 
