@@ -298,7 +298,100 @@ Existen distintas estrategias de escalamiento de tus features, pero ***la más c
 **PolynomialFeatures** transforma una matriz (A1,A2) a (1,A1,A2,A1^2 ,A1 * A2, A2^2)
 
 
+### Creación de más features
+Las features categóricas que tienen una cantidad de valores posibles limitadas. Ejemplo: Género, países... Y transformar en números (label an code) pero tener cuidado entre las distancias en vectores.
 
+Lo mejor es usar Encoding one-hot
+
+
+### Selección de features y la maldición de la dimensionalidad
+
+***Pirámide de Maslow del Machine Learning***
+
+- Hay un reto aquí
+
+## Modelos y evaluación más avanzada
+### Cross Validation
+Método de validación para saber qué tan bueno va a ser nuestro modelo
+
+### Selección de modelos
+Debemos estar en un punto medio, ni muy complejo ni muy sencillo
+Usar la version 0.19 porque tiene una función que usaremos en esta sección
+
+> Busquemos siempre el máximo del score de test. Eso le va a decir cuál es el mejor parámetro para su modelo.
+
+> El modelo usado aquí necesitan más datos para que funcionen.
+
+***¿Cómo solucionar overfitting y el underfitting?***
+Varianza alta:
+- Conseguir más ejemplos
+- Reducir cantidad de features
+- Aumentar coeficiente de regularización
+
+Bias alto:
+- Más features
+- Modelo más complejo
+
+Mal resultado general:
+- Probar otro algoritmo/familia de modelos, quizás las hipótesis del modelo (el modelo usado) no son cumplidos por tu dataset. Es decir, estamos usando el modelo incorrecto, las curvas de validación y aprendizaje nos pueden servir para este propósito
+
+### Introducción a Ensembles y Árboles de Decisión
+Ensembles es un modelo moderno compuesto de modelos más pequeño, lo que hace es comparar los resultados sus modelos y escoger cuál modelo es el que mejor se adapta.
+
+Hay algoritmos simples y otros todo terreno
+
+> Ver el algoritmo de árbol en el curso de algoritmos
+
+***graphiz*** es una librería basada en C. Sirve para llevarlo a grafos. Nos muestra el algoritmo usando Ensembles en forma de diagrama.
+
+### Random Forest y Gradient Boosting Trees
+
+> Si conocen el sitio web kaggle.com, es un sitio que organiza competencias con premios bastante importantes y con datos reales que vienen de las empresas socias de kaggle.com. En general los que ganan, suelen usar mucho el Random Forest y el Gradient Boosting Trees y luego esos modelos lo usan en Ensembler (Compara diversos modelos y ellos votan, el mejor es el elegido)
+
+Se usa el proceso de baggin¿? 
+
+***Chris Albon*** --> Destacado en la comunidad de Data Science
+***Leo Breiman*** --> Creador del Random Forest
+
+Tenemos un score mejor que en Lasso (Random Forest)
+
+En ***Gradient Boosted Trees*** Es más complejo de optimizar que Random Forest, funciona con otro mecanismo en este caso Boosting. Una lógica de ensambla modelos de aprendizaje débil.
+
+Ambos modelos son muy poderosos.
+
+### Optimización de hiperparámetros
+
+- Fijar un learning rate alto
+- Fijar parámetros de los árboles
+- fijados estos parámetros, elegir el mejor número de estimadores que conforman el ensemble.
+- (tarea) Con el learning rate dado y el número de estimadores óptimos optimizar los parámetros de los árboles.
+
+> Hay blogs de expertos que recomiendan qué valore darle a los árboles para que funcionen. Ejemplo GradientBoostingRegressor.
+
+Con todo lo realizado aquí optimizó enormemente el score (R^2)
+
+
+### Conclusiones
+
+> Es muy importante que vean todos los ejercicios a lo largo de él. Hay mucha información en este curso, manejamos muchas librerías y de forma profesional. Por lo que estos ejercicios les ayudarán a asimilar los conocimientos adquiridos.
+
+
+***Recursos***
+- Reddit /machinelearning y /learnmachinelearning (Preferido del profesor, uno enfocado a los avances en la industria y el otro es más pedagógico.
+- Analytics Vidhya y KD Nuggets
+- kaggle.com y There is no Free Hunch (es un blog) (Kaggle además de competencias tiene una parte pedagógica. Algunos cuentan sus secretos para optimizar sus algoritmos y ganar las competencias.
+- Arxiv, papers -> Publicaciones científicas. Para saber lo que se está haciendo.
+- Libros: "Pattern Recognition and Machine Learning" c.Bishop y "Elements of Statiscal Learning".
+
+***Próximos pasos, consejos de cierre***
+- Matemáticas
+- Praxis: Feature Engineering, Model Selection y Tuning. (Copiar Features que hacen las personas expertas)
+- Deep Learning para NLP y Computer Vision. ***Deep Learning*** es mu muy bueno para el reconocimiento de imágenes y reconocimiento de texto.
+- Reto: Aprender Machine Learning Bayesiano.
+
+> ***Machine Learning Bayesiano*** es una rama apasionante de Machine Learning donde se ocupa conocimiento experto como el de las Features, pero en este caso para hacer un modelamiento matemático, un modelamiento probabilístico que al final entrega resultados con un rendimiento excelente y el ***Machine Learning Bayesiano*** hoy en día está tratando de abarcar casi todas las áreas y las está reinventando de cierta forma por lo cual es un desafío interesante si quieren llegar un día a ser expertos a nivel mundial en el tema.
+
+***Nos invitó a iniciar discusiones por twitter y a ser parte de la comunidad científica del Machine Learning***
 
 
 # Recomendaciones del profesor para ser experto en Data Science y Machine Learning
