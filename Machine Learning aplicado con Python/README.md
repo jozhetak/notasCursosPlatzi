@@ -298,3 +298,15 @@ Existen distintas estrategias de escalamiento de tus features, pero ***la más c
 **PolynomialFeatures** transforma una matriz (A1,A2) a (1,A1,A2,A1^2 ,A1 * A2, A2^2)
 
 
+
+
+
+# Recomendaciones del profesor para ser experto en Data Science y Machine Learning
+### Pasos:
+1. Leer el libro ***Introduction to  Machine Learning with Python*** de Andreas Muller
+2. Resolver uno de estos dos problemas en ***Kaggle***
+   - Titanic
+   - Housing dataset
+3. Durante la fase 2 apoyarse en los materiales que recomiendo en el cierre del curso (sobre todo reddit y y blogs)
+4. Después de eso ya deberías pasar a temas específicos, como redes neuronales, time series forecast o aprendizaje reforzado
+
