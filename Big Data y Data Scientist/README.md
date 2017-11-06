@@ -275,3 +275,48 @@ Funciones usadas:
 La similaridad se puede medir entre la distancia de dos puntos en el espacio vectorial.
 
 Convertir las entidades o atributos a evaluar al espacio vectorial (tuplas) es todo cuestión de creatividad.
+
+
+
+### ¿Cómo llegar a ser un data Scientist?
+- Bootcamp (3 meses => 40 - 60 horas a la semana)
+- ***Tornado imparable*** Mirarse en el espejo y preguntarse "¿qué me toca aprender?" 
+> Si coursea me puede enseñar algoritmos de Machine Learning tan bien como cualquiera, si competencias de modelos predictivos pueden darme experiencia en resolver problemas del mundo real con herramientas de ***Data Science*** y si todo lo mencionado es efectivamente gratis para acceder ***YO SERÉ EL TORNADO IMPARABLE CONSUMIENDO TODO POR MI CAMINO***
+- Escoge tu camino, enséñate cosas de tu pasión 12 a 14 horas por día. Aprende todo lo que quieras en Data Science y Machine Learning. Comunica tus resultados con el autor del recurso. El profesor siempre estuvo publicando artículos, investigaciones para demostrar sus resultados a empleadores posibles.
+- ***Siendo un tornado imparable*** te tomaría 1 año desde cero.
+
+#### Burocracía
+> A muchos empleadores no les interesa dónde o qué estudiaste inclusive si estudiaste, lo que le importa es si puedes demostrar que puedes hacer algo con Machine Learning o con Data Science de impacto. Lo que les importa es que les demuestres lo que puedes hacer.
+
+***Debemos compartir los proyectos con la comunidad de Platzi***
+
+# Desafío 1
+Resumir el conjunto de datos en 5 formas distintas como visualizaciones, estadísticos sumarios o cualquier otra cosa. Hacerlo en 1 solo día, por lo que definir qué datos valen la pena comunicar.
+
+# Desafío 2
+Comunicar los resultados del desafío 1  a una persona que no haya practicado matemática desde los 12.
+
+# ¿Qué es big data y cuál es su papel en datascience?
+- ¿Qué es big data?
+  Si tus datos caben en memoria RAM no tienes bigdata, este se aplica en procesos de análisis de datos que requieren gran cantidad de datos y estos debe ser analizados a través de varios servidores.
+
+- ¿Quién actualmente usa big data?
+  Empresas que manejas millones de datos como google, facebook, etc. Cada vez procesamos más datos en la nube por esto en un futuro tal vez no necesitemos usar big data, tendremos herramientas para procesar esta cantidad de datos desde un computado personal.
+
+ - ¿Por qué existen herramientas como spark, big query? Y, ¿qué aportan al proceso de data science?
+   Al aumentar la cantidad de datos necesitamos más poder computacional, para hacer computación distribuida de nuestros datos necesitamos este tipo de herrramientas.
+
+- ¿Cómo data scientist es necesario solo aprender sobre big data?
+  Hoy un data scientist sabe de todo, pero entre más madura el campo vemos especialización.
+
+- ¿Cuáles son tus referencias favoritas?
+kaggle.com
+datau.com
+news.ycombinator.com
+
+> Computación distribuida ***Spark*** ***hadoop***
+
+# Tomar buenas notas
+Tomar muy buenas cosas de aquello que estás aprendiendo. Lo entiendes mejor porque lo escribiste a tu manera.
+
+> El profesor para usar trillones de datos usa cómputo en la nube
