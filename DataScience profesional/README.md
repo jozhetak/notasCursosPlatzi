@@ -169,3 +169,91 @@ Vamos a examinar todo el flujo de trabajo de data science: Recoger datos, a cont
 > Para las personas, ya sabes, que están trabajando en data science y adquiriendo habilidades, practicando, etc, es importante que sepan estas cosas, ya sabes, no se supone que se despierten  las entiendan. No se suponen que despierten y digan: "Ok, para escribir datos en una base de datos definitivamente debo crear un cursor, tengo que ejecutar una sentencia, etc"
 
 Así que, hemos sentado las bases para la recolección y limpieza de los datos, y, finalmente la persistencia de esos datos desde la API de Twitter.
+
+Instalar los requerimientos con
+```
+sudo pip install -r requeriments.txt
+```
+
+***Tweepy*** Librería para interactuar con la API de Twitter en Python.
+
+ Guardamos los resultados obtenidos en una bases de datos local
+
+ En la documentación de Twitter está la información para usar su API.
+
+ El "_" al inicio de una función o variable es para indicar a otros desarrolladores que no debe usarse fuera de la instancia. Es una convención.
+
+> "Es importante que sepan estas cosas, ya sabes, no se supone que se despierten y las entiendan. No se supone que despierten y digan: "OK, para escribi datos en una base de datos definitivmente debo crear un cursor tengo que ejecutar una sentencia, etc'. Hacemos estas cosas porque quienes escribieron la documentación nos muestran cómo hacerlo. Y después de un tiempo se vuelve muy natural. Ya sabes, ya no consultamos la documentación, se vuelve algo natural, etc. Pero en un comienzo es importante entender.
+
+## Creando nuestro modelo matemático
+
+Vamos a construir nuestro modelo matemático para responder nuestra pregunta original (***¿Cuál es la probabilidad de que un tweet en Colombia contenga la palabra "YO"?***)
+
+Lo primero que es importante explicar es una distribución beta, una distribución beta es una distribución de probabilidad canónica usada para mostrar incertidumbre alrededor de cada posible probabilidad, una probablidad por supuesto siendo un número entre 0 y 1, siendo la verdader probabilidad del proceso.
+
+Entonces entremos a esto un poco más, de nuevo la pregunta es:
+
+***¿Cuál es la probabilidad de que un tweet dado en Colombia contenga la palabra "yo"?***
+
+Entonces la respuesta va a ser un número entre 0 y 1 por definición de lo que es una probabilidad y esta distribución de probabilidad es una distribución beta es efectivamente una tabla de consulta para los datos dados que hemos observado y por supuesto limpiada y persistida, etc.
+
+Una distribución beta es una función que oma dos parámetros, el primero es alpha y el segundo beta, entonces para interpretar una distribución beta vemos la altura de la curva y la altura de la curva es proporcional a la probabilidad de dibujar el valor por debao de él en el eje x.
+
+--- Continuar esta clase y automatización ---
+
+# Machine Learning
+
+## Un poco de contexto sobre machine learning
+Ya hemos hecho bastante de data science en este curso sin tocar realmente machine learning y para muchas personas esto puede parecer muy extraño.
+
+***Machine Learning*** es muy importante. Pero lo más importante que debemos entender acerca de machine learning es que ya sabes, debemos formular los problemas de una forma que pueda ser pasada a los modelos de machine learning para interpretar.
+
+Y que la formulación de problemas realemente es la habilidad en data science que toma el mayor tiempo para perfeccionar, el mayor tiempo para desarrollar.
+
+Los modelos de machine learning normalmente, sin importar el tipo, se crean para dos fines:
+
+- El primero es I&D, Investigación y Desarrollo
+- El segundo fin es la predicción.
+
+Pero en muchos casos, en la práctica, hay una serie de delgada línea entre ¿sabes qué? si de verdad funciona bien en estas situaciones de, digamos, predicción multiclase o lo que sea es lgo con lo que en cierto modo estamos de acuerdo.
+
+Así que, ¿en qué se diferencian los modelos de machine learning de los modelos estadísticos tradicionales?
+
+En la mayoría de los casos, un modelo estadístico se efectúa tomando en cuenta un comportamiento previo, en el caso de un modelo de machine learning podemos llegar sin nada, aunque la respuesta puede ser menos acertada, es por eso que hablamos en esta parde de investigación y predicción.
+
+Leer artículo de "Doctor Breiman" titulaod "The Two culures". Trata de las diferencias entre modelos matemáticos y modelos de machine learning. El construyó el modelo ***Random Forest***
+
+Los modelos de ***Machine learning*** funcionan porque tenemos muchos datos y el poder de cómputo para procesarlos.
+
+## Entrenando un modelo de Machine Learning
+
+Machine Learning es el proceso de enseñarles a las computadoras a entender patrones en los datos, destinado a imitar ese proceso de cómo los humanos: "Nosotros intuimos patrones en los datos y luego entendendemos esos patrones, y hacemos predicciones"
+
+***El ejemplo al que más cariño le tengo de hecho es el de un radiólogo***
+
+Quién busca en los rayos X y dice, bien estos rayos X muestran un tumor, y el otro de hecho no tienen un tumor.
+
+Y entonces como humanos ¿cómo hacemos esto? ¿Cómo un radiólo interpreta esto?
+
+Y la forma en la que lo hacemos es viendo rayos X, consultando con expertos, y diciendo: "OK,aquí hay unos rayos X" y el experto dice: "este es un tumor", aquí hay otros y el experto dice: "estos no tienen un tumor" Y conforme pasa el tiempo como radiólogos aprenden, cad día, viendo nuevos datos, nuevos ejemplos.
+
+Y comenzamos a entender los patrones más y más, mejor y mejor.
+
+Lo primero que entender sobre modelos de machine learning s que ellos realmente están haciendo lo mismo. Ellos están tomando esa imagen insertada con una etiqueta, y están entendiendo, intuyendo, descubriendo patrones en esa imagen, que relaciona las diferentes cosas que están presentes o no en esaimagen, con la pregunta: ¿Tenemos un tumor presente o no?
+
+Y las diferencias fundamentales entre un humano y un modelo de machine learning son esas dos cosas que he mencionado antes, la cantidad de datos que ese modelo puede recibir y la velocidad a la que el modelo puede consumir esos datos.
+
+¿Cómo tomamos una foto y la cuantificamos o codificamos en números? Una sobre las maneras ***canócicas*** de hacer esto, es que una fto no es nada más que un conjunto de píxeles, y cada pixel tiene un valor numérico que describe el color de ese pixel.
+
+***Otro tipo de modelo de machine learning son los que se llaman modelos no supervisados***
+
+Por ejemplo como niño, ya sabes, si te pegas con algo y duele, lo que no pasí aquí es alguien diciendo:
+
+**"Si te pegas con esto, si haces esta acción, va a doler"**
+
+Entonces estos modelos no supervisados, la diferencia fundamental en términos matemáticos es el vector de etuquetas atadas a nuestros ejemplos. Pero aún podemos pasar ejemplos a un modelo de machine learning, y hacer que hasta cierto punto entienda la structura en este modelo.
+
+Tenemos muchos algoritmos de ***Machine Learning*** y separando un poco:
+
+- Regresión y clasificación serán modelos supervisados
+- Agrupamiento y reducción de dimensionalidad serán modelos no supervisados.
