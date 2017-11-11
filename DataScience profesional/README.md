@@ -257,3 +257,53 @@ Tenemos muchos algoritmos de ***Machine Learning*** y separando un poco:
 
 - Regresión y clasificación serán modelos supervisados
 - Agrupamiento y reducción de dimensionalidad serán modelos no supervisados.
+
+Con Machine learning podemos procesar más datos.
+
+Los modelos no supervisados son: Agrupamiento y reducción de dimensionalidad.
+
+Los modelos supervisados son de regresión.
+
+## Modelos de regresión, clasificación, clustering y reducción de dimensionalidad
+
+### Regresión
+***Los modelos de regresión que predicen valores continuos***
+Entonces, por ejemplo, un modelo de regresión podría predecir el número de minutos que el TransMilenio, que es el transporte público aquí en Bogotá, estaría retrasado en una determinada parada en un día determinado; podría predecir el número de votante que una cabina de votación en Minneapolis necesitaría albergar; o podría predecir el número de pulgadas de lluvia que el desierto de Atacama recibiría el próximo año.
+
+Y los modelos de regresión, por supuesto, son algoritmos de aprendizaje supervisado.
+
+Así los modelos de regresión, por supuesto, son algoritmos de aprendizaje supervisado.
+
+Así que le alimentamos a estos modelos ejemplos que tienen, ya sabes, algún ejemplo codificado en el espacio vectorial.
+
+### Clasificación
+Los modelos de clasificación predicen una etiqueta. Esto podría ser binaria en el caso del ejemplo de Twitter. "Si, mi tweet contiene esta palabra clave" o "no, no la contiene"
+
+Podría ser: "¿Quién ganaría las elecciones presidenciales de los Estados Unidos? ¿Hillary o Trump?
+
+"Lo que por supuesto es un problema de clasificación binaria."
+
+### Algoritmos de agrupamiento
+El agrupamiento se usa a menudo como un paso exploratorio en el análisis de datos. Y por supuesto, este es un tipo de ***algoritmo de machine learning no supervisado***
+
+Un ejemplo es agrupar canciones en Spotify codificadas como datos de frecuencia, mejor, datos de frecuencia de audio.
+
+¿Cuántos tipos diferentes de canciones tenemos aproximadamente?
+
+Es una canción alegre, canciones lentas, canciones con bajo, etc. Quizás tomamos esto com un paso exploratorio antes de aplicar etiquetas a cada canción de Spotify. De modo que quizás Sopitfy podría tener una pestaña de géneros donde dicen: "Puedes ordenar tu música por el tipo de género en el que cae"
+
+Para algoritmos de agrupamiento hacemos una distinción entre verdaderos algoritmos de agrupamiento y algoritmos de partición:
+
+- Un algoritmo de partición pone cada punto que tenemos dentro de algún grupo. Básicamente hace una partición de nuestros datos, divide nuestros datos, estratifica nuestros datos dentro de grupos distintos.
+- Un algoritmo de agrupamiento aplica alguna lógica por a cual solo está poniendo un punto dentro de un grupo si pasa ciertos criterios. Y posiblemente, si no lo hace, lo está dejando completamente por fuera.
+
+### Reducción de dimensionalidad
+Finalmente hablaremos de algoritmos de reducción de dimensionalidad. Que es reducir un conjunto de vectores desde una cierta alta dimensionalidad hasta una baja dimensionalidad.
+
+- El primero es visualización:
+    En dos dimensiones es muy fácil ¿verdad? Si nuestos datos, tienen dos dimensiones los ponemos en un plano x-y. Quizás tenemos un grupo por acá, un grupo por acá. Quizás vemos cómo diferentes valores varían entre sí, a medida que un valo sube, normalemnte otro baja, etc, etc. En 20,000 dimensines en teoría podemos hacerlo, es decir, del mismo modo en que podemos construir visualizaciones en dos dimensiones. El punto es que el espaco de 20,000 dimensiones existe, justo como el espacio en dos dimensiones. Pero como humanos en realdad estamos lmitados por nuestra propia intuición, nuesra propia capacidad de mirar fotos y entender lo que realmente nos están diciendo.
+    Como humanos, el espacio en dos dimensiones tiene sentido para nosotros.
+
+- La segunda el costo computacional:
+    Debido a que somos capaces de capitalizar la redundancia en nuestros datos y proyectar esos datos desde un espacio dimensional mayo y hasta un espacio dimesional menor sin perder las diferencias entre los puntos de datos. De nuevo, podemos representar nuestros datos en un espacio dimensional menor. Y cuando pasamos estos vectores más pequeños a algoritmos de machine learning por spuesto cuanta menor es la dimensión en la que residen nuestros datos más rapidamente pueden trabajar nuestros algoritmos.
+
