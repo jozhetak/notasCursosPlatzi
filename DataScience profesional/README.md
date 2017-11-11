@@ -307,3 +307,44 @@ Finalmente hablaremos de algoritmos de reducción de dimensionalidad. Que es red
 - La segunda el costo computacional:
     Debido a que somos capaces de capitalizar la redundancia en nuestros datos y proyectar esos datos desde un espacio dimensional mayo y hasta un espacio dimesional menor sin perder las diferencias entre los puntos de datos. De nuevo, podemos representar nuestros datos en un espacio dimensional menor. Y cuando pasamos estos vectores más pequeños a algoritmos de machine learning por spuesto cuanta menor es la dimensión en la que residen nuestros datos más rapidamente pueden trabajar nuestros algoritmos.
 
+Algoritmo de k-means y clustering. Dormir con tus datos.
+
+Hay un algoritmo de dimensionalidad llamad t-SNE (Distributed Stochastic Neighbors Embedding. También PCA. Todos esos son algoritmos de dimensionaldad.
+
+### Modelos canónicos y para qué los usamos
+Averiguar qué modelo funciona mejor en qué situación es 100% cuestión de práctica. Por supuesto existen criterios de orientación. Pero participar en competencias de modelos predictivos,
+leer publicaciones de blogs, y hacer estas cosas en el trabajo simplemente viendo cómo se desarrollan son realmente los únicos pasos para obtener esta intuición.
+Regresión Lineal
+Los modelos de regresión lineal deben usarse en casos en los que creemos que existe una relación lineal entre cada una de nuestras características, de nuestras entradas, las cuales son sinónimos, y nuestra salida.
+Sí, que nuestros datos de hecho se ajustan a una tendencia lineal, por lo tanto:
+No tan poderoso
+Por esta razón, en casos de tareas de regresión, se supone que es uno de los primeros modelos que pruebes, sólo como un punto de partida.
+Maquinas de Vectores de soporte
+Este es normalmente un algoritmo de clasificación, pero también tiene varianza, de modo que puede ser usado para regresión.
+Lo que hacen las máquinas de vectores de soporte es hallar el llamado “hiperplano de máxima separación” para dos clases de puntos en un espacio de n dimensiones.
+Entonces, si graficamos nuestros puntos, si visualizamos nuestros datos y observamos una separación lineal entre estos datos entonces las máquinas de vectores de soporte probablemente son un algoritmo que querremos explorar.
+Random Forest.
+Random forest es en realidad nuestro primer algoritmo no lineal en este conjunto.
+Y lo que hace, lo que eso significa es que si existen relaciones no lineales entre cada una de nuestras entradas y nuestras salidas un random forest puede descubrir esos patrones mucho mejor de lo que lo haría un modelo de regresión.
+Los random forest ajustan no sólo un árbol de decisión sino una gran cantidad de árboles de decisión. Y realmente hacen esto en una especie de forma no intuitiva, de hecho. Debido a que en lugar de ajustar cada árbol de decisión en todos los datos es decir, todas las filas, todos nuestros ejemplos, así como todas las características, lo que hacen en cambio es ajustar esos árboles de decisión, cada uno, en un subconjunto aleatorio de las filas y un subconjunto aleatorio de las columnas.
+Los modelos de random forest también introducen este concepto muy interesante, muy divertido
+en machine learning que es el de agrupación. La idea es que, en lugar de ajustar un árbol de decisión, ajustar muchos débiles y promediar sus votos.
+Redes Neuronales
+Las redes neuronales no son un algoritmo nuevo. Es algo que ha existido por aproximadamente 75 años. La razón por la que ahora funcionan tan bien son las cantidades masivas de datos, con los cuales entrenar estas redes, que generamos, y también los recursos de cómputo que tenemos fácilmente disponibles con los cuales procesar los datos ya mencionados.
+El otro punto para aclarar también es cuando hablamos acerca de aprendizaje profundo, El aprendizaje profundo es casi un sinónimo de redes neuronales.
+Las redes neuronales son normalmente cosas que tienen capas escondidas entre ellas
+y aprendizaje profundo hace referencia a una red neuronal con muchas capas escondidas, que son una red profunda.
+Empleamos redes neuronales profundas para entrenarse en lotes grandes de imágenes, audio, video.
+Así que para hacer esto en un marco de tiempo razonable y haciendo uso de esto del hardware especializado, de nuevo, la tarea de ingeniería es bastante pesada.
+
+---
+
+> ***Modelos canónicos***
+
+Las competencias de kaggle.com es un buen lugar para obtener práctica. 
+
+> ***Ramdon Forest***
+
+
+
+
