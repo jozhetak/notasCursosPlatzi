@@ -345,6 +345,96 @@ Las competencias de kaggle.com es un buen lugar para obtener práctica.
 
 > ***Ramdon Forest***
 
+> ***Scikit learning***
+
+> ***Transformation kernel***
+
+> ***Aloritmo de Breiman***
+
+> ***Agrupación***
+
+> ***Redes neuronales***
+
+> Un Data Scientist propuso un día usar GPUs, actualmente NVIDIA produce tarjetas gráficas exclusivas para redes neuronales. También Google las produce con tensor.
+
+### Más modelos canónicos
+La vectorización de ese modelo de negocios realmente es el primer paso para poder hacerle un modelo predictivo.
+De nuevo, ¿sabes? personalmente tengo esta creencia de que muchas de las entidades del mundo real, las personas en un nivel emocional y nuestras interacciones en el mundo, pueden ser codificadas en números, pueden ser codificadas en términos matemáticos y esto es de lo que se trata realmente convertir cosas en vectores.
+También hemos hablado sobre codificar imágenes, video, etc. en espacio vectorial, hablamos sobre que cada imágen tendrá diferentes pixeles, cada pixel tendrá un valor para el color que este toma, y al convertir estos valores en una gran lista, en un gran vector, los números que de nuevo, existen cómo un punto en largo espacio de n dimensiones. Y lo que hemos hecho es codificar esa entidad del mundo real en números.
+Y entonces conforme progresas en Machine Learning vas encontrando formas cada vez más creativas de hacerlo.
+Vamos a hacer este proceso en un ejemplo en breve, digamos que para nuestra tarea de predicción para predecir el número de mililitros de medicamento a administrar en un hospital.
+Tenemos cien diferentes pacientes, y cada uno existe en el espacio tridimensional, lo que significa que tienen 3 características. Así que nuestro set de entrenamiento, nuestra matriz de entrenamiento va a ser de (100 x 3) va a tener cien filas y tres columnas.
+A continuación tenemos un vector de respuestas, de el número de mililitros que históricamente, ha sido administrado a cada uno de estos pacientes. Y entonces, nuestro set de entrenamiento de (100 x 3) y nuestro vector, el cual efectivamente tiene cien diferentes columnas si quieres pensar verticalmente, y una sola columna.
+Una vez que codificamos las cosas al espacio vectorial, para poder pasarlas a nuestro modelo de Machine Learning, así es como nuestra data se tiene que ver.
+Cuando construimos modelos de machine learning todo es un “hiper parámetro” en otras palabras todo es una perilla que puedes girar o no girar.
+Desde las características que creas para tus datos, para los modelos que eliges, para los hiper parámetros con los que parametrizas esos modelos.
+
+---
+
+Los puntos viven en un espacio dimensional, cada dimensión es un atributo.
+
+En Machine learning todo es un parámetro
+
+> Debemos implementar nuestra propia métrica de error.
+
+> Se usan derivadas de las funciones como una métrica de error.
+
+> Classification: F1-Score, Logistc Loss, Accuracy, AUC ROC.
+
+> K-Fold -> Cross Validation (Dividir la data en lotes y en cada lote 90% entrenamiento y 10% validación)
+
+> Regresión: Mean Squared Error, Mean Average Error, Mean Absolute Error.
+
+> Es verdaderamente importante configurar tu flujo para ser muy iterativo, para poder hacer iteraciones rápido. Porque sino, esto se vuelve frustrante... las cosas se atascan, muy rápido, muy fácilmente.
+
+> Cross validation.
+
+> No es recomendable construir tus modelos de Machine Learning desde el inicio. Existen software que tienen estos modelos preconstruidos para ti.
+
+> Construir los algoritmos manualmente desde cero es una increíble forma de aprender. Por supuesto en machine learning al igual que en ingeniería de software construimos capas de abstracción sobre las cosas.
+
+> No necesitamos saber cómo funcionan los algoritmos de machine learning para usarlos. Pero mientras mejor entenderemos qué está pasando bajo el capó de nuestros modelos de machine learning, mejor podemos hacer mejoras, corregir errores...
+
+## Itera rápido o muere lento
+Somos data scientists y también somos ingenieros de software. Tenemos que implementar estos modelos en código. Así que hay un elemento muy práctico para hacer esto:
+“Itera Rápidamente o Muere Lentamente”
+Invertir tiempo en suavizar tu flujo de trabajo por adelantado es realmente importante. Es la diferencia entre ajustar modelos geniales y tener resultados estupendos, y quizás solamente, ya sabes, juguetear con tres o cuatro
+Generalmente no es recomendable crear tus propios modelos de machine learning desde cero.
+En lenguajes que son populares para data science, por ejemplo Python, por ejemplo R, existen paquetes de software que tienen estos modelos pre-construidos para ti.
+Por supuesto en machine learning como en ingeniería de software construimos capas de abstracción encima de las cosas. Así que, por ejemplo, otro profesor de Platzi el otro día estaba dando un gran ejemplo sobre manejar un auto y cómo se relaciona con la ingeniería de software.Como desarrollador de software, como data scientist, podrías programar,
+ya sabes, alguien que presione el pedal de ese carro.Y, dado que el pedal es presionado, ese auto empezará a moverse.
+Sin embargo, para crear un programa que usa ese pedal, que interactúa con ese pedal
+y crear un programa que funcione no necesariamente tienes que saber lo que está pasando bajo el capó de ese auto. Y esto es lo que se llama una "capa de abstracción "
+Sin embargo, cuanto mejor entendamos ese carro, mejor entendamos lo que está pasando bajo el capó de nuestros modelos de machine learning, mejor podremos usarlos, y serán, digamos, más intuitivos los cambios que podamos hacerles y más íntimamente entenderemos por qué están actuando de la manera en que actúan.
+No podemos impedir que alguien implemente sus propios algoritmos. Pero al construir sistemas de producción, en la mayoría de los casos un algoritmo pre-construido en una biblioteca como scikit-learn, en bibliotecas en R, es probablemente suficiente para tus necesidades.
+
+> Iterate Quickly, or Die Slowly.
+
+> Hiper parámetros
+
+## Recolectando y limpiando nuestros datos. Aquí crearemos un modelo de Machine Learning
+La idea es es crear un modelo de machine learning para detectar insultos en redes sociales.
+Entonces tenemos al favorito de todos: Donald J. Trump.
+Vamos a usar machine learning para hacer esto. Este va a ser un problema de aprendizaje supervisado. Vamos a tomar datos que hemos recogido previamente, cada uno es un comentario en una red social, y tiene una etiqueta vinculada. Y por supuesto esta es una tarea de aprendizaje supervisado.
+En este ejemplo utilizamos varias bibliotecas:
+Re, que es la biblioteca de expresiones regulares en Python, y string.
+Pandas
+Sklearn.
+Lo primero que hacemos es cargar nuestros datos. Para hacer esto vamos a usar la función read.csv de pandas. Como nota al pie, el módulo E/S de pandas es fenomenal. Realmente facilita consumir datos desde una variedad de fuentes, intuir el esquema de esos datos, etc.
+Antes hablamos de que las relaciones en los datos en muchos casos cambiarán fundamentalmente con el tiempo. Yo no pensaría que decir algo como: “eres estúpido” sería un mayor insulto hoy de lo que habría sido hace cinco años. Y por supuesto podría estar equivocado pero ese es mi propio primer instinto.
+Y seguimos por algunos casos puntuales donde podemos inferir que cierto conjunto de palabras son un insulto.
+Ahora que hemos recorrido el proceso de cargar nuestros datos, limpiar nuestros datos, inspeccionar nuestros datos y visualizar nuestros datos, estamos listos para empezar a crear modelos, hacer validación cruzada de estos y averiguar qué hiper parámetros nos dan el modelo que mejor predice.
+
+---
+
+Con el algoritmo que vamos a crear es para predecir si un tweet contiene palabras de insulto
+
+> En Jupyter podemos obtener documentación en línea ("librería?") Con el signo ?
+
+> n-grama -> Colección de segmentos de texto (una más de una palabra) bi-gram, tri-gram, etc.
+
+
+
 
 
 
