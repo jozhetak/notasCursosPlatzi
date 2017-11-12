@@ -433,8 +433,95 @@ Con el algoritmo que vamos a crear es para predecir si un tweet contiene palabra
 
 > n-grama -> Colección de segmentos de texto (una más de una palabra) bi-gram, tri-gram, etc.
 
+## Implementando nuestros modelos de Machine Learning
 
+Ahora que dividimos nuestros datos de entrenamiento y nuestros datos de validación
+para hacer validación cruzada, de nuevo, la idea es imitar el escenario de predicción, para hacernos una idea realista de cómo se desempeñará nuestro modelo al momento de predecir, sin predecir realmente en datos de prueba.
+Así que aquí vamos a ajustar un modelo con datos de entrenamiento.
+Previamente había dicho que al crear modelos de machine learning probablemente no hagas uno propio, o no, al menos en una situación de producción probablemente no hagas uno propio. La razón es es porque bibliotecas como scikit-learn hacen estos modelos realmente fáciles de usar
+y han sido “probados en batalla” por muchas organizaciones a lo largo de muchos años.
+De modo que instanciar un modelo de machine learning y ajustar ese modelo en scikit-learn
+es realmente tan fácil como lo siguiente:
+Son simplemente dos líneas y uno podría haber pensado que sería un montón de trabajo, ajustar estos modelos pero en realidad no lo es.
+Un modelo es este objeto LogisticRegression. Tiene muchos parámetros diferentes, todos ellos con valores por defecto.
+Así que al ajustar modelos en scikit-learn usar los valores por defecto nunca es una mala idea.
+Por supuesto probablemente queremos desviarnos de esos valores en algún punto del proceso.
+Pero empezar con lo que scikit-learn pre formula es por lo general una jugada inteligente.
 
+--- 
+
+Debemos dejar variables que sean fáciles de recordar o reconocer a otros programadores.
+
+## Creando y ejecutando nuestro pipeline
+Desafortunadamente, como data scientists pasamos la mayoría de nuestro tiempo recolectando datos, limpiando datos, explorando estos datos, haciendo preguntas sobre estos datos, leyendo, pensando y hablando con otras personas.
+Construir modelos de machine learning es muy importante y muy divertido, es esta tarea atractiva que todos quieren hacer, pero es desafortunadamente donde pasamos la minoría de nuestro tiempo.
+Hemos llegado a la parte del proceso donde comenzamos a construir modelos y comenzamos construyendo muchos.
+Así que aquí tendremos en verdad un poco de diversión.
+Bien, recuerda de las diapositivas anteriores que “todo es un hiper parámetro.” Desde la forma en la cuál agregamos características los datos hasta el modelo que usamos, hasta cómo combinamos esos modelos, y hasta cómo parametrizamos esas transformaciones de características, etc.
+
+---
+
+> En la creación de nuestros modelos de Machine Learning es la parte más divertida pero donde pasamos menos tiempo
+
+> Random Forest
+
+Recuerda que vamos iterando sobre los parámetros.
+
+En el notebook uno escribe una frase en inglés y el algoritmo va a predecir si es un insulto o no.
+
+# Estadística
+## Estadística y su aplicación en Data Science
+La estadística es en realidad un lenguaje a través del cual podemos comprender el mundo. Hace dos cosas principales por nosotros:
+La primera es que la estadística nos da una manera de cuantificar con precisión y comunicar la incertidumbre. Ésta podría ser incertidumbre acerca de cierto parámetro de un modelo de machine learning hacia otro data scientist, podría ser incertidumbre acerca de cierto proceso de negocios hacia una persona en la dirección.
+La estadística también nos da una mejor comprensión de nuestra organización. Y nos permite tomar decisiones más sobrias y auto conscientes en este respecto. Estas decisiones se basan en lo que dicen los datos en lugar de una especie de presentimiento que quizás tuvimos en camino a nuestro trabajo.
+Entonces, si alguien viene a nosotros y dice:
+¿Cuál es la probabilidad de sacar entre dos y cinco?"
+Podemos decir: “bueno, es 1/3 porque los valores entre dos y cinco en el intervalo abierto son tres y cuatro, lo cual abarca dos de nuestros seis valores. Así que, de nuevo, eso nos da 1/3.”
+En el mundo real en la mayoría de los casos tenemos exactamente lo contrario:
+Observamos datos, así que estamos viendo ese dado. No vemos a la persona que lo lanza,
+realmente no sabemos qué es ese dado. Solamente vemos una lista de números, vemos cuatro, cinco, dos, dos, seis, cuatro, tres, uno, etc.
+La idea es: cuantos más datos observamos, mejor podemos inferir cuál es el verdadero proceso que genera esos datos.
+Para comprender cómo llevar a cabo la inferencia estadística lo primero que debemos entender es qué son las variables aleatorias.
+Una variable aleatoria es: "algo que puede tomar muchos valores diferentes."
+Una vez más: algo que puede tomar muchos valores diferentes.
+Así que algunos ejemplos de algo que puede tomar muchos valores diferentes, podría ser el color de la camisa que personalmente uso los lunes.
+De modo que este podría tomar los valores, bueno, para los que me conocen probablemente es gris, o azul, o alguna variación de verde claro.
+OK, nuevamente, esa es una variable aleatoria.
+
+---
+
+> Es una manera de cuantificar con precision y comunicar la incertidumbre.
+
+> ***Inferencia*** La espada más brillante de la estadística.
+
+## Distribuciones de probabilidad
+Una distribución de probabilidad es realmente una tabla de búsqueda para ver qué tan probable es un resultado. Esos resultados son los valores de una variable aleatoria.
+Así que cuando vemos una distribución de probabilidad que parece un montón de bloques
+eso es lo que estamos haciendo, es sólo visualizar las probabilidades de observar cada uno de estos eventos.
+Las variables aleatorias además pueden ser de 2 tipos:
+Continuas: Pueden tomar cualquier valor dentro del espectro de números reales, por ejemplo: al decir entre 4 y 5 años existen los valores: 4.7, 4.9, 4.6242424242, etc.
+Discreta: No hay valores intermedios que podamos observar, se pueden ver como "categorías, por ejemplo: decir que tenemos el color azul, verde, rojo, no se puede decir que tengo 0.5 de azul y 0.3 de verde.
+Y justo para cada tipo de variable aleatoria tenemos funciones de distribución de probabilidad distintas:
+Las funciones de densidad de probabilidad son las funciones de distribución de probabilidad
+para variables aleatorias continua.
+Las funciones de masa de probabilidad son las funciones de distribución de probabilidad
+para variables aleatorias discretas.
+Las funciones de densidad de probabilidad nos ofrecen un conjunto de información extremadamente rica sobre el cual basar las decisiones. Desafortunadamente, en el mundo real no se nos dan funciones de distribución de probabilidad.
+Así que, lo que la estadística nos permite hacer es observar datos que recogemos en el mundo real y trabajar hacia atrás, tomar esos datos e inferir cuál podría ser la FDP subyacente que generó esos datos.
+
+---
+
+Repasar conceptos básicos de estadística para ingenieros.
+
+> La probabilidad se calcula en el área bajo la curva de una función.
+
+## Inferencia Estadística
+Una distribución empírica no es nada más que una representación visual de lo que hemos visto hasta ahora. En cambio, las distribuciones teóricas, son una imagen de lo que realmente está pasando desde el interior hacia afuera.
+Y entonces en un caso teórico, pensamos del problema en reversa.
+Muchos matemáticos nos nos han dado muchas distribuciones de probabilidad canónicas que,
+en teoría, describen el comportamiento de algún tipo de evento dado.
+Y entonces, distribuciones exponenciales describen eventos de supervivencia, las distribuciones beta pueden describir giros de monedas, las distribuciones de Poisson describen cosas que toman valores enteros, distribuciones de Dirichlet, distribuciones gama, distribuciones binomiales,
+distribuciones de Wishart, etc.
 
 
 
