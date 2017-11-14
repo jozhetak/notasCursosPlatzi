@@ -523,5 +523,145 @@ en teoría, describen el comportamiento de algún tipo de evento dado.
 Y entonces, distribuciones exponenciales describen eventos de supervivencia, las distribuciones beta pueden describir giros de monedas, las distribuciones de Poisson describen cosas que toman valores enteros, distribuciones de Dirichlet, distribuciones gama, distribuciones binomiales,
 distribuciones de Wishart, etc.
 
+> Distribución empírica
+
+> Repasar estadística
+
+> Proceso de Poisson
+
+> ***Rompiendo a pared*** Es estar afuera observando el número de bolas de paintball que tocan tierra cada hora. Identificar la variable aleatoria que cambia los valores.
+
+> Variable aleatoria de Poisson
+
+> Estadística Bayesiana.
+
+> Inferencia Bayesiana.
+
+## Ejemplo de un modelo estadístico en un Testing A/B
+Aquí se usa lo de la inferencia Bayesiana, como Data Scientist se hace muy seguido
+
+> La idea es maximizar el clic en botón azul y rojo
+
+> ¿Inferencia Bayesiana?
+
+> Distribución posteriori ¿?
+
+> Ensayo de Bernoulli.
+
+> Variables aleatorias de Bernoulli
+
+> Cadenas de Markov
+
+> Prencentil ¿?
+
+Hay muchos tipos de distribuciones
+
+# Herramienta clave que usa un Data Scientist
+## Herramientas que todos necesitamos
+Para ser un miembro efectivo de un equipo profesional de data science, hay un set de herramientas de ingeniería de software que todos necesitamos saber.
+Es muy fácil pensar que en tu viaje a través de data science, que lo único que importa es construir modelos geniales de machine learning, construyendo modelos de inferencia estadística, etc.
+Pero la realidad es que cuando trabajamos como data scientist nos encontramos haciendo unas cuantas cosas.
+Vamos a cubrir tres herramientas principales, la primera es AWS o Amazon Web Services, la cual es una colección de servicios de cómputo basados en la nube
+La segunda son los comandos de la terminal que usamos para explorar datos en la terminal.
+Y la tercera es GIT siendo un lenguaje de control de versiones que usamos para colaborar efectivamente en una base de código\Ncon otros data scientists e ingenieros de software.
+
+> Si eres una persona que entiende por completo cómo construir redes neuronales desde cero, cómo construir complejos modelos jerárquicos de inferencia Bayesina. Aprender las siguientes herramientas no es un gran desafío.
+
+## Servicios en la nube de Amazon: AWS/EC2
+Cuando estamos ejecutando un sitio web, tenemos que poner el código de ese sitio en una computadora, y esta computadora es más coloquialmente conocida como un servidor. Las personas que acceden a ese sitio solicitan la información a ese servidor, y ese servidor envía respuestas de regreso a esas personas accediendo al sitio.
+De nuevo, este servidor no es más que una computadora.
+Típicamente para tener el servidor, para ejecutar el servidor, lo rentamos de un proveedor de servicios de nube. Podemos rentar esto ya sea por poco tiempo o a largo tiempo,
+a un proveedor como AWS, de Amazon Web Services.
+AWS tiene muchos servicios, como por ejemplo:
+EC2 que significa Elastic Cloud y estos son servidores virtuales en la nube.
+S3 significa almacenamiento Super Simple Storage, y es un lugar para guardar una gran cantidad de datos y documentos, son como discos duros en la nube.
+Redshift, es un almacenamiento SQL basado en columnas, y lo primero es que por supuesto las bases de datos necesitan espacio para almacenar sus datos, y entonces si una organización por ejemplo tiene 50 Terabytes de datos que almacenar.
+
+- EC2 -> Elastic Cloud
+- S3  -> Super Simple Storage
+- Redshift -> Base de datos
+
+## Obteniendo y explorando datos desde nuestra linea de comandos
+
+Con curl hacemos solicitudes http para obtener archivos y datos desde el servidor
+
+Para saber la solicitud de un enlace en crhome solo hay que inspeccionar el elemento, entrar en red y presionar el botón para que capture
+
+Se deben descargar los archivos y todo el set de datos en el sevidor. Descargarlo en local para luego pasarlo al servidor es prohibitivo
+
+> cut, set, head, uniq, wc, curl, head, sort, 
+
+> Filtrar e interactuar con los datos de un DataSet con bash
 
 
+## Git
+Git es un lenguaje muy popular para el control de versiones, y una herramienta que usamos para colaboración de proyectos.
+Al trabajar con otros desarrolladores es realmente importante que todos se mantengan organizados.
+Entonces Git es su propio lenguaje, al igual que Python, al igual que Ruby, al igual que R, etc.pero es un poco diferente. El alcance de Git es extremadamente limitado, nos ayuda a hacer “control de versiones” de nuestro código.
+Si quieres aprender más sobre Git tenemos un curso enfocando a esto
+
+--- Terminar de ver esta clase y la de inferencia de Twitter
+
+# Construyendo un equipo de data science
+## Construyendo un equipo de Data Science
+En el 2016 un equipo de Data Scientist es de aproximadamente de 5 a 10 personas. Es muy raro encontrar a una organización con más de 50 Data Scientist.
+
+## Ingeniero de datos, creadores de producto y data scientists.
+
+> Data Engineers es de las primeras contrataciones que deben hacerse en un equipo de data science.
+
+> Un Data Engineer es más experto en el área de ingeniería de software que en la parte de las matemáticas y se encarga de llevar a producción.
+
+> Modelo incrustado vs modelo aislado (Embedded vs Siloed).
+
+# ¿Qué sigue?
+## ¿Qué sigue?
+Data science vive en linea, desde libros de texto, hasta competencias, cursos en línea, foros hasta Data Scientist como tu y yo.
+
+Sé un tornado, consume, consume y consume. Desde competencias de modelos predictivos en Kaggle hasta ir a reuniones, leer libros, hasta crear y publicar proyectos personales.
+
+La cantidad de información que necesitamos conocer como data scientist es mucho mayor y solamente crecer más rápido de lo que una persona podría consumir en su vida.
+
+Entonces probablemente, canceles tus planes de jugar videojuegos con tus amigos y todos los demás compromisos socials no urgentes y ponte a trabajar.
+
+Yo te prometo que ser data scientist es realmente muy divertido.
+
+## Cierre del curso
+Las herramientas de ingeniería que usamos en el día a día: Git, AWS y línea de comandos.
+
+## Contenido complementario
+
+> Con este curso, esperamos que todos ustedes estén un poco más cerca de cargos profesionales como Data Scientist. Afortunadamente, por estos días parece que todos están contratando data scientist.
+
+> Desafortunadamente, sin embargo, no todos los cargos de data scientist son creados iguales. Así que buscar tu primer trabajo en data science y leer as descripciones del trabajo.
+
+***Postulaciones negativas***
+1. ¿Cómo leemos descripciones de trabajo de cargo de data science? Cuando hay descripción del empleo que no son convenientes:
+    - Nos gustaría que tú, nos gustaría que esta persona nos ayude a darle sentido a nuestros datos.
+        Lo que esto significa es que la empresa no tiene definido lo que hará el data scientist.
+
+2. ¿Y si dice que eres la primera contratación? "Estamos creando nuestro equipo de data science y necesitamos esta persona para que dirija el esfuerzo"
+    Ser la primera contratación no es necesariamente malo, pero ya sabes, después de tomar este curso como estudiantes leyendo descripciones de trabajo probablemente este es tu primer trabajo de data science. De modo que tu primer cargo, probablemente no quieres estar en una posición en la que eres la primera contratación. 
+    De nuevo, lo que ellos en realidad te están pidiendo es que tena ese tercer lado del triángulo, el lado de negocios del triángulo, comprender cómo traducir problemas de negocios en problemas de data sciece.
+
+    Te están pidiendo que tengas esa información y ya sabes, si esta es nuestra primera oportunidad en data science  esa es una habilidad que casi... que normalmente viene después de las otras dos. Es algo que se desarrolla con experiencia.
+
+3. "Nos gustaría que nos ayudaras a construir nuestra infraestructura de datos"
+    Lo que es es en efecto es una especie de cargo de ingeniería de datos disfrazado. En un futuro puede separse, pero al 2016 a los data scientist realmente casi por necesidad, se les pide que lo hagan todo. Y entonces, como aprovechándose de este hecho muchas compañias disfrazarán lo que realmente son cargos de ingenieros de datos y los llamarán "trabajos de data science".
+
+***Postulaciones positivas***
+1. Construiremos una infraestructura para recomendaciones, haremos inteligencia empresarial interna.
+    Una empresa que dice esto, esta claramente o en apariencia ha considerado detalladamente la relación que el equipo de data sciece tendrá con otros departamentos y concretamente los problemas en los que estarán trabajando.
+
+2. Estas son las personas con las que trabajarás.
+    Si sabemos que estaremos trabajando con un puñado de ingenieros de datos, probablemente no pasaremos la mayoría de nuestro tiempo construyendo nuestra infraestructura ETL, probablemente pasaremos el tiempo construyendo modelos matemáticos, lo que para muchos de nostrotros es más donde nos gustaría vivir.
+
+3. Enumerar los otros agentes de negocios con los que trabajarás.
+
+    Transformar los problemas del negocio a problemas de data science es muy importante pero ello viene con la experiencia. Conocer quién trabajará con nosotros nos dará una idea cómo desarrollar esa habilidad durante nuestro cargo.
+
+    Si dice que estaremos trabajando con, ya sabes, un vicepresidente de data science que es una especie de coducto entre la dirección y el equipo de data science. Probablemente sabemos que esta persona tiene mucha experiencia siendo este conducto, siendo la persona entre el problema de negocios y el problema de data science. Y realmente nos ayudará a desarrollar esa habilidad que es tan importante, esa visión de negocios en esa organización.
+
+Es importante saber que no todos los cargos son creados iguales, es muy importante ser paciente al escoger tu primer cargo en data science y ser muy crítico al leer las ofertas de trabajo.
+
+> Ahora que hemos terminado nuestro curso de Data Science y aprendido un poco más acerca de cómo abordar nuestros primer cargo en Data Science ahora deberíamos estar listos para tomarnos el mundo de data science. ***Suerte en el camino a todos***.
