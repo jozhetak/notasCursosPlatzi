@@ -504,6 +504,7 @@ Discreta: No hay valores intermedios que podamos observar, se pueden ver como "c
 Y justo para cada tipo de variable aleatoria tenemos funciones de distribución de probabilidad distintas:
 Las funciones de densidad de probabilidad son las funciones de distribución de probabilidad
 para variables aleatorias continua.
+
 Las funciones de masa de probabilidad son las funciones de distribución de probabilidad
 para variables aleatorias discretas.
 Las funciones de densidad de probabilidad nos ofrecen un conjunto de información extremadamente rica sobre el cual basar las decisiones. Desafortunadamente, en el mundo real no se nos dan funciones de distribución de probabilidad.
