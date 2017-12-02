@@ -1,5 +1,8 @@
 # Notas del curso del Curso Introducción a algoritmos con C
 
+## Configuración vim
+![](vim-configuration.png)
+
 # Introducción a algoritmos
 
 ## User defined data types: Estructuras de datos y custom data types
@@ -35,6 +38,5 @@ Metodología para extraer los datos del problema:
 - Tipos de datos: Pueden ser:
   - Números: Reales, enteros, complejos.
   - Textos: Letras, palabras, frases
-  - Otros
 
 ***Pseudocódigo***= Son representaciones en nuestro lenguaje natural de los pasos a seguir. Son una etapa intermedia para que podamos llevar nuestro algoritmo a cualquier lenguaje de programación.
