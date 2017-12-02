@@ -134,12 +134,67 @@ El endeudamiento debería ser entendido como un apalancamiento y no como un dolo
 ## Tipos de crédito y cómo escogerlos
 Debemos comenzar por entender que los créditos no son todos iguales y que existen un crédito casi que para cada necesidad. En este vídeo te enseño los tipos de créditos más comunes y para qué deberíamos usarlos:
 
-- Crédito hipotecario: Para comprar vivienda
+> Hay un tipo de crédito casi que para cada necesidad.
+
+- Crédito hipotecario: Para comprar vivienda (no siempre es el 100%), hay países en los que se pueden pagar en 15 o 30 años (EEUU).
 - Leasing: Una entidad compra un bien que queremos y nos lo arrienda.
-- Fondos de empleados o cooperativas: Préstamos que vienen de recursos de un grupo de personas.
+- Fondos de empleados o cooperativas: Préstamos que vienen de recursos de un grupo de personas. (susi)
 - Libranzas: Créditos que están atados a los salarios y se deducen directamente.
 - Vehículo: Para la compra de un vehículo.
 - Educativo: Para sustentar un programa educativo.
 - Libre inversión:  Para cualquier cosa que queramos, pero las tasas son más altas.
 - Tarjeta de crédito: Una de las formas más caras de endeudamiento
 - Microcrédito: Créditos costosos por su alto riesgo.
+
+> "A mayor riesgo debe tener mayor rentabilidad"
+
+## ¿Qué tanto sabes de tus obligaciones?
+### ¿Cómo escoger un crédito
+
+> Hay un crédito para cada necesidad y debemos definir para qué lo queremos.
+
+Cuando queremos adquirir una deuda hay cinco preguntas que vale la pena que nos hagamos:
+- ¿Para qué? -> Este nos ayuda a definir el tipo de crédito que vamos a solicitar.
+- ¿En cuánto? -> Para evitar que nos den más dinero del que necesitamos. No debemos solicitar un monto que no podamos pagar.
+- ¿A qué costo? -> Para saber además de los interese cuánto deberíamos pagar. Pueden haber costos a parte del costo, como por ejemplo un estudio de crédito, cuota de manejo, etc... Preguntarle a la empresa qué otros costos fijos hay.
+- ¿En cuánto tiempo? -> Definir un tiempo justo para pagar el crédito. Entre mayor es el interés mayor es la cuota, no es recomendable endeudarse en una gran cantidad de tiempo. No muy corto ni muy largo (pagaríamos 3 o 4 veces más).
+- ¿Bajo qué condiciones? -> Identificar las condiciones para el endeudamiento. Hay beneficios según el banco, por ejemplo las de crédito con millas para viajar.
+
+### Debes evaluar tu estado para saber
+
+> No es lo mismo tener un ingreso fijo (como un sueldo) a un ingreso variable que pueda poner en riesgo el pago de las cuotas
+
+- Tener solvencia para endeudarte
+  activos/pasivos = solvencia
+  Si solvencia = 1 -> Estas justo
+  <1 -> Tus activos es menor a tus pasivos (no tines solvencia)
+
+- Tener la liquidez para pagar las cuotas de crédito
+  Ingresos mensuales
+  gastos mensuales > ingreso mensual * 0,05
+  pagos de deudas de consumo/ingreso neto = 0.1 - 0.15
+  
+Ambos son el equivalente a la seguridad para acceder a crédito
+Observar también:
+- Estructura de gastos y ahorro
+- Variación del ingreso
+- Concentración de ingreso (Si todo tu ingreso depende de 1 solo contrato o si depende de varios contratos. Por ejemplo si eres independiente y tienes un solo contrato, cuando se te acabe tendrás problemas para pagar el crédito en el futuro a diferencia que si tienes 4 diferentes en el que si en uno no sabes si lo van a renovar tienes los otros 3)
+
+## ABC de las tarjetas de crédito
+Uno de los temas mas consultados en finanzas personales es el uso de las tarjetas de crédito, esto se debe a que muchas personas hablan constantemente de su situación con su tarjeta de crédito y los problemas que ellas han generado. En este vídeo, hablamos sobre cuáles son las características de las tarjetas de crédito y cómo deberíamos usarlas.
+
+Debemos partir de que una tarjeta de crédito es una herramienta permanente y rotativa. Como herramienta no es ni buena ni mala, el uso que le doy el que determina qué acertado o no soy yo. Lo que ***NO*** es una tarjeta de crédito es una extensión del ingreso.
+
+Las tarjetas no son todas iguales y depende de la franquicia que las expide.
+
+> Es una herramienta que permite hacer pagos y consumos sobre la base de una ***línea de crédito permanente*** (que siempre la tenemos con nosotros, no hay que hacer nuevas aplicaciones o solicitudes de crédito) y ***rotativa***(a medida que se llena no podemos hacer más operaciones de crédito pero una vez pagamos la tarjeta de crédito volvemos a liberar el cupo y volver a endeudarnos), aprobada previamente para el titular y es de uso personal e intransferible.
+
+Para ciertas cosas es una excelente herramienta y en otos casos no.
+
+***No todas las tarjetas de crédito son iguales...***
+
+Franquicias:
+- Mastercard (Más usada en el mundo)
+- Visa       (Más usada en el mundo)
+- Diners club
+- American Express
