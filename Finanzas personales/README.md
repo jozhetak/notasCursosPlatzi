@@ -194,7 +194,101 @@ Para ciertas cosas es una excelente herramienta y en otos casos no.
 ***No todas las tarjetas de crédito son iguales...***
 
 Franquicias:
-- Mastercard (Más usada en el mundo)
-- Visa       (Más usada en el mundo)
-- Diners club
-- American Express
+ - Mastercard (Más usada en el mundo)
+ - Visa       (Más usada en el mundo)
+ - Diners club
+ - American Express
+
+Según entidad:
+- Crédito bancario
+- Expedidas por compañías de financiamiento comercial
+- Comerciantes o de compras
+
+Beneficiario:
+ - Personales
+ - Amparadas
+ - Empresariales
+
+### ¿Cómo funcionan?
+- Se cuenta con un límite de crétidot, el dinero del que sepuede disponer en calidad de préstamo.
+- Es posible pagar el dinero al final de cada mes, o hacer varios pagos por decisión propia o automáticamente.
+- Al pagar, el monto de capital pagado vuelve a quedar a disposición, todo esto se desarrolla en ciclos de un mes.
+
+### ¿Cómo funcionan?
+- Definir nuestro perfil y cómo la tarjeta se adecua a nuestro perfil.
+- Costo de la tarjeta, por ejemplo el solo hecho de tenerla.
+- Tasa de interés
+- Condiciones, hay diferencias entre las cuotas y avances de efectivo son con intereses mayores.
+- Beneficios, hay unas que dan punto otros que dan millas
+- El cupo (límite de crédito). Debe ser el justo para nuestra capacidad de pago.
+
+### ¿Cómo usarla?
+- Medio de financiación (Plazo y costo): Es una forma cómoda de disponer de un crédito contínuo siempre y cuando seamos responsables. ***Nota*** No diferir las compras a un plazo mayor al que podemos disfrutar de lo que estamos pagando, no vale la pena financiar un mercado de 1 mes y pagarlo en 2 meses.
+- Medio de pago (Fechas de corte y pago): Recomendado para convertirla en una herramienta de control de nuestras finanazas personales. ***Nota*** pagarlo en el mismo mes.
+
+### ¿Cómo leer el estado de cuenta?
+- Fecha de corte
+- Fecha límite de pago
+- Pago mínimo
+- Cupo disponible
+- Consumos y débitos
+- Intereses
+- Cargos por servicio (cuota de manejo)
+- Pago de de contado
+
+### Recomendaciones
+- Tasas de interés (cambian al pasar el tiempo)
+- Costos (las cuotas de manejo)
+- Plazo (plazos a los cuales diferimos las cuotas de nuestras tarjetas)
+- Condiciones
+- Historial crediticio
+- Capacidad de pago
+- Nivel de endudamiento (no pagar mas del 15% de nuestro ingreso en deudas)
+
+## Estrategias para salir de deudas
+Salir de deudas puede parecer una tarea inalcanzable, pero en realidad existen muchas estrategias que podemos aplicar para alcanzarlo:
+
+> La deuda no es buena o mala, pero cuando es muy alta debemos bajarle el nivel.
+
+
+### ¿Qué es lo básico que podemos evaluzar?
+
+En este punto se debe tener el ***flujo de caja***, ***Nivel de endeudamiento*** y ***ahorro***.
+
+Flujo de caja
+ : Revisa tu flujo de caja y revisa de que no haya días en rojo.
+ 
+Endudamiento
+ : El nivel de endudamiento no debe superar el 15%
+ 
+--- Imagen del gráfico, verde ingresos, rojo deudas.
+
+
+- Hazlo por ti
+  - Usa el modelo de bola de nieve 
+    - Ordenar las deudas de menor a mayor en la casilla de cuánto falta por pagar. debemos aseguranos de que podemos hacer el pago mínimo de cada una de las tarjetas al mes y pueda pagar un poco más. Con ese más pagamos la deuda más pequeña hasta terminar de pagarla, todos los meses pagaríamos a misma cantidad y saliendo de cada una de las deudas. 
+  - Refinanciar
+    - Esto es con el banco, es como pedir postergar el plazo
+  - Vender la deuda
+    - Ir a otra entidad financiera y pedirle que compre nuestra deuda. Esa otra entidad financiera si quiere que seamos su cliente pagarán nuestra deuda a una tasa de interés baja.
+  - Acudir a una reparadora
+    - Tu vas ahorrando el dinero a una entidad financiera y ellos pagan por el método de bola de nieve. Tendrás negativo en tu historial crediticio pero saldrás de la deuda.
+  - Insolvencia
+    - Es declararse en bancarrota.
+
+## Recomendaciones finales
+Ten presente:
+- Paga más del mínimo: Pagar el mínimo no te va hacer pagar toda la deuda en el plazo definido. Pagando el mínimo no vas a liberar el cupo que estás pagando en la tarjeta, no importa si son 5$ más.
+- Revisa el extracto: Para comproar que no aparezcan cuentas que no sean tuyas.
+- Asegúrate de que el sitio en el que estás comprobando es seguro: Protocolo SSL (candado)
+- Nunca pierdas de vista tu tarjeta al pagar: Porque clonar una tarjeta es muy fácil. Prefiere tarjetas que tengan chip que son un poco más seguras.
+- No excedas tu capacidad de pago:  A lo que puedas pagar mes a mes.
+- Cuidad con el carrusel de las tarjetas: Cuidado con abrir un hueco para tapar otro, usar una tarjeta de crédito para pagar otra tarjeta. Hacerlo una vez no pasa nada, pero si ya lo estamos haciendo por dos o tres meses seguidos es probable que sea un signo de sobreendeudamiento. 
+- Si usas avancces, hazlo inteligentemente: Asegúrate que lo estás usando para algo donde no tienes otra opción.
+- Evita a mora: Evita atrasarte en tus pagos.
+- No te escondas: Los bancos están dispuestos a escucharte si tienes problemas para pagar, es mucho mejor a esconderse. Si lo haces estarás dañando tu historial crediticio y eso hará que se te cierran las puertas a oportunidades de finanziación. Ten presente que no todo se solo se soluciona con más crédito.
+- Utiliza solo las tarjetas que puedes controlar: Entre más tarjetas de crédito tengas vas a tener más desorden. Son solo una o dos tarjetas de crédito es suficiente.
+- Haz uso de los beneficioes de tu tarjeta: Pero no esperes volverte rico o viajar por el mundo a costa de puntos o millas.
+
+# El ahorro y la inversión.
+## Introducción al ahorro y la inversión.
