@@ -1,5 +1,7 @@
 # Notas del curso de Finanzas personales
 
+***Profesor*** Juan camino González Twitter [@tranquifinanzas](https://twitter.com/tranquifinanzas)
+
 ## Conociendo la forma en la que tomamos decisiones
 
 En el test anterior...
@@ -292,3 +294,39 @@ Ten presente:
 
 # El ahorro y la inversión.
 ## Introducción al ahorro y la inversión.
+En este material te enseño cómo entender el ahorro, cuáles son las principales diferencias con la inversión, las variables que debes considerar cuando quieras comenzar  ahorrar y las estrategias y productos básicos que puedes adquirir para comenzar a ahorrar.
+
+Lo primero es entender qué es el ahorro. Muchas veces lo hemos definido como dejar de consumir algunos beneficios en el presente para pensar en beneficios a futuro, lo que hace que lo percibamos como un sacrificio. Esto puede ser un problema si lo queremos incluir en nuestras dinámicas. Por eso, es mejor definirlo como el ***cambio*** de una riqueza presente por una riqueza futura.
+
+La inversión puede ser entendida como la ***transferencia*** de dinero a una persona o un entidad con la esperanza de que me devuelva el mismo dinero pero con una ganancia adicional.
+
+***¿Qué tan diferente es el ahorro de la inversión?***
+
+> Para el profesor no es tan diferente. La diferencia es que la inversión que además de retornar dinero.
+
+### Mitos a la hora de invertir
+- "Eso es para ricos, con mi sueldo no puedo hacerlo": Lo poco o mucho que alcance el dinero no tiene que ver con el número que ganamos sino con las necesidades que tenemos en relación con ese salario. 
+- "Hace falta saber mucho de matemáticas para empezar a invertir": Hace falta estar más enterado en saber cómo se mueve el mundo económico sin necesidad de ser economistas ni financista, tener clara la idea de oferta y demanda y luego ver de que todo se trata de ***comprar barato y vender caro***.
+- "Ahorrar es muy duro porque si no es un DCT (certificado de depósito a término) o en acciones es muy difícil encontrar buenas alternativas".
+- "Te recomiendo un libro que acabé de leer en el que te explican cómo en un año puedes tener la mitad de capital de Warren Buffet": Del típico libro ***agáchese y vuélvase rico***. Warren Buffet, Bil Gates o cualquier millonario y multimillonario son personas que no lo hicieron de la noche a la mañana, son personas que llevan 40,50 o 60 años levantándose temprano, leyendo libros de economía, leyendo noticias, equivocándose y acertando también y trabajando duro para tener lo que tienen. Esto no es tan sencillo como para seguir cinco principios y en un año volverse multimillonario. Esto es un proceso que vale la pena hacer.
+- "Invertir es el único camino para lograr la libertad financiera": Definir para cada uno de nosotros qué es la libertad financiera, para el profesor la libertad financiera no tiene nada que ver con ser multimillonario... tener la seguridad de manejar el dinero día a día sin que te falte dinero, tener también el suficiente efectivo para atender cualquier variación negativa en tu ingreso en el futuro, accidente o cualquier imprevisto, tener el dinero para poder disfrutar de la vida como cada quien entienda cómo disfrutar de la vida. Invertir no es la única manera, hay que ahorrar, disminuir los gastos, hacer una buena gestión del endeudamiento. Incluso con una buena gestión del crédito podemos llegar a tener negocios interesantes.
+
+## Condiciones para ahorrar e invertir: 1
+Para ahorrar e invertir tenemos que cumplir con unas ciertas condiciones que te presento en este video Siempre que queremos comenzar a invertir debemos responder algunos cuestionamientos que nos permiten saber cuál es el mejor camino a tomar:
+- ¿Para qué?: Cuál es el propósito de invertir.
+- ¿Cuánto tiempo?: Cuál es el horizonte temporal, el tiempo en que tomará. Poner fecha límite (revisar nuestro flujo de caja para saber la respuesta).
+- ¿Qué costo de oportunidad?: A qué estamos renunciando cuando tomamos una decisión. Antes de hacer una compra como una chaqueta, pregúntate si hay algo en lo que puedas usar ese mismo dinero que me haga más feliz.
+
+### El costo de oportunidad
+- ... nos permite tomar decisiones ajustadas a nuestra realidad y capacidad económica.
+- ... es una excelente herramienta para la toma de decisiones financieras [no solo de inversión].
+- ... es personal y puede variar por factores como edad, profesión, capital social, nivel educativo, conocimiento de los mercados.
+
+### Reto:
+¿Cuál es tu Tasa de interés de oportunidad?
+Piensa en cuál es la mejor opción que tendrías hoy para invertir por ejemplo 1000$. ¿Qué harías con esos 1000$, con lo que sabes hasta ahora, con el conocimiento que tienes, conoce la mejor ganancia que puedas obtener hoy con lo que tienes, con lo que sabes y con ese dato en el próximo vídeo lo usaremos para determinar el vehículo de inversión.
+
+---
+
+
+
