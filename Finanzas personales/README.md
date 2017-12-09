@@ -326,7 +326,69 @@ Para ahorrar e invertir tenemos que cumplir con unas ciertas condiciones que te 
 ¿Cuál es tu Tasa de interés de oportunidad?
 Piensa en cuál es la mejor opción que tendrías hoy para invertir por ejemplo 1000$. ¿Qué harías con esos 1000$, con lo que sabes hasta ahora, con el conocimiento que tienes, conoce la mejor ganancia que puedas obtener hoy con lo que tienes, con lo que sabes y con ese dato en el próximo vídeo lo usaremos para determinar el vehículo de inversión.
 
----
+## Condiciones para ahorrar e invertir: 2
 
+La cuarta condición para empezar a hacer un ahorro es:
+- ¿Qué tanto nos sentimos cómodos con el riesgo?: Conocer nuestro perfil de riesgo.
+  - "Nos duele perder mucho más de lo que nos alegra ganar. Este es un análisis que va mas allá de lo matemático y debe considerar nuestra actitud hacia la incertidumbre y el miedo."
+  - "Mucho riesgo es malo. La aversión a la pérdida puede producir inercia, lo que nos puede llevar a no tomar decisiones o terminar afianzándonos en aquellas que ya hemos tomado."
 
+> Un pequeño ejercicio para ver nuestro perfil de riesgo: Lanzaremos una moneda varias veces y cada vez que caiga cara deberás pagarme 10 USD. ¿Cuánto me pedirías que te pagara cada vez que caiga sello para animarse a jugar? Los que no les gusta e riesgo dirán 30 o 40 USD"
+
+- ¿Qué vehículo de inversión es efectivo?: Escoger el vehículo de inversión.
+  - ¿Qué costos están asociados a la alternativa?
+  - ¿Quién la administrará? ¿Cuál es mi papel en la administración de la inversión?: Podemos hacerlo nosotros en el comportamiento de la moneda o bien contratar a una agencia que se encargue de ello.
+  - ¿Tengo los conocimientos necesarios para entender su funcionamiento?: Ejemplo los traders tiene que conocer bastante más del promedio del mercado, divisas, economía, etc
+  - ¿Cuál es el tiempo de repago o el período de recuperación de la inversión? ¿Cuál es la rentabilidad de la inversión?: Hay quienes ofrecen una renta fija y otro estimado, el segundo dependerá de la oferta y demanda.
+
+### ¿Y las matemáticas?
+- Deja que los expertos hagan los cálculos, preocúpese por hacer las preguntas correctas.
+- Compara rentabilidades porcentuales expresadas en la misma periocidad E.A: Porcentaje anual y mensual (tasas periódicas, tasas efectivas y tasas anuales) Pregunta siempre por la tasa efectiva anual.
+- Compara alternativas de inversión con iguales horizontes de tiempo. Evita compara dos inversiones que una te pida el dinero en dos meses con otra en la que te pida en dos años (dinero guardado).
+- Una cosa es la diversificación sensata y otra es la ingenua: Una cosa es no poner todos los huevos en la misma canasta y otra es poner igual número de huevos en cada canasta. (Es importante tener varias alternativas de inversión pero también saber cuánto poner en cada una)
+- Realiza el camino: No es posible aprender cálculo estocástico sin haber cursado la aritmética básica.
+
+## Cómo están conectados el gasto, el ahorro y la inversión
+Existen 4 variables que nos ayudan a entender qué tan efectivos somos en nuestras finanzas personales:
+- La cantidad de dinero que guardamos o que gastamos.
+- La tasa de interés que pagamos o que nos pagan.
+- Los riesgos a los que nos enfrentamos.
+- El tiempo.
+
+Acumular dinero es una buena estrategia hasta que consigamos la base mínima para poder llevarlo a la inversión.
+
+El primer ahorro que debemos tener es para nuestro fondo de emergencia.
+
+Cuando el ahorro alcanza cierto nivel deberíamos invertirlo, puede ser una oportunidad desperdiciada.
+
+## Alternativas y productos de ahorro e inversión
+En este vídeo te muestro cuáles son las alternativas de inversión disponibles y las formas en las que podemos acceder a ellas. Te cuanto cuáles son las condiciones que debemos tener, no solo en términos de montos, sino también de conocimientos para entrar a generar una inversión.
+
+Algunas de estas opciones son:
+- CDT
+(
+
+Cuando el ahorro alcanza cierto nivel deberíamos invertirlo, puede ser una oportunidad desperdiciada.
+
+## Alternativas y productos de ahorro e inversión
+En este vídeo te muestro cuáles son las alternativas de inversión disponibles y las formas en las que podemos acceder a ellas. Te cuanto cuáles son las condiciones que debemos tener, no solo en términos de montos, sino también de conocimientos para entrar a generar una inversión.
+
+Algunas de estas opciones son:
+- CDT (Certificados de depósito a término)
+- Bonos (Bonos de deuda corporativos)
+- Cartas colectivas 
+- Nuevas emisiones
+- Otros fondos de inversión
+- E-trading
+- Acciones (Compra y venta de acciones)
+- TES (Bonos de deuda pública)
+
+### ¿Cómo empezar?
+> No solo tener en cuenta el dinero sino el conocimiento mínimo necesario para manejar este tipo de inversiones
+
+- ¿En qué activos puedo invertir en el mercado de capitales?
+- ¿Cuál es la diferencia entre renta fija y renta variable?
+- ¿Con cuánto dinero puedo empezar a invertir en estos activos?
+- ¿Cómo funciona un fondo de inversión colectiva?
+- ¿Cómo funciona el e-trading?
 
