@@ -392,3 +392,254 @@ Algunas de estas opciones son:
 - ¿Cómo funciona un fondo de inversión colectiva?
 - ¿Cómo funciona el e-trading?
 
+ Mercado de capitales, invertimos el dinero en empresas o personas que necesitan recursos.
+
+Hay activos de renta fija y de renta variable (los que dependen de la oferta y la demanda)
+
+Bonos de deuda corporativa: Son papeles cuando la empresa necesita dinero y esta empresa paga los intereses que diga ese papel y cada año los paga y tienen una fecha de vencimiento que indican cuándo devolverán todo el dinero.
+
+Las acciones representan el valor de capital de la empresa, cuando una empresa tiene más ingresos más valor tienen las acciones y en algunos casos la empresa reparte las utilidades entre los socios que son dueños de las acciones. "Si a la empresa le va bien a los socios accionistas también le irán bien"
+
+## Fondos de inversión colectiva
+Conocer cómo podemos invertir es muy importante para que podamos cumplir nuestros objetivos financieros. No importa si tenemos mucho o poco dinero, lo importante es que estemos dispuestos a comenzar.
+
+En este material hablamos sobre las opciones de inversión que existen y las formas en las que cada tipo de fondo de inversión generan os tipos de inversión.
+
+Si te interesa conocer sobre esto, puedes investigar en internet acerca de las posibilidades que tienes en tu país.
+
+Si tenemos $100 podemos invertir, algo llamado ***Fondos de inversión colectiva***: Es una de las mejores formas para empezar en el camino de las inversiones en acciones, agrupan muchas personas para hacer una gran bolsa y le nombran a un gerente de ese fondo a una persona que normalmente sabe mucho de finanzas y que en un reglamento que indica cómo va a invertir ese dinero (acciones para un nicho como tecnología por ejemplo, deudas, arrendar departamentos y locales, construcción, private equity para startup). Lo mejor de estos fondos es que no necesitas mucho dinero para entrar. Debes leer siempre el ***Reglamento de inversión y la ficha técnica*** que son los dos documentos que debe tener todo fondo de inversión colectiva en donde te muestran en qué pueden invertir y en qué no pueden invertir y cuáles han sido los rendimientos históricos de ese fondo.
+
+***E-trading*** es para invertir de todos estos activos desde el celular. Pero debemos saber conocer mucho de análisis técnico y análisis fundamental y practica mucho antes de meterte en una cuenta real. Si lo vas hacer por otros lados busca robots que invierten por ti (hay bancos que ya los tienen). No inviertas en cosas que no entiendas, no te dejes llevar por lo demás que dicen ser lo correcto. Los expertos se equivocan, nosotros tenemos mucho más posibilidades de equivocarnos debemos practicar mucho.
+
+***El primer paso*** es saber mucho de análisis estadístico y fundamental pero también mucha inteligencia emocional para ***aprender a perder y aprender a ganar***
+
+--- Imagen del gráfico
+
+### 3 trucos para evaluar rentabilidad
+
+--- Imagen de los trucos
+
+## Recomendaciones finales
+
+Un teléfono que salió malo puede tener efectos en el valor de la acción, o bien las baterías que estallan, etc.
+
+Para este vídeo quiero hacerte las siguientes recomendaciones:
+- Sé paciente
+  - No esperes hacerte rico de la noche a la mañana, las fortunas se hacen levantándose temprano antes que abran los mercados, leyendo las noticias entendiendo el sentimiento del mercado. La bolsa y el mercado se mueve con las emociones de las personas, es cuestión de practicar mucho antes de meterte con e-trading con una cuenta real.
+ 
+- Una acción que se monitorea demasiado nunca crece
+  - Por eso es muy importante definir el tiempo horizontal, si vas a una inversión de 5 años no tiene sentido ver acciones a diario pero si haces transacciones a diario sí necesitas estar al tanto del valor de las acciones (e-trading)
+
+> Pregúntate siempre: ¿Tengo las capacidades para entender y manejar esta inversión? ¿Es un buen negocio? ¿Me siento cómodo asumiendo su administración y control leyendo gráficos y todo eso? ¿Por qué creo que la decisión que tomaré es razonable? ¿Se la recomendaría a algún familiar?
+
+> Busca activamente opiniones en contra, no para confirmar tu hipótesis sino como si quisiera desestimarla. ¿Qué me haría cambiar de opinión.
+
+> No te ancles con información o percepciones históricas. Porque algo haya crecido en su histórico no significa que va a seguir creciendo. Siempre operamos en ciclos, todo sube y baja. Hay que ver más allá.
+
+> Borra precios y rendimientos históricos de tu mente. El que haya dado 5% de interés en los últimos años no significa que lo va a seguir haciendo en un futuro, puede que dé más pero también puede que dé menos.
+
+> Reconoce y aprende de tus errores, pero solo las elecciones que lave la pena recordar. Cuando vamos a invertir debemos entrar sabiendo que es muy probable también que perdamos y si perdemos no vale la pena que nos demos látigo por meses y meses o huir de ahí porque eso no es para nosotros, es cuestión de saber aprender de los errores que cometimos.
+
+> No intentes buscar patrones en donde no los hay. "Esta tendencia va subiendo y como los activos van subiendo, significa que esto es el negocio del siglo y esto nunca va a caer, cuidado con esos patrones cuando no necesariamente los hay".
+
+> Todas las decisiones generan consecuencias, por eso preferimos evitar catalogarlas como correctas e incorrectas. ***Uno no debe evaluar la decisión en base al resultado sino del proceso***. Debes hacer la tare, investigar, buscar opiniones en contra y si todo sale bien excelente, sino, pero hiciste el proceso entonces es mala suerte.
+
+> Ganar dinero no es lo mismo que tomar una buena decisión. Dinero fácil no certifica una buena decisión. "El que apuesta por necesidad pierde por obligación" [Lotería]
+
+# Planeación financiera
+## Introducción a la planeación financiera
+
+Hasta aquí hemos aprendido que todos los días tomamos decisiones financieras, salir de las deudas de maneras eficientes, cómo ahorrar e invertir.
+
+En enero es donde menos gastamos y septiembre a diciembre  son donde más se gasta.
+
+Planificar nos ayuda a definir el tiempo en que queremos las cosas.
+
+
+***Antes de empezar***
+- Las finanzas personales son más personales que financieras
+  - No hay una planeación que sea estándar para todos. ¿Quién dijo que comprarse un departamento tiene que hacerse a determinada edad y no antes o después?
+- La planeación financiera no se trata de hacer las cosas "bien"
+  - Siempre nos saldrán un poco más las cosas, que cuando estemos planeando un hijo puede que nos salgan gemelos. No se trata de hacer un plan super detallado con 20 hojas en Excel...
+- El mejor plan es el que nos permite hacer ajustes de la forma más rápida
+- No hay un plan financiero de "talla única"
+- Busquemos ejercicios que nos permitan mantenerlo tan simple como sea posible
+- Los problemas nunca son tan malos como parecen
+  - La planeación puede ayudarnos a reducir la incertidumbre a la que siempre estamos afectados al futuro y poder tener un poquito más de control sobre nuestras finanzas y claramente sobre la vida.
+
+## Cómo planear objetivos - Parte 1
+Lo primero que debemos hacer cuando queremos crear nuestra planeación financiera es definir nuestros objetivos. Aunque en ocasiones pensamos que los objetivos deben ser medibles y accionables, en los procesos de planeación financiera es más importante que respondamos algunas preguntas.
+
+Hazte las preguntas y realiza el ejercicio que te permite cuál es tu comportamiento típico.
+
+***La pregunta del millón***: ¿Por qué el dinero es importante para ti?
+
+Ejemplo: Porque quiero una casa para estar seguro
+Pregunta 2: ¿Por qué crees que una casa te hace sentir seguro?
+
+Esto va a ayudar a no distraernos por el nuevo iphone, etc, para tomar decisiones financieras
+si, si,
+no, si,
+si, si,
+si, si,
+no, si
+
+Impares 1 punto por cada si, las pares 1 punto por cada no: 3 (hay cosas que mejorar, 10 es para quienes están preparados)
+
+Los estudios indican que las preguntas pares no ayudan mucho.
+- Motivarme concentrándome en alguien a quien admiro por haber llegado muy lejos: ***Es la vida de esas personas no la nuestra***
+
+- Pensar en las cosas malas que sucederán si no logro mi objetivo: ***Lo único que puede hacer es cargarnos de estrés y evitar que actuemos***
+- Intentar suprimir los pensamientos que no me ayudan: ***No tenemos tanto control sobre esos pensamientos***.
+- Confiar en la fuerza de voluntad: ***Es un músculo que se agota y cuando no tenemos mucha energía o estamos muy cansados es un mal momento para tomar decisiones importantes en nuestra vida porque tenemos poca fuerza de voluntad***
+- Fantasear con lo estupenda que será nuestra vida al lograr el objetivo: ***Nada logramos con eso***
+
+En cambio, vale la pena:
+- Hacer un plan detallado
+- Contar mis objetivos a otras personas (financieros)
+- Pensar en las cosas buenas que sucederán si logro mi objetivo
+- Darme una recompensa por avanzar
+- Dejar constancia de nuestros progresos
+
+Una cosa son deseos y otra objetivos. Los deseos son esas cosas que queremos pero de las que no tenemos ningún control (una casa). Los objetivos son esas cosas que queremos pero de las que tenemos un control.
+
+***Reto: ¿Qué objetivo puedes cumplir en los próximos 90 días que marcaría una diferencia en tu vida?*** No tiene que ser algo demasiado grande, algo que puedas hacer en 30 días.
+
+--- Colocar gráfico
+
+
+
+
+
+--- Imagen de las preguntas de los objetivos, las respuestas son si y no.
+
+
+
+---
+
+- Entender la capacidad que tienes realmente
+- Busca activamente opiniones en contra
+- No te ancles con información
+- Borra precios y rendimientos históricos
+- Reconoce y aprende de tus errores
+- No intentes buscar patrones
+- Todas las decisiones generan consecuencias
+
+
+## Cómo planear objetivos -parte 2
+Si lo que quieres es comenzar a definir algunos objetivos financieros sigue este proceso que te ayudará a alcanzarlos:
+- Escribe tu objetivo
+  - Descrícrebelo lo mejor que puedas
+
+- Crea un plan detallado
+  - Divide tu objetivo en pequeños pasos, en cada paso:
+    - Escribe por qué crees que puedes lograr ese pequeño objetivo
+    - Qué tienes que hacer para lograrlo
+    - La fecha para la que lo completarás
+    - Un premio que te darás por lograrlo (que el premio que te das sea consecuente por el logro que haz hecho)
+
+- Escribe las ventajas de lograr ese objetivo
+  - Enumere tres ventajas importantes, centrándose en lo que mejorarán las cosas para usted y los que lo rodean. Fíjese en los beneficios asociados al futuro deseado, y no en que se librará de los aspectos negativos de su situación actual. (En cómo mejorará tu vida, dormir tranquilo, destinar el dinero de deudas para el viaje que quiero hacer)
+- Hazlo público
+  - Es opcional, pero el profesor lo recomienda. Pero no significa publicarlo en tus redes sociales, busca un mejor amigo o amiga y cuéntale tu objetivo. Puede funcionar, porque generamos un compromiso ya que tenemos como un referi que nos preguntará cómo vamos con el objetivo. 
+- Enumera las cosa que podrían salir mal
+  - Anticípese y piense en las cosas que podrían obstaculizar el cumplimiento del objetivo y escríbalas como si fuera la inscripción de la lápida del objetivo que no se logró. (Pre-morter). Disparar unas alarmas o unas alertas para que nuestro cerebro nos advierta cuando suceda un evento parecido, ejemplo una salida a un centro comercial y gastemos toda la plata del objetivo o cualquier imprevisto que pueda arruinar dicho objetivo.
+
+## Hora de revisar nuestro inventario
+Para cumplir nuestros objetivos financieros lo primero que debemos hacer es saber qué es lo que queremos lograr. Sin embargo, para saber qué podemos lograr debemos reconocer cómo se encuentran nuestras finanzas. Por esto te recomiendo que vuelvas a excel en el que revisábamos nuestra salud financiera.
+
+Recuerda que la idea de esto es saber si tenemos días en rojo, además saber cuáles son nuestros activos y así podamos generar algún tipo de liquidez de estos, y cuáles son nuestras deudas.
+
+Las tres cosas que debemos revisar para saber si nuestros objetivos  son consecuentes y realistas en lo que estamos buscando y con la situación por la que estamos atravesando en estos momentos o es mejor hacer algunos ajustes porque son demasiado ambiciosos o porque en el tiempo en que lo queremos lograr son demasiado cortos o demasiado justos.
+- ***Flujo de caja*** - Cuánto gasto: Y cuándo gasto. (Descarga una aplicación de registro de gasto y coloca allí el gasto por dos o tres meses y mira cómo te has comportado y ello te ayudará para proyectar tu flujo de caja). Vas a ver allí si tienes días en rojo, siempre debe ser positivo. Vas a ver allí si tienes días en rojo, siempre debe ser positivo, si no estamos a raya y si tenemos un colchón.
+- ***Ahorro*** - Activos: Liquidez y productividad: ***No todo en finanzas personales todo es dinero*** ejemplo las ventajas de tener un carro (productividad). Aquí llenamos los activos. 
+- ***Endeudamiento*** - Cuota, tasa, beneficio, saldo: Mira primero el de las cuotas más altas porque es el que más dinero sale, mira la tasa, si aún disfruta de los beneficios y cuánto debes.
+
+***Cuidado con subestimar los gastos y exagerar los ingresos***
+
+> Es preferible exagerar los gastos y ser pesimista con el ingreso, sobre todo los que trabajan como independientes porque no sabemos cuánto ingreso tendremos al final del mes.
+
+- ¡Cuidado! Sufrimos de exceso de confianza
+- Saber cuánto es tan importante como saber cuándo
+- Trabajemos sobre un escenario modernamente pesimista
+- Las expectativas influyen sobre nuestra percepción del resultado (con la realidad de lo que tenemos hoy, no con lo que queremos que sean)
+
+Aquí sabrás en dónde estás y los ajustes que debes hacer.
+
+## Cómo cumplir nuestros objetivos
+
+Ya que nos encontramos en este punto, podemos comenzar a definir el camino que vamos a recorrer para alcanzar nuestros objetivos financieros. Para lograr esto podemos recurrir a ciertos ajustes que nos sirvan en nuestras finanzas:
+- Tener la información clara y saber en dónde la podemos encontrar
+  - Vale la pena cuáles son los activos, nuestros ingresos (y en qué momento llegan, nuestras deudas y cuáles son el resto de los gastos). Coge una aplicación y registra al nivel de detalle en el que te sientas cómodo a diario y en dos o tres meses y saber allí en qué gastas a plata. Si dejamos de registrar gastos, cortamos y volvemos a empezar, hay que crear el hábito.
+
+- Empezar a ahorrar o invertir en algún fondo de inversión
+  - Es importante empezar ahorrar o invertir de manera formal
+
+- Mover flujos de caja
+  - Mover los gastos por si están muy lejos de los días de pago para evitar días en rojo.
+
+- Reducir o priorizar consumo
+  - No hay que renunciar a todo. Si nos partimos la espalda en ganar nuestro dinero es también para gastárnoslo en cosas que nos parecen importantes en nuestras vidas. "Si me gusta salir a fiestas y tomarme unas cervezas quién dice que no puedo gastarme el dinero en eso, la idea no es amenazar mi sostenibilidad en el futuro. La idea es coger una medida que nos mantenga feliz y al yo del futuro. Pensar en cuál nos hace más felices"
+
+- Reestructurar pasivos
+  - Haz el flujo de caja sin tener en cuenta las deudas. Si tienes flujo de caja negativo solo con tus gastos, significa que el problema no están en tus deudas el problema está en tu estructura de gastos. Si no, entonces el problema sí está en tus deudas, por más grave que sea siempre hay algo que hacer. Recuerda: Puedes vender activos, más deuda no puede ser la solución.
+
+- Acudir a otras fuentes de ingresos
+  - Con tu pareja, trabajos independientes (requiere tiempo, si lo tienes adelante), eventualmente si es conveniente, pensar en crédito.
+
+- Pedir ayuda
+  - La mayor cantidad de problemas financieros, podemos resolverlos por nosotros mismos pero si no es así debemos pedir ayuda a un asesor financiero o alguien que sepa de economía que te pueda ayudar.
+
+## Mecanismos de compromiso
+En este material hablamos acerca de los mecanismos de compromiso que podemos generar para alcanzar nuestras metas u objetivos financieros. Lo más importante de esto es saber que tener mecanismos de compromiso es la única forma en la que podremos hacer modificaciones a la forma en la que gastamos y eso nos lleva en última instancia a alcanzar nuestros objetivos.
+
+Estas son algunos ejemplos de mecanismos de compromiso:
+- Seguir los gastos
+  - Cuando eres consciente de cuánto gastas, sabes si debes hacer ajustes o si estás gastando más.
+
+- Ayuda de la pareja
+  - Entrega $200 y dile que si no cumple con un objetivo se lo puede quedar y que haga lo que quieras con ello.
+
+- Pagando más pronto los gastos fijos
+  - Después de recibir el salario pagar todas deudas. Lo primeros $100 del mes no funcionan igual que los últimos $100 del mes uno lo hacemos rendir de una manera impresionante.
+
+- Sacar dinero del banco y ponerlo en sobres etiquetados
+  - No hacerlo siempre, poner las categorías grandes de gastos. Para ver si tomamos el dinero de otra cosa.
+
+- Tener solo el efectivo necesario
+  - 
+
+- Pico y placa de las tarjetas
+  - Dependiendo del número de placa los vehículos no salen a ciertas horas (Colombia). En este caso, no sacar las tarjetas ciertos días. Cuando hay una gran probabilidad de gastos.
+
+- Establecer un límite de gasto diario
+  - Ejemplo $10 por día, y si sobra podemos dejarlo para el siguiente día o bien abonarlo para el ahorro.
+
+- El test de las 72 horas
+  - Esperar tres días para comprar algo que queramos, cómpralo si tienes la plata.
+
+- Preguntarse por el costo de oportunidad
+  - Pregúntate si hay algo que te puede hacer más feliz con esa misma cantidad de dinero ahora no en 20 años, ahora.
+
+- ¿Lo necesito? ¿Lo puedo obtener después? ¿Tengo el tiempo y el dinero?
+  -  No enloquezcas por ese 10% de descuento
+
+- Date premios y castigos
+  - Lo importante es que ese premio sea consecuente con el logro que has hecho.
+
+## Resumen y despedida
+
+Poner en práctica de todo lo aprendido.
+
+Ten las herramientas para lograr el bienestar financiero.
+
+Pregúntate seguidamente, antes de meterte a un excel, ¿por qué el dinero es importante para ti?
+
+Invertir y ahorrar no es una cosa de ricos, con poco podemos empezar. La incertidumbre está a la orden del día y el tiempo, esperar trae una recompensa si llevamos un control sobre nuestras finanzas.
+
+Establece tus objetivos, y toma el pulso a tus finanzas, no necesariamente debe ser cada mes, aunque esto sería ideal.
+
+Encuentra cuál es tu camino y con qué estás bien, para saber cómo están tus finanzas personales y una vez sepas cómo estás toma decisiones que te permitan cerrar la brecha entre el punto al que quieres llegar y el punto del que estás partiendo.
+
+> "Obra así, como si vivieras por segunda vez y la primera vez lo hubieras hecho tan desacertadamente como estás a punto de hacerlo ahora" Victor Frankl - En busca de un sentido.
+
