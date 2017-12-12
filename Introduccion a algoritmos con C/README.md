@@ -148,3 +148,67 @@ Tipos de datos en C:
 - double: Número real de precisión doble
 
 Recomendación: Utiliza lápiz y papel para tratar de simular el programa antes de llevarlo al entorno en el que vas a estar trabajando. 
+
+---
+
+Cuando sabemos que los números serán siempre positivos, usar ***unsigned*** para optimizar el uso de memoria ya que el espacio de los números negativos se adicionan a más números positivos.
+
+## Variables en C
+
+Las variables son una posición de memoria donde se almacena un dato.
+
+Hay dos cosas que se deben definir en una variable:
+
+- ***Nombre***: Esto nos sirve para poder recuperar su valor en cualquier parte del programa que estemos desarrollando.
+- ***Tipo***: Es el límite que le damos de almacenamiento de valores.
+
+
+## Operadores y expresiones en C
+***Operadores***: Son símbolos específicos que van a tener una función definida.
+
+Los operadores se dividen en 4 tipos:
+
+- ***Operadores de asignación (=)***: Este nos permite asignarle el resultado de una expresión a una variable dada. Es importante recordar que la expresión debe de usar los mismos tipos de datos que vamos a guardar en la variable.
+
+- ***Operadores Aritméticos***: Estos operadores van a tener un orden o jerarquía en la que se resuelven, los paréntesis nos van a ayudar a que este orden se cumpla para llegar al resultado que se opera.
+
+- ***Operadores Relacionales***: Esto nos van a servir para establecer una relación entre dos números y evaluarla o hacer una comparación.
+
+- ***Operadores Lógicos***: 
+  - Siempre nos van a devolver en verdadero o falso, los cuales son denominados valores booleanos.
+  - En el lenguaje de programación de C no existen los valores booleanos, por lo que así se definen:
+    - Valor verdadero: Cualquier número que sea distinto a cero.
+    - Valor falso: Cero
+    - Lo convencional es que se utilice ***1 para verdadero y 0 para falso***.
+
+***Importante***:
+- Los operadores lógicos o booleans son empleados para comprar dos valores.
+- Los operadores lógicos o booleanos denotan una relación entre dos valores.
+- Los operadores lógicos o booleanos tienen el mismo nivel de prioridad.
+
+## Ejemplo de operadores en C y reto.
+
+La compilación es:
+```
+gcc -o operadores operadores.c
+
+// Se corre con
+
+./operadores
+```
+
+## Entrada y salida de datos 
+La salida de datos estándar tiene 3 aspectos importantes:
+- La salida por defecto es de la pantalla.
+- Puede ser redireccionado.
+- Cuando es redireccionado se utiliza la función printf.
+
+La entrada de datos estándar tiene 3 aspectos importantes:
+- La entrada es por defecto en el teclado.
+- Puede ser redireccionado
+- Cuando es redireccionado se utiliza la función scanf.
+ 
+
+***Para tomar en cuenta***: Nosotros podemos concatenar tantos valores como queramos.
+
+
