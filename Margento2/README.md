@@ -153,3 +153,102 @@ Solución: Cambiar el lugar de guardado de sesiones a archivos
 Solución: usar una versión más baja de Composer
 
 Magento es una plataforma en constante desarrollo y con una comunidad muy activa, si alguna vez encuentras otros erros no dudes en registralos en el github del proyecto [https://github.com/magento](https://github.com/magento)
+
+## Areas de Magento 2
+Magento se divide en dos áreas distintas, una área de frontend y un área de administración.
+
+***FrontEnd***: Donde los clientes navegan para hacer sus compras
+
+***Administración***: Donde se hace la administración de la tienda.
+
+Demos un recorrido por el admin de Magento 2.2
+
+---
+
+Una vez instalado dirá success
+
+Ambos modos están en dos url distintas, para la url de admin se necesita usuario y contraseña.
+
+Recorrido de Admin:
+- Dashboard: Pantalla de control principal, ventas totales, cosas que más busca la gente, etc.
+- Sales: Reportes de ventas
+- Catalogo: Todo lo referido a la administración del catálogo.
+- Custumers: Todos nuestros clientes, verlos y saber qué están haciendo.
+- Marketing: Conexiones a facebook, marketing y todo lo que sea seo de nuestra tienda.
+- Content: Contenido estático.
+- Reports: Reportes necesarios.
+- Stores: Envío o pago de nuestras ventas.
+- System: Configuraciones avanzadas y módulos.
+- Extensiones: Marketplace de las extenciones de Margento
+
+## El admin de Magento
+Lo primero que vamos a aprender es a hacer un flush de cache, cómo sabes que necesitas hacerlo? Cuando haces cambios pero en tu sitio no se ven reflejados, necesitas limpiar el cache. Por ejemplo cuando hacemos cambios en el CSS y los cambios no se reflejan.
+
+Para ello en ***Sytem*** -> tildar la lista Refresh  luego en Flush Magento Cache.
+
+***Flush Magento Cache***: Se encarga de la caché de Magento.
+
+***Flush Cache Storage***: Warning, build cache, caché te tercera parte.
+
+Luego en ***System*** -> Index Management -> Seleccionar Rebuild design config grd index -> Update by Schedule para que se reindexe cada cierta cantidad de tiempo. Si el cron no estuviese configurado esto no funcionaría.
+
+En ***Customers*** -> All Customers Agregamos un nuevo Customers. Agregamos nuestro usuario, sale toda la información de los clientes.
+
+> Nota: ***Billing Agreements*** es cuando por ejemplo te suscribes a una revista a través de Magento y todos los meses te cobraría la suscripción.
+
+En ***Wish list***: Son los artículo que el usuario agrega as su wish list para luego aplicar Data Science y predecir su comportamiento futuro.
+
+## Crear tu propio usuario admin
+
+Una opción muy útil es la opción de crear usuarios administradores sin necesidad de ingresar al administrador de Magento. Esto porque muchas veces un cliente te solicita cambios en la tienda pero no tiene acceso administrativo, esto lo puedes resolver de la siguiente manera.
+
+Pare esto vamos a la consola de comandos y digitamos el siguiente comando:
+```
+magento admin:user:create [--<parameter_name>=<value>, ...]
+```
+
+Los posibles parámetros para la configuración son:
+
+Nombre del usuario administrador que estas creando, este parámetro es requerido.
+-admin-firstname
+
+Magento administrador user's last name, este parámetro es requerido
+-admin-lastname
+
+Dirección de correo electrónico del usuario que estás creando, este parámetro es requerido
+-admin-email
+
+UserName del usuario que estás creando, este parámetro es requerido
+-admin-user
+
+Contraseña del usuario que estás creando, este parámetro es requerido
+-admin-password
+
+La contraseña debe tener por lo menos 7 caracteres e largo, y necesita incluir por lo menos una letra y por lo menos un número.
+
+---
+
+Esto es para crear usuarios administradores sin entrar a la página. Ideal para cuando se nos olvida la contraseña
+
+```
+php bin/magento admin:user:create --paremetro='valor'
+```
+
+Para cambiar la contraseña del usuario, es ingresar los mismos parámetros pero con la otra contraseña.
+
+> Cuando necesitemos entrar al admin de Magento o crear un nuevo usuario, no necesariamente tenemos que tener el password del admin... Muchas veces los clientes olvidan sus contraseñas o bien nuestros clientes piensan que cuando les pedimos su contraseña admin les vamos a quitar algo (jejeje)
+
+# Manejo de contenido Magento 2
+## Manejo de contenido estático, páginas estáticas
+
+Vamos a trabajar con algunas páginas estáticas, veamos cómo se hace la administración de widgets y blogs para incrementar las funcionalidades de nuestra tienda.
+
+En la pestaña de ***Content*** -> Pages para editar las páginas. 
+
+Hay editores para la edición sin necesidad de usa HTML. Pero es recomendable tener nociones básicas ya que no siembre el editor funciona.
+
+Con ***Search Engine Optimization*** Como las urls de acceso, Meta keywords, Meta title.
+
+En ***Page in websites*** podemos configurar los estilos.
+
+También se pueden crear páginas para que se muestren en un período de tiempo, por ejemplo fechas feriadas.
