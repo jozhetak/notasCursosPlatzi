@@ -64,6 +64,26 @@ Para deployar el proyecto:
 - Composer: Es la recomendable
 - GitHub: Ideal para trabajo colaborativo donde forkean el proyecto y de allí instalar.
 
+
+--- Agregar el paso a paso para la instalación
+
+***Descargar composer***
+```
+curl -sS https://getcomposer.org/installer | php
+
+Para usar:
+php composer.phar ...
+
+Para una instalación global:
+sudo mv composer.phar /usr/local/bin/composer
+```
+
+***Instalación de Magento2 con composer***
+
+Primero crear una cuenta en [https://marketplace.magento.com/](https://marketplace.magento.com/)
+ - Seguir con esto [http://devdocs.magento.com/guides/v2.0/install-gde/prereq/connect-auth.html](http://devdocs.magento.com/guides/v2.0/install-gde/prereq/connect-auth.html)
+ - La llave pública es usuario y la privada la contraseña
+
 El comando de instalación es:
 ```
 composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition .
