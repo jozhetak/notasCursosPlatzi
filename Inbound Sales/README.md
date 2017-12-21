@@ -242,3 +242,197 @@ Buyer Personas: (Con quién queremos hablar de la empresa)
 - Director de Ventas
 - Director de Marketing
 - Analista de Marketing (Porque es el que le estará vendiendo nuestro producto a su jefe)
+
+## Identificación  de leats Inbound
+El primer paso es monitorear los potenciales clientes identificados en el paso anterior, es decir, cuáles están posteando en las redes sociales y cuáles están buscando información nueva.
+
+Y es aquí donde se diferencia los vendedores Inbound de los que no lo son, sabiendo quiénes están activos y quiénes no lo están.
+
+***Maneras de saber quiénes son compradores activos***:
+- Leads Inbound: Son las personas o contactos más activos, que visitan tu sitio web o dejan sus datos para descargar algo de tu página web. Es importante contactarlos de inmediato y darles prioridad por encima de cualquier otro comprador porque ya te están mostrando interés.
+  - Con un formulario  podemos hacer que dejen sus datos de contacto y nos lleguen una notificación.
+  - Con un CRM, en Hostpot tienen uno, se pueden filtrar en base semanas, meses, etc. De tal forma el departamento de vendedores estarán mas enfocados en saber quiénes están más interesados en resolver su problema.
+   - Con ese CRM, llega notificaciones en tiempo real a los vendedores para que puedan contactar inmediatamente.
+   - No pedir información muy personal porque tal vez no se la van a dejar.
+   - Hay filtros avanzados, como por ejemplo que no sean hotmail o gmail sino emails corporativos. Ya que su cliente ideal es B2B.
+   - En vez de tener una base de datos de miles de personas, el profesor tiene una de 300 contactos que señala ser mejor por ser más manejable.
+   - Se pueden descalificar los que no tienen fit, por ejemplo una lista de ***¿Con cuál puesto te identificas mejor?*** Emprendedor, Analista, Gerente, Estudiante... De esta forma se pueden optimizar los filtros en base a los intereses.
+
+- Compañías Inbound: ¿Qué pasa si es una compañía la que entra a nuestro sitio pero no deja ningún formulario? El 95% de tus visitas no llenan el formulario. Esto significa que no están activos  en el proceso de Buyer Journey. Entonces cómo tratamos de aumentar de la tasa de conversión de 5% a un nivel más alto.
+  - Utilizando Hostpot podemos saber qué empresas, mediante la dirección IP, estuvieron en el sitio web. Pero tal ves no dejaron información, una vez que identificamos que tiene un fit las contactamos proactivamente. Podemos saber qué páginas visitó, qué artículos leyó y de esta forma tenemos buen material para entrar en contacto.
+  - Si no tenemos contacto alguno de la compañía, buscamos en google, en LinkedIn, definimos a quién nos interesa contactar en la empresa y lo buscamos en LinkedIn. Quizás el gerente de Marketing, Analista o quizás el CEO.
+
+- Trigger Events (Eventos disparadores):
+  - Menciones de nuestra empresa en Twitter
+  - Empresas de nuestra industria (#) en Twitter
+  - Entrar a las redes sociales de las empresas. Ejemplo: Al entrar en la red de Platzi, vemos que tienen una conferencia. Hablamos respecto a esa conferencia para generar algo de confianza, ***no*** vamos de una a venderle nuestro producto.
+  - Notas sobre la compañía: Quizás salieron a la bolsa, nuevos empleados, nuevo empleado... 
+
+***Social Selling***: Cómo interactuar en las redes sociales para interactuar con posibles clientes.
+
+Técnicas:
+- Influenciadores: La idea es conectarse con personas expertos en la industria, hablar con ellos y conectarse para que te relacionen y te empiecen a conocer dentro de tu mercado.
+- Grupos en LinkedIn: Pertenecer a grupos en LinkedIn de ese mercado o bien cualquier otra red social.
+- Blogs de otras compañías: Blogs de las compañías de la industria. Hagan comentarios, eso lo reciben siempre muy bien. Porque si te hacen un comentario sabes que lo están leyendo y si lo haces a otros te lo van a recibir de una muy buena manera.
+- Blog de tu compañía: Traten de dedicarle mucho tiempo a generar contenido en internet. El comprador cambió la manera de cómo comprar productos, ahora es muy dependiente de google cuando esté interesado. Es mejor que consiga información de nuestra empresa que nosotros demos este contenido gratuito, que estemos educando a nuestro cliente potencial y nos vean como expertos en nuestra industria que no encuentren en nuestra competencia. ***Entonces si sienten que no tienen tiempo en generar contenido para su blog***, un tip del profesor es apartar ***4 horas*** o empezar con 2 horas, a la semana para aplicar a una de estas cuatro opciones. Y de esta manera generamos mucho contenido. 
+
+> La idea es que el primer contacto sea con un tema que le interese al cliente objetivo.
+
+
+## Enriquecimiento de Leads con contexto
+
+Enriquecimiento de un lead (cliente potencial), consiste en generar más data del mismo para realizar.
+- Formulario
+- Contenido de mi sitio web: En Hotspot dice lo que leyó, lo que descargó a qué hora, todo por la IP.
+- Seguimiento de Emails, en Hotspot dice si abre los Emails,
+- Canales: De dónde vino, posicionamiento orgánico, vienen de facebook.
+- Interacciones en redes sociales de nuestra compañía.
+- Información pública: La trae automáticamente del CRM, Nombre, url linkedin, números de trabajadores, ingresos, etc...
+
+***Información que se debe obtener***
+- Título y rol (cargo)
+- Industria donde se desenvuelve
+- Tamaño de la compañía (presencia en países, cantidad de empleados)
+- Lugar geográfico
+- Longevidad del contacto dentro de la compañía (qué tan comprometido está con la compañía y cuántos años tiene)
+
+> Información que sí o sí debe tener el equipo de ventas.
+
+***Proceso para crear nuestra etapa de identificación***
+- Define tu Ideal Buyer Profile
+- Identifica los leads que son acordes a tu Ideal Buyer Profile
+- Enriqueces a tu lead con contexto (Google Directives)
+
+***Hasta aquí la etapa de identificación***
+
+## Ejercicio práctico: Etapa de Identificación
+
+***Aquí descargar la plantilla de los archivos***
+
+PlatziMetrics comenzará a latinoamérica, Asia y Europa *No los podemos ayudar por los momentos*
+
+## Introducción: Etapa de conexión
+Aquí es donde interactuamos por primera vez con nuestros clientes potenciales.
+
+Los vendedores tradicionales: Usan emails masivos y llamadas masivas. La tasa de contacto es menor a 5% y la de cerrar la venta es mucho menor.
+
+> 42% de los vendedores dicen que lo más difícil de vender es hacer prospecting. Según encuesta realizada por HubSpot en el "State of Inbound" Report.
+
+El uso de las herramientas Inbound es para que sea una charla en vez de una venta.
+
+Vendedores Inbound, hablan de:
+- Objetivos: Que tiene este posible cliente
+- Planes: Que tiene de 1 año, 2 ños o 5 años. Que tienen que ver con la solución que el vendedor provee.
+- Desafíos del comprador: Por qué piensan que necesita el vendedor Inbound
+
+> La idea no es vender en este momento, sino saber si el cliente potencial tienen una necesidad que necesitan satisfacer.
+
+Podemos utilizar información obtenida en la etapa de identificación:
+- Industria
+- Rol dentro de la empresa
+- Intereses
+- Conexiones mutuas
+- Interacciones
+
+¿Qué buscan tus clientes potenciales?
+- Comienzo del embudo (75% del tráfico de web): ***Etapa de conocimiento*** Información general para educar a nuestro potencial cliente (ebooks, guías, eventos y vídeos)
+- Medio del embudo (22% del tráfico web): ***Etapa de consideración*** Información general de los servicios o productos (casos de estudio, spreadsheets (hojas de cálculo), plantillas) Material general pero sin hablar de pricing.
+- Final del embudo (3% del trafico web): ***Etapa de decisión*** Información específica (1 asesoría gratuita, una demo, una llamada con un vendedor).
+
+***Recuerden*** Cuando hacen la llamada de conexión, tus compradores potenciales se encuentran en la etapa de conocimiento, así que el  seguimiento puede ser enviarles un libro digital.
+
+
+## Definición de Buyer Personas
+En PlatziMetrics, necesitamos contactar con:
+- CMO (Director de Marketing)
+- CTO (Director de tecnología)
+- CEO (Dueño de la compañía)
+
+En todos debemos crear contenido para cada una de las industrias donde se desenvuelva nuestro Ideal Buyer Profile, enfocado en cada contacto (3 por cada industria).
+
+***Desarrollo del Buyer Persona***
+- Objetivos y desafíos: Que ellos tienen reales hasta con nombres y fotos, los desafíos día a día, los objetivos dentro de la empresa. Tal vez tienen un jefe al que tienen que reportar o un equipo al que tienen que dar soporte.
+- Educación: Cómo se educa esa persona diariamente, acostumbran a leer blogs, van a eventos presenciales, etc. Todo esto porque el contenido que consideremos relevantes deben estar en los canales adecuados.
+- Implicaciones: De no o de sí lograr los objetivos, las remuneraciones que ello implica. Todo esto te ayuda a entender el día a día de estas personas y cuando estés hablando con estas personas sepas con quién lo haces y cómo debes hacerlo.
+- Ideas erróneas comunes: Que tienen sobre tu solución y sobre la industria, esto ayudará a saber cómo comunicarte con las personas.
+
+***En PlatziMetrics***
+El CEO, CMO, CTO, con foto, nombre, empresa, cargo, etc. Todo esto para que cuando el equipo de ventas entre en contacto sepan toda la información que necesitan para saber con quién están hablando.
+
+## Secuencias y contenido de secuencias
+Estas son las acciones que vamos a tomar para entrar en contacto con las personas.
+
+Define:
+- Canales (email, red social, llamada, etc)
+- Cuando (horario y hora)
+- Frecuencia (Después de un primer intento fallido cuándo y cómo volverlo a intentar. Después del 2 intento la tasa de respuesta aumenta hasta el 6 intento)
+
+En PlatziMetrics: 5 veces durante las dos primeras semanas. Canales: Email, teléfono, redes sociales y blog. Como es B2B de 9am a 5pm. Si no responde la llamada le enviamos un email y le hacemos un retweet. Hay maneras de automatizar el proceso
+
+
+***Contenido***: En base a plantillas por cargo y por industria pero personalizando nombres.
+- Tipo de organización
+- Rol de la persona
+- Etapa del Buyer Journey
+
+> No armar un email armando la descripción de la compañía expresando lo increíble que eres (eso se hace después). Lo primero es educar al cliente, demostrarle que estás aquí para ayudarlo, entender sus problemas y no venderle otro producto más que seguro vio 10 emails ants que el tuyo con ofertas de productos o servicios similares.
+
+- Inventario de contenido actual.
+- Contenido ideal (Que recibe la persona que recién contactas). Ejemplo, si recibes alguien de ventas en tecnología podríamos enviarle un ebook "¿Cómo aumentar tus ventas en la industria tecnológica?". Es posible le guste el contenido y que nos agradezca entregarle algo tan valioso para él o ella.
+- Contenido de terceros: Tal vez no tengas los recursos para crear contenido, en ese caso puedes usar contenido de terceros que sean de utilidad.
+- Contenido intangible: Puede ser una asesoría gratuita. Ejemplo si es de algún sitio web puedes darle unos tips para indicar cosas que no están haciendo de la mejor manera.
+- Personaliza el título: Debajo de 200 palabras, ***menciona al contacto dos veces más de lo que te mencionas a ti mismo***. Pregunta por sus desafíos, objetivos y procura ese ratio de 2 a 1. 
+
+> ***Siempre termina el email con una pregunta, si lo haces, la tasa de respuesta es mayor*** Siempre termina con una pregunta que de pie a una respuesta bilateral.
+
+***Recuerda*** En un primer contacto la idea es ***ayudar, ayudar y ayudar***. Para aumentar la tasa de apertura personaliza el título. La mayoría de las herramientas de email marketing te permiten hacerlo, chequea los nombres de la base de datos para que no se note que sean emails automatizados. Por ejemplo las letras en mayúsculas. 
+
+Piensa en métodos no tradicionales para establecer contacto, por ejemplo de webinar y luego escribirle un email conversando acerca de es webinar o te unos tips que puedan mejorar desde un lado educativo y no de venderle.
+
+## Tipos de prospectos
+- Leads Inbound: Son los más fáciles porque llenaron un formulario en nuestro sitio web. Podemos llamarlo o enviarle un Email dependiendo de cómo definimos la secuencia. "Detectamos que descargarte nuestro ebook de retorno de inversión. ¿Qué te pareció? ¿Qué dificultades estás teniendo para calcular el RO de tu compañía". De esta manera la persona va hablar de sus objetivos y desafíos.
+- Compañías Inbound: Son las compañía que entran en tu sitio web, es igual a los Leads pero con la diferencia de que no sabes quién es el contacto de la compañía. En este caso, buscamos por linkedin al personal que pudiera haber hecho la conexión, en este cas CMO. El email podría ser algo como: "Vimos que alguien de tu compañía o de tu empresa estuvo buscando información acerca de cómo calcular el retorno de inversión de marketing. Eso suena algo como que están buscando hacer en el corto plazo". Y allí empezar la conversación.
+- Trigger Events: Eventos disparadores, el cliente o contacto posteó algo en linkedin sobre un puesto laboral como que están aumentando su presupuesto y allí como "vimos que tienen abierto un puesto en linkedIn  de un personal de Marketing, ¿están calculando el retorno de inversión de sus campañas?"
+- Conexiones en común: Estas son las ***intros***. Referidos de clientes actuales que estén felices y pedirles que te refieran.
+
+## Creando el Buyer Personas de PlatziMetrics
+
+***Aquí hay una plantilla para descargar en archivos***
+
+Es importante llevar esto a papel y no solo en tu cabeza para que cuando alguien nuevo llegue a la empresa el haces entrega de este documento.
+
+- Nombre, Nacionalidad, canales de redes sociales, Lugar de residencia, metas, rango de sueldo, edad, retos (Retos) [cuando el generador se queda sin ideas para contenido, lee esta plantilla y le surgirán ideas] , ¿qué podemos hacer? (servicios que podemos ofrecer acorde a las metas en base al buyer personas), objeciones comunes (saber cuáles son las cosas que siempre surgen durante las llamadas, las preguntas normalmente hacen durante una reunión personal), mensaje de mercadeo.
+
+Una vez armado toda la información lo subimos a una herramienta tecnológica como HubSpot. También añadir su historia dentro de la empresa, lo que hace, gustos, etc.
+
+## Creando las secuencias de PlatziMetrics
+
+Podemos llenar las plantillas y entregarlas en la plataformas para obtener feedback de cómo las estamos armando.
+
+***Aquí plantilla de las secuencias en los archivos***
+
+Cuando conocemos a alguien en un evento, haremos conexión por email (tarjetas de negocio) con Follow Up.
+
+Las demos pueden ser una reunión.
+
+Si no me contesta continuar en una frecuencia definida hasta contestar.
+
+También está el contacto perdido.
+
+Hay una tabla.
+
+Ejemplo de un email:
+```
+Hola Pablo,
+
+Tu artículo de "tierra" me encantó.
+
+Dejé una pequeña pregunta en los comentaros y también lo compartí en mis redes sociales.
+
+Me encantaría escuchar tu perspectiva en el comentario que hice.
+
+Saludos,
+Daniel
+```
+
+De esta manera estás tratando de generar un vínculo con esta persona y no estás yendo directamente a la venta.
