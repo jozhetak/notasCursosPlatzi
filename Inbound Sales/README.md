@@ -436,3 +436,97 @@ Daniel
 ```
 
 De esta manera estás tratando de generar un vínculo con esta persona y no estás yendo directamente a la venta.
+
+## Roleplay: Lead Inbound
+¿Qué pasa cuando te atienden primera llamada?
+Puf!:D Esta clase tienen que verla 
+
+Debemos generar confianza en los primeros segundos, el objetivo es generar una segunda llamada o la segunda reunión para entender mejor al cliente.
+
+Debemos entrar en la fase de exploración de una manera orgánica.
+
+## Roleplay: Compañía Inbound
+Es alguien que visitó nuestro sitio web desde una compañía y lo detectamos mediante tecnología.
+
+Cuando detectamos a la empresa, buscamos a Paula por linkedin quien es la gerente de marketing de la empresa a la que detectamos que se conectó a nuestro sitio web.
+
+"¿En serio de quién?"
+"Ahí es donde quiero saber si me puedes ayudar, ¿hay alguien en tu organización que se enfoca en este objetivo?"
+
+Al igual que en el anterior. La idea es que pases a la etapa exploratoria de manera orgánica ya sea en esta llamada o en la segunda llamada o reunión.
+
+Puf!!! Este también tienen que verlo, no tengo palabras para describir la calidad de clase que hay aquí.
+
+## Roleplay: Trigger Events
+
+Estos son los disparadores que investigamos que tienen en internet. Ejemplo en un anuncio en LinkedIn.
+
+"Acabo de leer que tienen una búsqueda laboral para el puesto de marketing"
+"Tengo algunas sugerencias que les pueden servir para encontrar el candidato perfecto..."
+
+Wow! También deben ver esta
+
+## Roleplay: Contacto en común
+Se conoce a Pablo Perez y éste conoce a Yesica Cortés de Platzi, que muy bien recomendó que la llamara.
+
+*Hace mención al contacto en común*
+
+"Pablo Perez me comentó que tienen un problema con ...."
+"Si..."
+"¿Cómo van con eso?"
+...
+
+Wow! Deben verlo también.
+
+## Roleplay: Pasos a seguir
+
+...
+Continúa con la conversación con Paula
+
+"..."
+"Cuéntame, ¿qué has intentado hasta ahora?"
+"..."
+"¿Y eso no te está funcionando para atribuir correctamente a los clientes?"
+"..."
+"... Te hago una pregunta, ¿resolver esto es una prioridad alta en tu empresa?"
+"..."
+"... ¿Qué tal si agendamos una segunda llamada?"
+
+Como pudieron ver la llamada terminó y el prospecto sintió que lo estábamos ayudando. En ningún momento mencionamos a PlatziMetrics, sino que nos enfocamos en los desafíos y objetivos que nuestro cliente aspira lograr.
+
+***Recuerden***: Hay tres pasos en nuestra llamada de conexión:
+- Explicar por qué estamos llamando
+- Posicionar un desafío o un objetivo que ellos tienen
+- Plantear los pasos a seguir
+
+> Escuchar las necesidades de los clientes potenciales y hacerles saber que podemos ayudarles.
+
+
+Yo sí me acuerdo cuándo fue que supe de platzi por primera vez y fue con este vídeo: [Vídeo de IA PlatziConf] ¿Fecha?
+
+## La tecnología ayuda con el aseguramiento de calidad en los procesos
+
+Necesitamos un software que nos ayude en lo siguiente:
+- Plantillas: Diferentes plantillas para cada caso sin tener que hacer un copy/paste
+- CRM: Organizar los contactos
+- Email: Plataforma que envíe email y que quede almacenado en tu CRM para hacerle un buen seguimiento, si lo abrieron si no lo abrieron.
+
+Con HubSpot podemos hacer todo esto. Aunque existen muchas otras.
+
+Llegado a una cierta cantidad de intentos fallidos, cambiar el status de vida a "Suscriptor".
+
+Desde Gmail se pueden enviar la secuencias que se detendrá cuando el contacto responda a uno de los correos.
+
+Evitar el uso de:
+- Mail Merge: Envíos masivos que cambian el nombre pero no permite cambiar el contenido a uno más personalizado. Pero el que lo recibe se da cuenta de que es un email automatizado con campos personalizados.
+- Dailers automatizados: Son sistemas que te permiten llamar de manera automática, pero no tienes tiempo a entrar al LinkedIn de la empresa y no tendrás el contexto por lo que te convertirás en una máquina que repite la misma presentación para todos.
+
+***Repaso***:
+- Determinar Buyer Persona
+- Definir contexto
+- Armado de secuencia
+
+# Preguntas:
+- ¿El ejemplo de platzi respecto a lo de marketing es una problemática real?
+- ¿Cómo conseguir el número telefónico de nuestros prospectos (compañías)?
+- ¿Los correos en la fase de exploración son un correo personalizado?
