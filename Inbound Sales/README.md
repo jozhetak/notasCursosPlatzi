@@ -526,7 +526,30 @@ Evitar el uso de:
 - Definir contexto
 - Armado de secuencia
 
+## Encaje de los leads
+Este es el momento cuando realmente conectamos con el cliente y empezamos a hacerle muchas preguntas y entender qué están buscando.
+
+Cuando apliquen esto en la vida real se van a dar cuenta de que los clientes tal vez se queden un poco confusos porque están acostumbrados a que les hagamos una presentación directamente... Cuando realizamos muchas preguntas postergando presentarte a ti y lo bueno que eres les va a parecer algo muy bueno y te va a diferenciar del resto de tu competencia.
+
+***Etapas del proceso de exploración***
+- Enfoque: Debe ser el correcto. 
+  - Vendedores tradicionales: Van directo a la presentación y tal vez los compradores los toman como ansiosos o interesados en vender y no realmente en solucionar un problema.
+  - Vendedores Inbound: Se enfocan es entender si hay un fit. Durante esta fase calificamos al comprador y somos nosotros los que decidimos si nuestra solución es un fit para ellos y si queremos trabajar con el comprador o no. 
+- Actitud: Correcta. Nos tienen que ver como expertos en la industria que quiero estar y que la conversación debe ser de la manera más fluida.
+- Solución: Correcta para cada cliente potencial. Hay veces, aunque es muy raro, que la solución no hay encaje con el comprador y les decimos que no queremos trabajar con ellos, obviamente de una manera muy sutil porque vemos que no hay ese encaje. Es muy importante ser honesto desde el principio y ser crítico, saber desde un principio si tu producto va realmente a satisfacer las necesidades de ese cliente potencial.
+
+***Hay tres resultados de una llamada de exploración***
+- Hay fit: Hay una urgencia, una necesidad. Perfecto, esto es lo mejor porque ambas partes están felices.
+- No hay fit: Es decir, no trabajar juntos.
+- Hay Fit, pero es un mal momento: Para este caso dejar una nota en el CRM para unos dos o tres mesesi.
+
 # Preguntas:
 - ¿El ejemplo de platzi respecto a lo de marketing es una problemática real?
 - ¿Cómo conseguir el número telefónico de nuestros prospectos (compañías)?
 - ¿Los correos en la fase de exploración son un correo personalizado?
+
+# Conclusiones
+- Debo volverme muy bueno Go, tanto en BackEnd como en Desktop, ML y móvil.
+- Seguir e interactuar por redes a los líderes y quienes tienen más presencia en esas tres industrias.
+- Escribir mucho contenido de cada una de esas industrias 
+- En la empresa que quiero trabajar debo saber su cultura y si va acorde con la mía además de que mis talentos contribuirán a su desarrollo entonces sí trabajar con ellos.
