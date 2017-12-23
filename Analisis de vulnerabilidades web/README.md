@@ -26,3 +26,14 @@ El cliente solicita que el servidor le envíe información, y el servidor envía
 
 La herramienta que estamos usando para capturar la petición HTTP se llama Burp Suite.
 
+---
+
+Hay muchos tipos de peticiones, los dos principales son GET y POST. Recibir y enviar peticiones HTTP.
+
+> Nota: Hay diferentes versiones del protocolo http
+
+***En BurpSuite***
+- Host: Donde nos conectamos, puede ser dominio o IP.
+- User-agent: Huella del cliente que estamos usando para conectarnos
+- Accept: Tipo de contenido que va a ser aceptado.
+
