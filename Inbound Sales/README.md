@@ -541,12 +541,110 @@ Cuando apliquen esto en la vida real se van a dar cuenta de que los clientes tal
 ***Hay tres resultados de una llamada de exploración***
 - Hay fit: Hay una urgencia, una necesidad. Perfecto, esto es lo mejor porque ambas partes están felices.
 - No hay fit: Es decir, no trabajar juntos.
-- Hay Fit, pero es un mal momento: Para este caso dejar una nota en el CRM para unos dos o tres mesesi.
+- Hay Fit, pero es un mal momento: Para este caso dejar una nota en el CRM para unos dos o tres meses.
+
+## Roleplay: Rapport, Recap y agenda
+Hacer esto cuando se hace la etapa de exploración
+- Rapport: Generar empatía con el comprador. Hablar de cosas que no necesariamente sea del trabajo.
+- Recap: Hacer un resumen de la etapa de conexión. "Me gustaría agendar una segunda reunión donde discutiremos de tus objetivos y desafíos y también te facilitaré información de cómo hemos ayudado a otras empresas y consejos que pueden implementar hoy mismo"
+
+> Lo que mejor podemos hacer es retomar los temas de la conversación anterior. "Cuando hablamos anteriormente me comentaste de X desafío, ¿podrías expander y profundizar sobre este punto?". La mayoría de los clientes contarán sobre su problemática.
+
+"Luego en la parte final de llamada decides si tiene sentido esto y si nos podemos ayudar formalmente"
+
+Casi siempre si realizas una buena llamada al prospecto te va a contestar que sí y continuar con la fase de exploración.
+
+## Framework: GPCTBACI
+- C: Challenges -> Desafíos: Tener una lista de preguntas para entender los desafíos de nuestros clientes. Para tomar la decisión si hay un fit o no.
+- G: Golas -> Metas: Las metas que quiere el cliente en un tiempo determinado, o ayudarlo a definir las metas.
+- P: Plans -> Planes: Tener esa lista metas y desafíos y a cada uno preguntarle cuál es el plan para lograr ese objetivo.
+- T: Timeline -> Urgencia: Muy importante este punto, les encanta tu solución, la necesitan pero no lo van a activar hasta dentro de tres meses. En ese caso no es un lead calificado, lo ponemos en CRM y hacemos una tarea que ejecutaremos más adelante.
+- C: Consequences -> Consecuencias: Son las consecuencias negativas de saber qué pasa si no toman tu solución o no hacen nada al respecto. Debemos cuantificar todo esto en un valor monetario. ¿Cuál es el costo de oportunidad o de inacción? En el caso de PlatziMetrics de no calcular el retorno de inversión.
+- I: Implications -> Implicaciones positivas: Dar a conocer los beneficios en utilizar la solución planteada. Personalizada en base al personal con quien hablas de de cómo dicha solución lo va a beneficiar. Visualizarlo como un caso de éxito dentro de su compañía.
+- A: Authority -> Autoridad: Saber si estamos hablando con la persona que toma la decisión y si no es así saber cómo podemos hacerlo. Pero no hay que dejar de lado a los analistas y quienes tiene influencia sobre quien toma las decisiones.
+- B: Budget -> Presupuesto: En esto consiste en saber si el cliente tiene la capacidad de adquirir nuestra solución que en B2B usualmente el monto es el presupuesto. Una manera de saber, es preguntar cuánto están invirtiendo en ese problema o bien preguntar cuánto están perdiendo por no solucionar eso.
+
+***Proceso de active listening***
+Para los desafíos
+- Escucha al prospecto
+- Repite el contenido
+- Confirma
+
+***Soluciones posibles b2b***
+Metas 
+- Hacer más dinero
+- Ahorrar dinero
+- Evitar riesgos de los trabajadores
+
+- Pregunta para ver si lo que entendiste fue lo que el comprador quiere transmitir
 
 # Preguntas:
 - ¿El ejemplo de platzi respecto a lo de marketing es una problemática real?
 - ¿Cómo conseguir el número telefónico de nuestros prospectos (compañías)?
 - ¿Los correos en la fase de exploración son un correo personalizado?
+
+## Roleplay: Llamada de Exploración
+En este punto debemos aplicar el framework explicado anteriormente y hacerle saber que entendiste todo lo que el cliente te transmitió.
+
+Por supuesto, la llamada no va a ser tan fácil y no va a hacer un fit directo. Entonces escucha para que en la etapa de recapitulación los dos estén en la misma página.
+
+# Implementación de GPCTBACI
+
+***Descargar la plantilla***
+
+> Recuerda: Debe hacer cada plantilla para cada llamada.
+
+Usar una hoja por cada letra del framework
+
+Esos documentos se van a llenar una vez terminada la llamada para hacer una presentación personalizada.
+
+> ***Cada cliente es un mundo***
+
+Si no hablamos con el que toma la decisión va a ser muy difícil que cerremos la venta.
+
+En tanto al presupuesto debería verlo desde el punto de vista de ellos y no del mío. Piensa en lo que implica en todo el plan. Si es un software piensa en quién lo va a estar usando y si lo va a seguir manteniendo.
+
+## Introducción: Etapa de asesoramiento
+
+El propósito en esta fase es transformar las oportunidades de ventas en clientes finales y esto lo vamos hacer mediante toda la data que hemos recopilado durante las tres últimas etapas.
+
+Recuerden: El vendedor Inbound no va hacer una presentación genérica sino que tendrá los datos para tener siempre el control de la situación.
+
+***Existen tres maneras para esta etapa***
+- Una propuesta
+- Una presentación o demo del software o servicio
+- Un contrato
+
+***Pasos del asesoramiento Inbound***
+- Resumen: Dar una breve recapitulación de lo que hemos obtenido en las tres etapas después.
+- Cómo cumplir sus metas
+- Presupuesto, toma de decisión y urgencia
+- Buy-In: Obtener el Ok verbal del cliente, si no lo obtenemos tal vez las cosas no van a quedar claras cuando les enviemos el correo para que lo firme.
+
+***Asesoramiento tradicional***
+- Sobre nosotros
+- Con quién hemos trabajado
+- Cómo solucionamos tu problema
+- Firma
+
+> Los vendedores Inbound hablamos de nosotros al final en el Buy-In
+
+## Estructura de presentación: Resumen
+
+***Pasos para asesorar***
+- Metas y desafíos: Los tiene que decir verbalmente para obtener el ok y también los debes documentar. En caso de que te haya faltado algo o que el cliente potencial quiera agregar algo más en el documento lo puedes hacer en ese momento.
+- Plantear solución: Ya después que tienes los objetivos planteados puedes hablar sobre la solución que propones, sobre ti, también de casos de éxito que has tenido con clientes similares al comprador. Este es el momento en el que puedes demostrar lo bueno que eres y de tu equipo. También incluir testimonios.
+- Presupuesto, toma de decisión, y urgencia: Una vez planteado los objetivos, planteaste la solución y te pusiste en la posición de experto. Ya puedes decir el presupuesto, de cuánto tienen que invertir para tener tu solución. Ten en cuenta que esto se hace en este momento porque el objetivo si fue cuantificable, si tiene un valor monetario, cuando le dices la inversión la persona va a poder calcular el retorno de inversión incluso si tu tienes esa información puedes dársela verbalmente. Porque si le das la información sin contexto, tal vez les pueda parecer muy caro pero si les indicas los ingresos que puedan alcanzar con tu solución, sea un producto o servicio. Van a ver ese presupuesto como entendible. Asegúrate que quien toma la decisión esté presente en las reuniones. Y ten al tanto si la urgencia es inmediata para fijar una fecha y paguen.
+- Obtén el Buy-In: Obtener el ok para la firma del contrato.
+
+## Método de cierre 1 al 10
+Es cuando hacemos una seguidilla de preguntas al comprador potencial para entender en qué etapa de decisión se encuentra:
+
+- 1era Pregunta: Del 1 al 10, donde 1 es "No estoy interesado en trabajar contigo" y 10 es "Quiero comprar en este momento", ¿En qué número estás? (Ideal: 8 al 9)
+- 2da Pregunta: Yo imaginaba que podría escoger un número más cercano a 7, ¿por qué escogió 9? Queremos que la persona nos diga por qué quiere trabajar con nosotros. Para que él se convenza de que quiera comprar nuestro pregunto.
+- 3ra Pregunta: ¿Por qué no sería un 10? Para entender si hay algo que esté evitando que quiera evitar firmar el contrato y saber qué falta para llegar a ese punto y ver cómo se puede solucionar.
+- 4ta Pregunta: "Si estuvieras convencido de que esta preocupación puede ser evitada entre los dos, ¿sería un 10?" Es muy probable de que termine cerrando la venta, si es un punto muy bajo regresar a la etapa de exploración para luego entrar en la etapa de decisión.
+
 
 # Conclusiones
 - Debo volverme muy bueno Go, tanto en BackEnd como en Desktop, ML y móvil.
