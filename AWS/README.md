@@ -118,3 +118,148 @@ En Network & Security
 - Elastic IPs: Genera ip pública y las asigna a una instancia o a una interfaz de red.
 - Key Pairs: Para las llaves SSH para conectarse a las instancias.
 
+# Creación de una instancia
+
+Una instancia es una máquina virtual para AWS.
+
+En AWS Marketplace se tiene un buscador de imágenes.
+
+> Nota: Ciertas imágenes no son compatibles con ciertas instancias.
+
+Una subnet es una red privada interna.
+
+La que la IP pública no cambie hay que usar una elastic ip. Porque cuando se reinicia el servidor se pueden cambiar la IP.
+
+Con "Protect against accidental termination" es para tener que hacer un doble paso para terminar el servidor y así evitar hacerlo accidentalmente a las 3:00 am
+
+Los security group son para la apertura de puerto, aquí se abre el puerto 22. Lo ideal es asignar una IP o un rango de IPs de la cual accederemos.
+
+No colocar como nombre de Security Group que comience por "sg*"
+
+Si se tiene una IP dinámica hay que cambiar el SG cada vez que cambie.
+
+# Modificación de un Security Group
+
+Para habilitar el puerto 80 y el 443
+
+Inbound, conexiones entrantes
+- HTTP (80) Para todo el mundo
+- HTTPS (443) Para todo el mundo
+- Se abren para IPV4 y IPV6
+Outbound, conexiones de salida
+- Cualquier puerto puedan lanzar información
+
+> Nunca está de más verificar dos veces los puertos abiertos.
+
+# RDS Dashboard
+
+Para ello hay que entrar en el servicio RDS para crear una instancia de base de datos, AWS hará todo y nos otorgará un endpoint.
+
+Podemos tener un clusters, snapshops no de la base de datos si no de la instancia de la base de datos aunque esto se puede programar.
+
+En Platzi se hacen respaldos diarios y cada uno se almacena por 30 días. Cada aplicación puede tener un respaldo cada cierto tiempo pero se recomienda diario si es una aplicación grande.
+
+- Paremeter groups: Conjunto de parámetros que definen una bases de datos específica.
+
+# Aurora
+
+Es una base de datos creada por Amazon que promete compatibilidad con MySQL y PostgreSQL.
+
+Te promete hasta 5 veces más rendimiento que una base de datos MySQL tradicional y hasta 3 veces más que una base de PostgreSQL a un precio más barato. Dependiendo de la instancia, a veces MySQL puede ser más barata.
+
+> Cluster: Bases de datos distribuidas.
+
+Al crear la instancia de aurora debemos escoger con cuál motor de base de datos va a ser compatible.
+
+# Creando de una instancia de bases de datos en RDS
+
+Para bases de datos relacionales hay:
+- Aurora
+- MySQL
+- MariaDB
+- PostgreSQL
+- Oracle
+- SQL Server
+
+También las version (5.6), el tiempo de Backup para retener (a más días más cobran), hay monitoreo, AWS actualiza la versión en el tercer nivel.
+
+# Instalación de Nginx
+
+# Instalación de PHP
+Para tener en cuenta: La dependencia que uno instala en un servidor cuando se está utilizando computación en la nube, depende mucho el tipo de aplicación que uno necesite.
+
+No es lo mismo instalar las dependencias de WordPress que las de Magento.
+
+Para ver que la ejecución de PHP se está realizando correctamente:
+sudo systemctl status php7.0-fpm
+
+Para configurar de que Ngnix renderice un php.index
+
+cd /etc/ngnix/sites-available
+sudo vim default
+
+En la línea donde dice index, al lado poner index.php
+
+Para verificar la configuración
+
+sudo nginx -t
+
+En /var/www/html crear phpinfo.php
+
+```
+<?php
+phpinfo();
+?>
+```
+
+sudo systemctl reload nginx
+
+ip-de-AWS/phpinfo.php Debería salir toda las librerías y configuración de php.
+
+# Instalación y despliegue de Wordpress
+
+Para iniciar sesión en AWS
+ssh -i curso-aws.pem usuario@ipPublica
+
+Configurar nginx para que ejecute wordpress
+
+--- Colocar imagen
+
+Para instalar wordpress se hace en la carpeta /var/www/html con wget
+
+Para descomprimir `tar xvf archivo.tar.gz`
+
+Crear un usuario para que no tenga privilegios root o acceso desde afuera
+`sudo adduser --disabled-password --disabled-login wordpress`
+
+esa es la carpeta de wordpress
+
+Verificar el usuario con *cat /etc/passwd*
+
+Agregar la carpeta el usuario
+
+sudo chown -R wordpress:www-data wordpress/
+
+Asignamos la carpeta raíz de nginx en */etc/nginx/sites-available/*
+
+root /var/www/html/wordpress;
+
+sudo systemctl reload nginx
+
+En el navegador entrar dentro de la carpeta raíz y accederemos a wordpress.
+
+Para la base de datos entramos en la instancia de RDS y de allí tenemos el endpoint (ruta de la base de datos) y el usuario, podemos muy bien usar ese nombre de usuario.
+
+Al crear la instancia RDS creamos nuestra contraseña.
+
+En EC2 agregar en el Security Group el puerto de MySQL, usaremos la ip privada para que pueda editar el archivo que worpress necesita en su base de datos.
+
+# Terminando la instalación de WordPress
+
+Para solucionar el error de que WordPress no puede editar un archivo:
+
+`sudo find /var/www/html/wordpress -type d -exec chmod g+w {} \;`
+
+WordPress hizo casi todo, el blog ya quedó hecho.
+
+***Nota***: Ver el curso de WordPress.
