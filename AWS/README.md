@@ -185,6 +185,35 @@ También las version (5.6), el tiempo de Backup para retener (a más días más 
 
 # Instalación de Nginx
 
+Descargado la imagen, editar los permisos para que solo pueda ser usado por los usuarios
+
+chmod 0600 curso-aws.pem
+
+Nos conectamos
+
+ssh -i curso-aws.pem usuario@ip del servidor
+
+Actualizar repositorios
+
+sudo apt-get update
+
+sudo apt-get upgrade (para actualizar)
+
+> Es importante siempre tener actualizado el sistema por temas de seguridad
+
+sudo apt-get install nginx
+
+sudo systemctl status nginx (para verficar que el demonio funciona)
+
+Si ingresamos en el puerto 80 (colocar la IP pública), ngnix debe salir con una página estática.
+
+cd /var/www/html -> aquí debe estar el archivo
+
+cd /etc/nginx -> Los archivos de configuración
+
+> Dentro de ésta, la carpeta ***sites-enabled*** muestra las páginas que están habilitadas donde sus archivos son un enlace simbólico a la carpeta ***sites-available***
+
+Dentro de la carpeta /etc/nginx/sites-available está el archivo ***default** Que es el archivo de configuración donde podemos habilitar PHP, Proxy reverse o el puerto 443 que nos permite tener certificado SSL.
 # Instalación de PHP
 Para tener en cuenta: La dependencia que uno instala en un servidor cuando se está utilizando computación en la nube, depende mucho el tipo de aplicación que uno necesite.
 
