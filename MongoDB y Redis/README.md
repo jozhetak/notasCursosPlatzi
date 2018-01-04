@@ -67,3 +67,75 @@ La página es [coinmarketcap.com](https://coinmarketcap.com) tienen información
 El reto acá es poder traer la información y hacer conversión de datos y almacenarlas en el motor de MongoDB y crear luego un API Rest para poder consultar esa información sin necesidad de pasar por coinmarketcap sino directamente a la base de datos de MongoDB.
 
 Usar una librería para acceder a MongoDB con Python.
+
+# Primeros pasos con MongoDB
+
+MongoDB es una base de datos no relacional en C++ por el 2007. Es una base de datos documental (en documentos en formatos JSON).
+
+***Conceptos claves***:
+- Base de datos
+- Tablas (Colecciones)
+- Filas o registros (documentos -> BSON)
+- Columnas o campos (campo)
+
+> En un mismo campo se pueden guardar un número o bien un string.
+
+# Modelado de datos en MongoDB relaciones uno a uno y uno a muchos.
+
+El campo obligatorio en toda colección es "_id" que de no hacerlo se va autogenerar.
+
+***Uno a uno***
+La relación uno a uno trata de información de información que podrías guardar por separado y que básicamente una de las dos entidades que almacenes va a tener una referencia hacia la entidad que necesite.
+
+Ejemplo
+{
+    _id: "platzi"
+    name: "Platzi"
+    address:(
+     city: "Bogotá"
+     country: "Colombia"
+ )
+}
+
+Si fuera una base de datos SQL, el campo "addresss" se guardaría en otra tabla.
+
+***Uno a muchos***
+
+> En la actualidad es más barato pagar por la storage y no por CPU o RAM que es mucho más caro.
+
+Ejemplo:
+{
+    title: "Curso de NoSQL y MongoDB",
+    published_date: ISODate("2018-10-31"),
+    languague:"Spanish",
+    publisher:{
+        name: "Platzi", location: "Colombia"
+}
+}
+
+
+{
+    title: "Curso de Programación en Go",
+    published_date: ISODate("2018-10-31"),
+    languague:"Spanish",
+    publisher:{
+        name: "Platzi", location: "Colombia"
+}
+}
+
+Si la información cambia muy seguido, entonces utilizamos una referencia como que *publisher_id*
+
+> "Redundar información en SQL es un pecado y por ello existe la normalización y diferentes técnicas para guardar la información necesaria". Pero en MongoDB es perfectamente válido redundar la información teniendo en cuenta que esto va a optimizar la consulta de dicha información.
+
+# Modelado de datos tipo árbol
+
+Empezamos un elemento y lo vamos desglosando así como en los organigramas. En MongoDB, los que están arriba son padres y los de abajo son hijos.
+
+Hay dos tipos de referencia:
+
+El resto de los campos quedan iguales.
+
+- Referencia el padre <<parent: "Carrera de Bases de datos">>
+- Referencia a los hijos <<children:["Curso de NoSQL y MongoDB"]>>
+
+La forma en que se hacen es igual, la diferencia entre ambos es si recorres el árbol de arriba hacia abajo o inversa.
