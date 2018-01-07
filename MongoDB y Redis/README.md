@@ -139,3 +139,196 @@ El resto de los campos quedan iguales.
 - Referencia a los hijos <<children:["Curso de NoSQL y MongoDB"]>>
 
 La forma en que se hacen es igual, la diferencia entre ambos es si recorres el árbol de arriba hacia abajo o inversa.
+
+# Creando el modelo de datos de Cryptongo
+
+Desde [coinmarketcap.com/api](https://coinmarketcap.com/api)
+
+Capturamos el siguiente endpoint:
+
+{
+        "id": "bitcoin", 
+        "name": "Bitcoin", 
+        "symbol": "BTC", 
+        "rank": "1", 
+        "price_usd": "16868.0", 
+        "price_btc": "1.0", 
+        "market_info":{
+            
+            "24h_volume_usd": "20439700000.0", 
+            "market_cap_usd": "283140124916", 
+        },
+        "available_supply": "16785637.0", 
+        "total_supply": "16785637.0", 
+        "max_supply": "21000000.0", 
+        "last_updated": "1515246261",
+        "hash_ticker": ""
+    }
+
+> Cada 5 minutos traeremos información del API, pero no queremos que la información se repita. El campo "last_updated" en formato unix nos dice la fecha de modificación.
+
+> El campo "hash_ticker": Lo vamos a crear partiendo de los datos y de esta manera nos aseguramos que el hash va a ser único y no se repetirá el registro. 
+
+Así estemos redundando, es preferible dejar todo en un mismo documento. Pero sí sería bueno que como reto hagas relaciones pertinentes uno a uno u uno a muchos de este mismo documento.
+
+# Librerías de MongoDB
+
+[enlace de librerías](https://docs.mongodb.com/manual/applications/drivers)
+
+PyMongo: Librería que soporta MongoDB para Python.
+
+# Ejecución de código JS en la shell de MongoDB
+
+MongoDB tiene dos componentes, un componente servidor y un componente cliente.
+
+***mongo*** -> Para ejecutar el cliente, de esta forma si lo tenemos en localhost.
+
+***mongo --help*** -> Para ayuda
+
+***show dbs*** -> Mostrar las bases de datos. *admin* y *local* son las bases de datos que se crean por defecto.
+
+***use nombreBaseDeDatos*** -> Usar una base de datos
+
+***db.curso.insert({"name": "platzi"})**
+
+***show collections*** -> Ver las colecciones creadas
+
+***db.createCollection("curso1")*** -> Creación de la collección de manera implícita.
+
+> Podemos insertar código JS
+
+function hello(){
+    print("Hola")
+}
+
+hello()
+
+for(i=0;i<10;i++){
+    print(i)
+}
+
+Podemos implementar código javascript para implementarlo desde la consola.
+
+Podemos insertar archivos de javascript
+
+En un archivo:
+function hello(){
+    print("hola")
+}
+
+function getCol(){
+    print(db.getCollectionsNames())
+}
+
+Para cargarlo, una vez usado la base de datos
+***load("nombre-script.js")***
+
+Podemos usar script en Javascript para crear cargas masivas de información que nos permitirán administrar el servidor de mongo de manera fácil.
+
+# Insertar un documento con la consola de MongoDB
+
+Podemos guardar variables, ejemplo
+
+documento1={aquí lo que copiamos par el API }
+
+***use cryptongo*** -> Base ded datos para nuestra aplicación.
+***db.ticker.insert(documento1)*** -> Insertar nuestro documento.
+
+Creamos otra variable, pero como documento2.
+
+***db.ticker.insertOne(documento2)*** -> Insertar un documento en MongoDB, válido para v3 en adelante.
+
+# Insertar múltiples documentos con la consola de Mongo
+
+Crear dos o más variables "documento#" 
+
+> Si no especificamos la base de datos creará las colecciones en test.
+
+Para insertar múltiples documentos
+
+***db.ticker.insertMany([documento1, documento2])***
+
+Reto: Hacer una inserción de 10 documentos haciendo solo una operación en la shell de Mongo.
+
+# Funciones find y findOne
+
+***db.ticker.find()*** -> Primeros 20 documentos que encuentre
+
+***db.ticker.findOne()*** -> Un document
+
+***db.ticker.findOne()*** -> Un documento
+
+# Operaciones avanzadas con find y findOne en la consola de MongoDB
+
+***db.ticker.find({"last_updated":"1515246261", "available_supply":"16589962.0"}).pretty()*** -> Buscar con dos parámetros, la coma indica un "y"
+
+***db.ticker.find().limit(1).pretty()*** -> Limita el número de colecciones y la función de pretty muestra en formato JSON, otra forma de hacer esto es con ***find.ticker.findOne()***.
+
+***db.ticker.find({"last_updated": {$gt: "1506525557"} })*** -> Verificar que la información sea mayor a un número.
+
+- $gt: Mayor que
+- $lt: Menor que
+- $lte: Menor o igual a
+- $gte: Mayor o igual a
+
+Después de ***{$gte: "1506525557"}}, {_id:0, price_btc:0, rank:0}).limit(4).pretty()*** -> Muestra todo a excepción de los campos marcados por 0.
+
+# Modificación de documentos en la consola de MongoDB
+
+Una forma es guardando un documento en una variable, hacer una modificación y guardando posteriormente ese documento.
+
+***documento1 = db.ticker.findOne()***
+
+***documento1.hash_ticker=1234***
+
+***db.ticker.save(documento1)*** -> Si el documento existe lo modifica, si no existe lo crea.
+
+Otra forma de modificar, podríamos perder información si utilizamos esta función ya que si solo insertamos la variable a usar eliminará el reste a excepción del id del documento.
+
+***db.ticker.update({_id: ObjectId("todo un número")}, {hash_ticker: 123456})*** -> De esta manera se elimina el resto del documento. Para modificar solo un campo, colocar una variable entre los corchetes. Está también updateOne y updateMani
+
+# Eliminar documentos en la consola de MongoDB
+
+Hay dos formas, una con remove y drop.
+
+- Remove: Para eliminar documentos según una query, un id, un campo, un rango...
+- Drop: Elimina todos los documentos de una colección, aunque puedes hacerlo con remove, drop es más rápido.
+
+***db.ticker.remove({_id: ObjetctId("12312312")})*** -> Para que elimine el documento de la base de datos.
+
+***db.ticker.remove({"last_updated":{$gt: "123123213"}})*** -> Con esto eliminará los documentos mayores a dicho número.
+
+***db.ticker.drop()*** Elimina toda la colección ticker.
+
+# Indices en MongoDB
+
+Ayudan a ordenar para poder extraer la información mucho más rápido.
+
+Para crear índices usar este enlace [https://docs.mongodb.com/v3.4/reference/method/db.collection.createIndex/](https://docs.mongodb.com/v3.4/reference/method/db.collection.createIndex/)
+
+# Estructura del proyecto Cryptongo
+
+Tendrá dos componentes, el que interaptuarán con coinmarketcap y guardará en la bas de datos y el que será una api que mostrará resultados en el navegador.
+
+El endpoint ticker donde nos mostrará la información de coinmarketcap y top20 quien mostrará las primeras 20 monedas de toda la información de la base de datos.
+
+Todo hecho completamente en python.
+
+En el agente necesitamos que la información no se duplique.
+
+# Cómo funciona el agente que consulta CoinmarketCap
+
+Nota: El profesor usa pycharm
+
+Cada vez que se utiliza un API, debemos chequear la conección con un status code 200.
+
+raise: Palabra reservada en python para producir un error.
+
+cryptongo se actualiza cada 5 minutos.
+
+# Calcular el hash a partir de a información del ticker en Cryptongo
+
+
+# Guardar la información obtenida por el agente
+
+Correr el programa con ***python3 main.py***
