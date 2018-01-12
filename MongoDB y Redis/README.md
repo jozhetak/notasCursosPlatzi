@@ -332,3 +332,75 @@ cryptongo se actualiza cada 5 minutos.
 # Guardar la información obtenida por el agente
 
 Correr el programa con ***python3 main.py***
+
+# Crear API que consulta la base de datos get_documents()
+
+Para ello se utilizará Flask que es un microframework para construir apis res con Python.
+
+
+
+
+# Primeros pasos con Redis
+
+Redis es una base de datos NoSQL del tipo llave-valor. Almacena mayormente en memoria pero si uno lo desea puede guardar al disco duro.
+
+La velocidad de escritura y lectura en ram es muy superior a cualquier otra que necesite buscar en disco duro.
+
+Usos:
+- Full Page Cache: Hacer que todo el sitio web se renderee una sola veez y se almacene ese resultado html en una key de redis y cuando el visitante vuelva a visitar la página traiga esa información de la base de datos y se lo muestras en pantalla. De esta manera no tienes que hacer consultas a la base de datos para hacer render en esa vista.
+
+En la forma como uno trabaja con un framework se hace render del html una y otra vez. Pero con Redis podemos hacerlos acelerar el tiempo de carga al ser leído desde la memoria ram. Y de esta manera tener mejor rendimiento de la aplicación.
+
+PubNub: Permitir Pub/Sub, es una técnica para poder crear emisión de datos donde existe un Publisher quien emite la información y hay unos Subcribe quien recibe la información. Algo como si fuera un canal. Ejemplo: Socket.io. Ideal para websocket, una cola de procesamiento.
+
+# Consola interactiva de Redis
+
+Para entrar solo colocar ***redis-cli***
+
+***redis-cli --help***
+
+Podemos asignar una ip, usuario y contraseña.
+
+> Nota: No se recomienda ingresar directamente la contraseña porque esto queda almacenado en el historial de log de la terminal.
+
+En redis las bases de datos no tienen nombre, sino que se identifican por números. Máximo va a tener 16 bases de datos, pero esto se puede configurar para cambiar el valor permitido. Recuerda que el límite lo va a dar la ram de tu servidor.
+
+El puerto de redis es ***6379***
+
+Para seleccionar la base de datos ***SELECT 1***
+
+***INFO*** Para obtener información de redis.
+
+Redis es fácilmente escalable.
+
+# Full page cache con Redis
+
+Guardaremos los html de platzi.com/precios. Recuerda que según la ciudad se muestra un valor.
+
+En ***Python***
+
+```
+import redis
+r=redis.StrictRedis()
+r
+r = redis.StrictRedis(db=8)
+
+# Pegar en esta variable el contenido de html de platzi.com/precios
+content = """
+... #Pegar
+"""
+# Almacenar el html en una variable
+r.set('pricing_co', content)
+
+# Para almacenar el resto de los sitios por país, usar una función
+
+```
+Con ***r.setex(name='pricing_mx', value=content, time=3600)*** Podemos especificar el tiempo que estará esa base de datos. Es útil para cuando no necesitamos guardar la información por días.
+
+
+
+La compresión del html es minificado
+
+# Cierre del curso
+
+Ya en este punto puedes implementar MongoDB y Redis en tus aplicaciones sin ningún tipo de problemas.
