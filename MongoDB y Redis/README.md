@@ -337,6 +337,74 @@ Correr el programa con ***python3 main.py***
 
 Para ello se utilizará Flask que es un microframework para construir apis res con Python.
 
+# Funciones get_top20() y remove_currency()
+
+# Creación del EndPoint de Cryptongo
+
+Ejecutar el servidor web con ***FLASK_APP=main.py flask run*** Con esto él va a encender todo el servidor web. El main es del API.
+
+
+> Cuando estés creando un servidor web es importante indicar qué métodos serán permitidos (get, post...)
+
+# Endpoint - Tickers para ver todos los documentos en Cryptongo
+
+Con ***localhost:5000/tickers?limit=10*** podemos limitar los documentos mostrados.
+
+***localhost:5000/tickers?limit=10&name=Bitcoin***
+
+Para evaluar el API REST usar postman
+
+Para aplicar DELETE usar postman.
+
+# Publicación de Cryptongo con Docker
+
+Antes de desplegar nuestro agente haremos una modificación para agregar un sleep y un while para ejecutar de manera infinita nuestro agente y que espere 4 minutos para volver a pedir información del APU. La modificación se debe hacer al principio y al final del archivo.
+
+Para ejecutar mongo con Docker:
+***docker run -d --name=mongo-crypto mongo:3.4***
+
+Contenido del Dockerfile
+
+```
+FROM python:3.5
+WORKDIR /usr/src/app
+RUN pip install request flask pymongo
+COPY main.py ./agent.py # main.py del agente lo renombramos a agent.py
+
+```
+
+Construimos el contenedor de MongoDB:
+***docker build -t="cryptongo-agent" .
+
+Ejecutar la imagen del agente
+***docker run -it --link=mongo-crypto cryptongo-agent***
+
+## Desplegando nuestro API REST
+Para nuestra API solo cambiaremos la línea que contiene:
+***db_connection = get_db_connection('mongodb://localhost:27017/')***
+
+por
+
+***db_connection = get_db_connection('mongodb://mongo-crypto:27017/')***
+
+Luego creamos el Dockerfile en la carpeta donde se encuentra el archivo main.py de nuestra API y colocamos el siguiente contenido:
+```
+FROM python:3.5
+ENV FLASK_APP api.py
+WORDKDIR /usr/src/app
+RUN pip install requests flask pymongo
+COPY main.py ./api.py
+EXPOSE 5000
+CMD ["flask", "run", "--host=0.0.0.0"]
+```
+
+Flask, usa el puerto 50000 para escuchar peticiones.
+
+Construyendo la imagen
+***docker build -t="cryptongo-api" .***
+
+Ejecutando el contenedor
+***docker run -it --link=mongo-crypto:mongo-crypto -p 5000:5000 cryptongo-api***
 
 
 
