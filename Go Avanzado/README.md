@@ -170,12 +170,108 @@ Estar pendiente de que se ejecute o no, hacer que falle para probar.
 
 Frameworks para pruebas unitarias:
 - ginkgo y gomega: Se usa el símbolo omega (???)
+- gobblin: Es otra librería para Unit Testing
+
 
 # Acceso a bases de datos
+Una forma de accesar a la base de datos desde Go es con el siguiente código:
+```
+package main
+
+import (
+	"database/sql"
+	"fmt"
+	_ "github.com/lib/pq"
+	"time"
+)
+
+const (
+	USER     = "platzi"
+	PASSWORD = "platzi"
+	NAME     = "platzi_test"
+)
+
+func main() {
+	dbinfo := fmt.Sprintf("user=%s password=%s dbname=%s sslmode=disable",
+		USER, PASSWORD, NAME)
+	db, err := sql.Open("postgres", dbinfo)
+	checkErr(err)
+	defer db.Close()
+
+	fmt.Println("--- Insertando valores ---")
+
+	var lastInsertId int
+	err = db.QueryRow("INSERT INTO users(username,email,created_at) VALUES($1,$2,$3) returning id;", "platzi_user", "email@platzi.com", "2020-12-09").Scan(&lastInsertId)
+	checkErr(err)
+	fmt.Println("Último id =", lastInsertId)
+
+	fmt.Println("--- Actualizando ---")
+	stmt, err := db.Prepare("update users set username=$1 where id=$2")
+	checkErr(err)
+
+	res, err := stmt.Exec("platzi_update", lastInsertId)
+	checkErr(err)
+
+	affect, err := res.RowsAffected()
+	checkErr(err)
+
+	fmt.Println(affect, "Filas afectadas")
+
+	fmt.Println("--- Consultando ---")
+	rows, err := db.Query("SELECT * FROM users")
+	checkErr(err)
+
+	for rows.Next() {
+		var id int
+		var username string
+		var email string
+		var created time.Time
+		err = rows.Scan(&id, &username, &email, &created)
+		checkErr(err)
+		fmt.Println("id | username | email | created_at ")
+		fmt.Printf("%3v | %8v | %6v | %6v\n", id, username, email, created)
+	}
+
+	fmt.Println("# Deleting")
+	stmt, err = db.Prepare("delete from users where id=$1")
+	checkErr(err)
+
+	res, err = stmt.Exec(lastInsertId)
+	checkErr(err)
+
+	affect, err = res.RowsAffected()
+	checkErr(err)
+
+	fmt.Println(affect, "rows changed")
+}
+
+func checkErr(err error) {
+	if err != nil {
+		panic(err)
+	}
+}
+```
+
+Para crear una ruta, entrar en ***conf/routes**, recuerda colocar ***App.funcion*** y crear una función en ***app/controllers/app.go*** crear la función que resuelva la ruta.
+
+Con ***revel.INFO.Printf("Texto a mostrar en consola cuando se acceda a esta url")***
 
 # Diseño de la vista de nuestra aplicación
+
+Aquí en revel también podemos hacer cambios en caliente a excepción de las rutas.
+
+En producción debemos crear una vista para los errores y se vean mejor, ello lo accedemos con **views/errors**.
+
+Por convención el nombre del controlador debe ser igual que el de la vista. Para el ejemplo de platzi ***app/views/App/platzi.html***.
+
+Se debe usar ***c.Render()*** Para renderear la vista.
+
+Los Flash son tanto para mensajes de éxito como de error.
 
 # Notas importantes:
 - [Recuperar la contraseña en postgres](https://alasombra.net/blog/2010/09/postgresql-recuperar-la-contrasena-de-postgres)
 - El _ al importar un paquete, Ejemplo: '_ "upper.io/db/postgres"' Es para invocar el init de la librería y se inicie al inicializar.
 - Status http [https://golang.org/net/http/status.co](https://golang.oeg/src/net/http/status.go)
+- Enlace del repositorio [gopro-chat](https://github.com/platzi/gopro-chat)
+- Bootsrap lo desarrolló twitter, el profesor usa este framework.
+- Es buena práctica crear un paquete por cada estructura ya que de esta forma nos ayudará a localizar errores.
