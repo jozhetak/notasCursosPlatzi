@@ -268,6 +268,8 @@ Se debe usar ***c.Render()*** Para renderear la vista.
 
 Los Flash son tanto para mensajes de éxito como de error.
 
+# Mostrar en la vista lo que tenemos en la base de datos
+
 # Notas importantes:
 - [Recuperar la contraseña en postgres](https://alasombra.net/blog/2010/09/postgresql-recuperar-la-contrasena-de-postgres)
 - El _ al importar un paquete, Ejemplo: '_ "upper.io/db/postgres"' Es para invocar el init de la librería y se inicie al inicializar.
