@@ -270,6 +270,85 @@ Los Flash son tanto para mensajes de éxito como de error.
 
 # Mostrar en la vista lo que tenemos en la base de datos
 
+> Por cada ruta se agrega un htlm y una función en el mismo u otro paquete. Ejemplo: App.Index, App.Platzi, Refresh.Index, Polling.Room. Tods configurados en routes.
+
+# Workshop: Concurrencia, gorutinas y channels
+
+***Concurrencia***: Es la composición de cálculos de ejecución de forma independiente. Es una manera de esructurar el software, en particuar como una forma de describir código limpio que interectuará bien con el mundo real. ***No es paralelismo***.
+
+Concurrencia no es paralelismo: [enlance](https://golang.org/s/concurrency-is-not-parallelis).
+
+Características de la concurrencia como en Java o C:
+- Un solo código, múltiples instancias ejecutándose.
+- Un hilo por instancia (generalmente)
+- Desarrollador describe explícitamente qué pasa y cuándo
+
+Concurrencia en Go:
+- Un solo código
+- Una instancia en ejecución (sí, solo una)
+- Memoria compartida (en el mismo programa compartirla con otra goroutina)
+- Desarrolladores describen qué pasa al mismo tiempo.
+- Go decide en tiempo de ejecución cómo pasa
+
+Elementos principales concurrencia en Go:
+- Goroutines: Describe las unidades que lo ejecutan independientemente
+- Channels: Comunicación entre goroutines
+- Select: Elige entre los channels
+
+El paquete ***sync*** provee las primitivas de sincronización más avanzadas (sync.Mutex, sync.WaitGroup) para profundizar en las goroutinas a bajo nivel.
+
+# Refactorizando el BackEnd
+
+
+Goroutines:
+- Es la ejecución independiente de una función
+- Es muy barato. Puedes tener practicamente miles o hasta cientos de miles de goroutines
+- ***No es un hilo***
+
+Channels:
+- Es un canal que provee una conexión entre dos goroutines, permitiendo la comunicación.
+
+Resumen de las goroutines:
+- Múltiples entradas
+- Múltiples salidas
+- Timeouts
+- Fallas
+- Son divertidas (mmm sí lo son)
+
+Select: Es la manera de cómo podemos manejar los canales de forma que nosotros mismos definimos de tal forma en que estamos manejando el canal que queremos. Terminar la ejecución, terminar canales, etc. Evaluar el contenido del canal y dependiendo de lo que tiene ejecutará un código.
+
+Función anónima: Es una función que no tiene nombre y se define en plena línea de código. Ejemplo:
+
+```
+go func(){
+    // Toda la función
+}("Variable input")
+```
+
+Para tener un orden, podemos usar el paquete ***container/list*** que usaremos en el websocket del chat.
+
+***Tres elementos principales***:
+- Goroutines (go keyword) describe las unidades que lo ejecutan independientemente.
+- Channels (chan type) comunicación entre goroutines
+- Select elige entre los channels. Es una manera para elegir qué correr según el contenido de los canales.
+
+***WaitGroup*** Controlar tiempo de espera a un grupo de funciones en goroutinas.
+
+Elementos el chat:
+- Usuario
+- Evento
+- Chatroom
+  - Suscripción
+  - Publicación
+  - Descripción
+
+Tipos de actualización de mensaje:
+- Refresh
+- Polling
+- WebSocket
+
+
+
 # Notas importantes:
 - [Recuperar la contraseña en postgres](https://alasombra.net/blog/2010/09/postgresql-recuperar-la-contrasena-de-postgres)
 - El _ al importar un paquete, Ejemplo: '_ "upper.io/db/postgres"' Es para invocar el init de la librería y se inicie al inicializar.
@@ -277,3 +356,10 @@ Los Flash son tanto para mensajes de éxito como de error.
 - Enlace del repositorio [gopro-chat](https://github.com/platzi/gopro-chat)
 - Bootsrap lo desarrolló twitter, el profesor usa este framework.
 - Es buena práctica crear un paquete por cada estructura ya que de esta forma nos ayudará a localizar errores.
+
+> Siempre es bueno saber las causas de nuestros errores. El error del snipper en la clase "Mostrar en la vista lo que tenemos en la base de datos" para el html.
+- Haciendo ***// TODO: Mensaje*** Podemos en un directorio más arriba agregar ***grep -rn "TODO" .*** y de esta forma nos aparecerá en la consola el mensaje. Ideal para pendientes. Algo del framework en el ***var HeaderFilter*** para evitar XSS. Que está por defecto.
+- Cuando retornamos un nil no va a buscar la vistas
+- Hay momentos en que Revel compila internamente, esto dura un poco. Pero no debería durar mucho tiempo, en ese caso revisar las rutas o cambios.
+- Para llevar una variable a otro controlador: ***var user = "Ivan"*** y ***eturn c.Render(user)*** para usar en el html ***{{.user}}
+- Para recibir y retornar el tipo de variables en una función con un canal. Se hace ***func Inpunt(input <-chan string) <-chan string{}***
