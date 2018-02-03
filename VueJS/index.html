@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Curso de Vue.js</title>
+    </head>
+    <body>
+        <div id="app">
+            <template v-if="mostrar">
+            Hola {{ nombre  }}
+            <h1>{{ titulo | uppercase }}</h1>
+            <h2>{{ subtitulo | lowercase }}</h2>
+
+            <a v-if="mostrar" :href="url" target="_blank"> Ir a {{ pagina  }}</a>
+            </template>
+            </br>
+            <button v-on:click="sumar">Sumar 1</button>
+            <button @click="contador--">Restar 1</button>
+            El contador está en {{ contador  }}
+        </div>
+
+        <div v-show="!mostrar">
+            <!--
+                La diferencia con template v-if es que lo incluye
+                en el html pero con css inactivo.
+
+                Con v-if los destruye
+
+                Para algo de mostrar u ocultar al inicio v-if
+
+                Para ocultar o mostar dependiendo de la interacción con el usuario usar v-show ya que es menos trabajo al navegador
+            -->
+            Esto está oculto
+
+        </div>
+    
+       <script src="https://unpkg.com/vue"></script>
+       <script type= "text/javascript">
+           let app = new Vue({
+               el: '#app',
+               data: {
+                   nombre: 'Osmandi',
+                   url : 'https://google.com',
+                   pagina: 'Google',
+                   mostrar: true,
+                   titulo: 'Estás en Platzi',
+                   subtitulo: 'Estás en el curso de VueJS',
+                   contador: 0
+                   
+               },
+               methods:{
+                   sumar: function(){
+                       this.contador++
+                   },
+                   restar: function(){
+                       this.contador--
+                   }
+               },
+
+               filters:{
+                   uppercase: function(str){
+                       return  str.toUpperCase()
+                   },
+                   lowercase: function(str){
+                       return str.toLowerCase()
+                   }
+               }
+
+               // Podemos concatenar otros filtros con |
+           })
+       </script>
+    </body>
+</html>
