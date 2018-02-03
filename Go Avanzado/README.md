@@ -347,7 +347,21 @@ Tipos de actualización de mensaje:
 - Polling
 - WebSocket
 
+En Revel podemos ejecutar pruebas unitarias por terminal o bien agregando en la ruta ***@test***
 
+# El uso de goroutines
+
+Es buena práctica limitar la capacidad de los canales para tener un control. 
+
+# WebSockets en Go
+Para poner alias en la importación: *** import alias "librería"***
+
+Para la creación de API con Go, beego tiene la ventaja de crear un proecto. Otras opciones son: Martini, echo (Este es el que recomienda la gente de GygaCode)
+
+# Conclusiones
+- Es buena práctica limitar la capacidad de los canales
+- En vez de reescribir las aplicaciones hechas, usan a Go como microservicios
+- Las presentaciones del profesor se hacen con [Presents](http://halyph.com/blog/2015/05/18/golang-presentation-tool.html). El cual se escribe en Markdown
 
 # Notas importantes:
 - [Recuperar la contraseña en postgres](https://alasombra.net/blog/2010/09/postgresql-recuperar-la-contrasena-de-postgres)
