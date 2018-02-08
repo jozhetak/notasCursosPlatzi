@@ -351,3 +351,68 @@ npm i -S trae
 ```
 
 Cuando no especificas el path de la librería, webpack lo incluirá de npm
+
+Aquí hay un reto de API
+
+# Componentes
+
+Hay dos maneras de crear componentes, una es global que puede ser reutilizado en cualquier aplicación. La otra es la manera local donde especificar dónde usar componentes hijos.
+
+Siempre deben tener un único componente padre. El de los div y esas cosas.
+
+***Esto es global***
+
+src/ChildComponet.vue:
+```
+<template lang="pug">
+  h1 Este es un componente
+</template>
+```
+
+Se debe importar en main.js
+
+```
+...
+import ChildCompomnet from './ChildComponet.vue'
+
+vue.component('child', ChildComponent)
+```
+
+En App.vue:
+```
+#app
+  ...
+  child
+```
+
+***Esto es local***
+
+src/LocalComponent.vue
+```
+<template lang="pug">
+  h1 Este es un local component
+</template>
+```
+
+> Los componentes podemos usarlo en cualquier parte, tanto en App, como Child.
+
+En ChildComponent.vue
+```
+<template>
+  div
+    h1 Este es un componente hijo
+    local-component <!-- es LocalComponent pero pascal-case lo convierte automáticamente -->
+...</template>
+
+<script>
+import LocalComponent from './LocalComponent.vue'
+
+export default {
+  components: { LocalComponent }
+}
+</script>
+```
+
+# Creación de componentes para PlatziMusic
+
+Es buena práctica colocar todos los componentes dentro de una carpeta componets y dejar App.vue fuera de esta carpeta.

@@ -203,5 +203,4 @@ Jorge prefirió hacer proyectos freelancer en vez de entrar en una empresa para 
 - [Tieeco](https://tieeco.org/)
 - [SiliconValleyForum](http://siliconvalleyforum.com/)
 - [Ecorner](https://ecorner.stanford.edu/)
-
-
+Busca cómo participar en eventos de forma virtual.
