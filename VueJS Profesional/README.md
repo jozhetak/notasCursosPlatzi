@@ -253,7 +253,7 @@ data():
  
 computed: {
     fullName(){
-        return this.name + '  ' + this.lastName
+        return `${this.name} ${this.lastName}`
 }
 }
 
@@ -304,8 +304,50 @@ methods: {
 }
 
 #app
+    input(v-model="name")
+    input(v-model="lastName")
+    p {{ fullName }}
     button(v-on:click="format") Format // Tipo de evento y la función a ejecutar.
     p {{ formattedName }}
 ```
 
 > Los eventos no son solamente para usarlo en botones y eventos click, también pueden usarse en eventos "submit" de formularios. Pueden utilizarse en eventos ***float*** de imágenes y básicamente pueden usarse con cualquier evento soportado por el navegador y por javascript. Podemos reemplazar ***v-on:click*** con ***@click***.
+
+# Integración a PlatziMusic
+
+Recuerda que estamos usando bulma como framework de estilos css.
+
+section.section -> El primero es el id y el segundo la clase
+
+button.is-info y button.is-danger, el is info y is-danger son estilos de botones de bulma.
+
+is-large: Ocupa lo largo de la pantalla
+&times; : Para dibujar una cruz chiquitita
+
+Es igual .container que div.container
+
+Bulma usa flex por defecto para el responsive.
+
+La información ficticia o harkcodeada la hacemos fuera de la instanciación de VueJS.
+
+# Servicios
+
+Para interactuar con API podemos hacerlo muy bien con vainilla Javascript. Pero ten en cuenta que las API key serán vistas desde el front.
+
+> Sintaxis kibba: Nombrar los archivos con palabras minusculas separadas por guiones.
+
+Para usar una API, crearemos una carpeta llamada servicios y en ella config.js y platzi-music.js
+
+Para los componentes usaremos pascal-key donde cada palabra tendrá la primera letra en mayúsuculas y no se utilizan espacios para separarse.
+
+# Fetch API & Trae
+
+Fetch nos ayudará a realizar peticiones http y Trae que hará un rapper con Fetch a navegadores que no lo tengan soportado.
+
+***La -S es para guardarla como dependencia para producción***
+
+```
+npm i -S trae
+```
+
+Cuando no especificas el path de la librería, webpack lo incluirá de npm
