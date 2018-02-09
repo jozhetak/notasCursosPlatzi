@@ -416,3 +416,40 @@ export default {
 # Creación de componentes para PlatziMusic
 
 Es buena práctica colocar todos los componentes dentro de una carpeta componets y dejar App.vue fuera de esta carpeta.
+
+Para el footer se creará una instalación local y no tenga acceso desde otros componentes. Recuerda que al instalar localmente vue lo convierte a pascal case, es decir de PmFooter a pm-footer para el pug.
+
+Revisar la documentación de Bulma y Pug para conocer las propiedades y cómo hacer las cosas. 
+
+La creación de componentes, por buena práctica, empiezan por ***Pm***
+
+# Reactividad
+
+Es una de las cualidades más importante del framework, la reactividad es lo que hace al buscar los cambios realizados y los propague  las vistas de manera dinámica. Para ello Vue agrega Getters y Setters. La función watcher chequea la data y lo renderea ante cualquier cambio para así mostrarlo a las vistas y luego al ***VirtualDom***, para hacer más óptimo el código con las mutaciones cuando que tenemos renderizar y actualizar la vista.
+
+Pero la reactividad tiene un límite. Hay dos maneras:
+- Poner en data el objeto a retornar.
+- Cuando se inicializa la aplicación y quieres agregar una propiedad nueva:
+
+> Las funciones internas de Vue comienzan por ***$*** 
+
+```
+...
+  data() {
+    return {
+      person: {
+          name: 'Osmandi'
+      }
+    }
+  },
+
+  methods: {
+    addProp() {
+      //this.person.lastName = 'Gomez'
+      //this.$set(this.person, 'lastName', 'Gomez')
+      //Para agregar más de una propiedad y además agregarle una reactividad:
+
+      this.person = Object.assing({}, this.person, {a:1,b:2})
+    }
+  }
+```

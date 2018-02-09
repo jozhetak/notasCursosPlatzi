@@ -203,4 +203,25 @@ Jorge prefirió hacer proyectos freelancer en vez de entrar en una empresa para 
 - [Tieeco](https://tieeco.org/)
 - [SiliconValleyForum](http://siliconvalleyforum.com/)
 - [Ecorner](https://ecorner.stanford.edu/)
-Busca cómo participar en eventos de forma virtual.
+
+Busca cómo participar en eventos de forma virtual. Esto es solo un probadita de lo que puedes encontrar en internet.
+
+Su libro [Think Like Silicon Valley: Explorting the Silicon Valley Way of Thinking to Companies Around the Globe](https://www.amazon.com.mx/Think-Like-Silicon-Valley-Explorting/dp/1475088302/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1517964505&sr=8-1)
+
+> "Los proyectos de clase mundial lo hacen gente desde todas partes del mundo".
+
+# Tips para ser freelancer
+
+Siendo freelancer puedes trabajar remotamente y empezar hacer proyectos desde otra parte del mundo. Hay personas que conoce el profesor que todo su ingreso es con freelancer y muy bien pagado.
+
+[Workana](https://www.workana.com/es) -> En latinoamérica
+
+[Toptal](https://www.toptal.com/)
+
+[Freelancer](https://www.freelancer.com/)
+
+[Upwork](https://www.upwork.com/)
+
+[Freelance](https://www.freelance.com/)
+
+
