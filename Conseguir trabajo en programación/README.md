@@ -214,7 +214,7 @@ Su libro [Think Like Silicon Valley: Explorting the Silicon Valley Way of Thinki
 
 Siendo freelancer puedes trabajar remotamente y empezar hacer proyectos desde otra parte del mundo. Hay personas que conoce el profesor que todo su ingreso es con freelancer y muy bien pagado.
 
-[Workana](https://www.workana.com/es) -> En latinoamérica
+[Workana](https://www.workana.com/es): Empezó en Argentina y ahora tiene presencia en latinoamérica. 
 
 [Toptal](https://www.toptal.com/)
 
@@ -224,4 +224,109 @@ Siendo freelancer puedes trabajar remotamente y empezar hacer proyectos desde ot
 
 [Freelance](https://www.freelance.com/)
 
+> Recuerda: Nadie te conoce, nadie sabe en que eres bueno. Define lo  que te interesa y luego busca trabajo en esa parte. Define lo que haces. Esto para Workana.
 
+En ****Toptotal**** Es el de las competencias. Aquí se muestren los tres primeros proyectos que están entre los más altos.
+
+> Recuerda: El primer proyecto puedes hacerlo a muy bajo precio. Tan solo por tener la experiencia es muy bien. 
+
+> "Cuando tú sabes venderte, cuando aprendiste hacer esa parte de networking, cuando aprendiste hacer un buen pitch. Lo que aprendes es que tu trabajo valga cada vez más y no importa que estés en un lugar donde el salario mínimo es mucho más bajo. Cuando tu haces un proyecto que termina estando en una gran empresa en cualquier parte del mundo, el valor de tu proyecto es de donde está la empresa y no en donde te pagan menos por estar remoto que asume que ***eres barato***".
+
+Hay muchos más lugares para hacer freelancer, empieza por las plataformas en español. Pero recuerda, ***El mundo de los negocios se mueve en inglés***.
+
+# Mejorar como desarrollador
+
+Uno puede decir que uno es muy buen programador, pero tiene que probarse constantemente para saber en qué lugar estamos con respecto a otros programadores. Entre ellos están:
+
+[Kaggle](https://www.kaggle.com/): El más complicado, pero el más demandado los científicos de datos. Aquí puedes tener grandes cantidades de datos para solucionar. El primer paso es que puedas jugar con ellos, el segundo es crees tus propios algoritmos que mejoren la eficiencia de código. ¿Cuańto te cuesta?: Te cuesta tu esfuerzo y dinero.
+
+[Codefights](https://codefights.com/)
+
+[Topcoder](https://www.topcoder.com/)
+
+[Codility](https://www.codility.com/)
+
+[Codecombat](https://codecombat.com/)
+
+[Battlecode](https://www.battlecode.org/)
+
+[Hackerrank](https://www.hackerrank.com/)
+
+> "Para poder tener algún proyecto interesante lo que tienes que hacer es invertir un poco de tu tiempo y de tu esfuerzo".
+
+Encuentra cuál plataforma te gusta.
+
+# Lanzamiento del curso
+
+Hay muchos caminos de programación y puedes especializarte en el que te guste, las empresas que se dedican al desarrollo de apps para otros clientes no es la única fuente.
+
+### Cómo platzi recluta:
+
+1.- Revisa la calidad del trabajo:
+ define el perfil, por ejemplo FrontEnd con React. Pide el mejor trabajo y no el curriculum, de esta manera pueden saber qué resultados se pueden obtener de la persona al trabajar, puede ser cualquier app con tal que demuestre lo que la persona sabe hacer y lo que ellos andan buscando (Yohan Graterol es el encargado de buscar nuevos desarrolladores).
+
+2.- Comunicarse con el desarrollador
+
+> Nota: Si eres rechazado, no te rindas. Sé constante, mejorando en cada intento. Para trabajar en una empresa que te guste.
+
+El paso siguiente, si hay interés de parte de Platzi, es comunicarse con el desarrollador.
+
+Preguntas durante la entrevista:
+- ¿Quién eres?
+- ¿Qué haz hecho?
+- Preguntas de conceptos básicos de desarrollo. Para tener constancia de que la persona ha estudiado y si está dispuesto a trasladarse.
+
+> Ten en mente que te van a preguntar sobre tu vida, preguntas técnicas. No tan avanzadas (para una llamada corta), aspiración salarial y disponibilidad a trasladarse de país. ***¿Te puedes mover a Bogotá?***.
+
+3.- Una prueba técnica
+
+Hay empresas que entregan un ejercicio en vivo y pues mandan a resolverlo, como hay personas que los que buscan es cambiar de empleo, tienen un tiempo limitado. Lo que hace Platzi es: Enviar una prueba especifica ni tan corta ni tan larga, algo que puedan hacer en 5 días y dar las instrucciones de cómo la van a entregar (en 5 días). Ello ayuda:
+
+- Verificar cómo siguen las instrucciones.
+- Proactivo para encontrar la solución al problema, saber si toma decisiones y si las toma rápido en el algoritmo.
+
+Luego de entregar la prueba técnica, por tres o cuatro desarrolladores y deciden si continúan o dejan hasta allí la prueba.
+
+> En este punto tienes el 90% de trabajo hecho, si en este punto te dicen que no, puedes volverlo a intentar.
+
+4.- Temas de recursos humanos
+
+El tema de traslado, desde donde estás e inclusive si estás trabajando. Ten en mente muchas de estas cosas.
+
+En resumen:
+- Una llamada.
+- Una prueba técnica.
+- El proceso de traslado.4.- Temas de recursos humanos
+
+El tema de traslado, desde donde estás e inclusive si estás trabajando. Ten en mente muchas de estas cosas.
+
+En resumen:
+- Una llamada.
+- Una prueba técnica.
+- El proceso de traslado.4.- Temas de recursos humanos
+
+El tema de traslado, desde donde estás e inclusive si estás trabajando. Ten en mente muchas de estas cosas.
+
+En resumen:
+- Una llamada.
+- Una prueba técnica.
+- El proceso de traslado.4.- Temas de recursos humanos
+
+El tema de traslado, desde donde estás e inclusive si estás trabajando. Ten en mente muchas de estas cosas.
+
+En resumen:
+- Una llamada.
+- Una prueba técnica.
+- El proceso de traslado.
+
+Esto aplica a muchas empresas.
+
+Podrías incorporarte a una comunidad de alguna librería y colaborar con ellos ya sea con código, pruebas y mejoras a la misma. A un comunidad que te guste. Esto permiten ver a las personas tu trabajo al compartir tu repo de GitHub. En Platzi le gusta que los desarrolladores compartan. Esto hace que mejores tus habilidades de programador.
+
+> Tus habilidades como programador va a ir mejorando en la medida que hagas más y más cosas en el desarrollador en tu lenguaje de programación. Por ejemplo, si trabajas con Python y quieres meterte en el mundo de Machine Learning podrías muy bien ir participando en la comunidad de Scikit-Learn o redes neuronales.
+
+Otra cosa muy importante son ***tus creaciones***, una cosa es apoyar algo ya creado pero otra es crear desde cero aplicaciones, librerías, etc. E inclusive emprender, que ayuda a tener más puntos.
+
+> "Si hoy me llega un desarrollador que ya haya hecho emprendimiento, sabe cómo manejar clientes, ha trabajado con producto en general tiene ventaja en comparación con otro que no haya hecho nada GitHub, no haya hecho nada ni en comunidad física ni algo que tenga que ver con o que hace en el día a día. Entonces no es solo hacer el trabajo que le da a un de comer sino ir mejorando a partir de lo que uno está haciendo." Yohan Graterol.
+
+Debes plantearte ciertos hitos 'yo voy hacer este tipo de proyectos y luego hacer este tipo de estudios y así voy a ir creciendo'.
