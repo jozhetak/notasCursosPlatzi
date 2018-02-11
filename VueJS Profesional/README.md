@@ -453,3 +453,52 @@ Pero la reactividad tiene un límite. Hay dos maneras:
     }
   }
 ```
+
+# Ciclo de vida de los componentes
+
+Cada componente de Vue tiene un ciclo de vida desde que se crea hasta que se destruye. Todo está en la documentación de VueJS. Hay métodos procedurales y otros que son cíclicos mientras el componente exista.
+
+Se escriben como funciones con el nombre del mismo.
+
+Algunos casos de usos como el ***created*** para cargar en memoria una solicitud a una API.
+
+# Comunicación entre componentes padres e hijos
+
+La comunicación de un padre a un hijo funciona a traves de propiedades, es decir, que envía información a través de propiedades así como las definimos en los html. En cambio, la comunicación de un hijo hacia un padre, la comunicación funciona orientado a eventos, es decir, que    un hijo emite eventos que un padre puede escuchar.
+
+Para quitar el path al especificiar, en webpack:
+
+```
+...
+resolve:{
+  alias: {
+    ...
+    '@': path.resolve(__dirname, './src')
+  }
+}
+```
+
+Cada vez que vayamos a pasar valores entre componentes debemos bindearlo.
+
+Es buena práctica definir a las variables booleanas con verbos: is, has...
+
+Si algo se va a estar ocultando y prendiendo, es más performante usar v-show.
+
+# Comunicación desde el hijo al padre
+
+Esto es para que cada vez que se le de click a un botón de una de las canciones envíe un evento para que se comunique con el padre. Esto lo haremos con ***v-on*** o @seletct
+
+# Utilización de Slots
+
+Es una funcionalidad que nos permite integrar desde el componente padre html, con elementos dentro de los componentes hijos.
+
+Lo podemos usar para personalizar modals o ventanas emergentes.
+
+Los watch deben llamarse igual que la propiedad que se quiere usar, en este caso showNotification que lo uso como isShowNotification. Lo que se quiere hacer aquí es ocultar la notificación por tres segundos luego de hacer iniciado.
+
+El propósito de los slots es para no sobrecarcargar componentes con mucha lógica. Porque nos permite inyectar html de manera dinámica de padre a hijo.
+
+# Comunicación entre componentes genéricos
+
+Para ello crearemos un plugi
+Para ello crearemos un plugin..
