@@ -500,5 +500,26 @@ El propósito de los slots es para no sobrecarcargar componentes con mucha lógi
 
 # Comunicación entre componentes genéricos
 
-Para ello crearemos un plugi
-Para ello crearemos un plugin..
+Para ello crearemos un plugin en /src/plugins/event-bus.js
+
+Un plugin permite extender métodos y funcionalidades a Vue model con componentes que no están relacionados.
+
+Esto se hace para que el componente Track que no tiene relación con el componente Player se comuniquen.
+
+El evento emit, emite el evento y el on lo escucha.
+
+El caso mostrado en el proyecto es de uso común, un caso muy común del profesor es crear plugin en cosas que usa mucho, por ejemplo un componente que tiene funcionalidad de guardar en el localstorage, en lugar de importar ese archivo en cada uno de esos componentes de manera manual lo que hace es crear un plugin, registrarlo e instalarlo para tal forma que dicha funcionalidad quede en cada uno de los componentes y así usar this.$storage para guardar la información en lugar de hacer un import manual.
+
+# Introducción a VueRouter
+
+Lo que hasta ahora hemos visto es el Core de VueJS. VueRouter es un enrutador del lado del cliente, esto quiere decir que en lugar de ir a otra url y refrescar la página completa, solo refrescará una parte. Ejemplo, en vez de cargar un Header y un Footer en todas las páginas solo carguemos el contenido. De esta forma podemos crear mejor experiencia de usuario.
+
+Con VueRouter cada ruta será un componentes, también hacer animaciones, navegar en el historial del navegador.
+
+# Instalar vue router y configurar router view
+
+***npm i -S vue-router***
+
+> Cuando trabajemos con Pug y bulma, separar los atributos por coma.
+
+# Crear y navegar rutas en router-link

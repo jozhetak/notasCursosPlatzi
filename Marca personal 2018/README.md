@@ -80,4 +80,68 @@ Una buena recomendación es que intentes responder todos los mensajes y comentar
 Behance es la red social dedicada exclusivamente a los diseñadores. Ahí puedes tener tu portafolio entero y formas de contacto también.
 ```
 
+Behance -> Para diseñadores, 500px -> Para Fotógrafos
 
+# Instagram Stories efectivas
+
+- Colocar texto con fondo
+- Compartir, preguntar y encuestar
+- Etiquetar y linkear en las stories
+
+# Cómo triunfar en Twitter
+
+> Si arrancas un tweet con un emoji es más probable que enganches a tu audiencia y usar hilos para contar historias largas con hilos y no con 280 caracteres.
+
+Un hack interesante, es que si bloqueamos y desbloqueamos a un usuario éste automáticamente hace unfollow sin notificar al mismo.
+
+Con mute, podemos mutar a usuarios sin enterarse.
+
+Freddy usa Tweedeckt, con el cual se puede manejar muy bien Twitter.
+
+El home de twitter no es cronológico sino por la cantidad de likes.
+
+***Opengrahp*** Es la cajita de imágen con url embebido. Con el curso de content marketing. También de social media marketing para entender.
+
+Cuando respondes un tweet, los usuarios que verán las respuestas los que siguen al primer @. Los replay que no tiene nada o solo un punto es para que todo el mundo lo vea.
+
+Si das like y retweet puedes tener más relevancia tus tweets.
+
+> Hay cuentas que tienen millones de followers, pero estos números no significan mucho sino la cantidad de retweets y likes.
+
+Se recomienda tomar el curso de social media marketing que ayudará a usar las redes sociales con analitics.
+
+# GitHub, la comunidad de desarrollo
+
+Es la red profesional para desarrolladores. No funciona contactar a alguien simplemente para pedirle cosas, vale la pena cómo puedes tu colaborar. Y es una de las formas más populares para reclutar.
+
+> Crear proyectos personales es gratis, y esto es fundamenta para tener un portafolio que llame la atención y usarlo como marca personal.
+
+Una estrellita es que estás interesado y recibir notificaciones para los cambios.
+
+> Una forma de contactar con alguien es ofrecernos como colaborador en un proyecto.
+
+***text*** es una tecnología para los libros.
+
+***issue*** Es para escribir nuestra opinión o mejoras al proyecto.
+
+> "No tienes que compartir si no quieres pero ***debes tener proyectos en los que demuestras lo que sabes***. Crear proyectos personales es gratis, GitHub puede ser tu portafolio."
+
+> Tener un GitHub ordenado puede hacer la diferencia entre ser un desempleado y estar aplastado de ofertas te empleo.
+
+# Cómo crear una página en Facebook
+
+Usar Page Public, que es personal.
+
+Facebook le da mucho poder a los texto largos. Si cambias el cover, puedes hacer rank.
+
+No tiene mucho sentido que publiques imágenes con mucho texto. Facebok tiene inteligencia que lo detecta y le baja el range Facebok tiene inteligencia que lo detecta y le baja el range..
+
+# Qué plataformas existen para crear un blog
+
+> Un sitio web o un blog personal es extremadamente importante sobre todo si te quieres meter en el mundo de la tecnología, no importa si es muy sencillo, porque de esta forma demuestras conocimientos en hosting, páginas web y esto es muy básico.
+
+Muchos trabajadores de Platzi entraron allí porque demuestran en sus artículos que saben de internet y tienen muy buenas ideas aunque hoy en día no hacen nada similiar a lo que hacen en Platzi. 
+
+Con el curso de content marketing, se enseña cómo escribir para la web.
+
+Es de suma importancia, en el que se tenga un apartado donde hablemos de nosotros mismos y cómo contactar.
