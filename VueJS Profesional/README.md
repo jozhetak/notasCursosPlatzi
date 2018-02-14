@@ -523,3 +523,91 @@ Con VueRouter cada ruta será un componentes, también hacer animaciones, navega
 > Cuando trabajemos con Pug y bulma, separar los atributos por coma.
 
 # Crear y navegar rutas en router-link
+
+Con $route.params podemos obtener los parámetros que viajan en la url.
+
+El layout con pug se maneja con columns y column.
+
+Para navegar de una ruta a un código, usamos push porque usa el historial de navegación html 5 y porque necesitamos que la ruta sea dinámica (cambio de id).
+
+$route: Información de la ruta específica, es decir parámetros, url, etc.
+$router: Navegar programáticamente y para accedera a funcionalidad del router.
+
+El historial de navegación no está por defecto en VueJS, activándolo se elminará el "#" de la url.
+
+En router de main.js
+
+```
+const router = new VuewRouter({
+  routes,
+  mode: `history`
+})
+```
+
+Tener en cuenta que debemos tener un servidor que soporte el rooteo para que no dañe el cliente.
+
+# Modifiers
+
+Son algunos atributos que podemos agregar sobre directivas que nos permite extender el uso de las directivas, por ejemplo, cuando trabajamos con eventos. Ejemplo presionar enter sobre la barra de navegación.
+
+***@keyup.enter="search"*** Con los modifiers evitamos tener que colocar las teclas.
+
+# Filtros
+
+Permiten mostrar o modificar un valor sin modificar el contenido real. Porque muchos valores en la vista lo mostramos de una manera pero en el código de otra. Por ejemplo convertir milisegundos a minutos.
+
+> Recuerda que los filtros se aplican con |
+
+# Directivas personalizadas
+
+Las directivas son un concepto y una funcionalidad que ya viene por defecto en el framework que ayudan mucho a manipular el DOM.
+
+Al igual que los plugins podemos instalarla global (si la vamos a usar en muchos componentes) y local (uno o dos componentes).
+
+Vamos a crear una directiva que nos detecte si una canción no contiene un preview.
+
+```
+function setBlur(elementoHtml, informacionAtributos, referenciaeNuevaAlDom, referenciaAntiguoDom)
+```
+
+> Las etiquetas ***a*** no tiene la opción a deshabilitar pero las buton sí.
+
+# Mixins
+
+Nos permiten reutilizar funcionalidades de los componentes, parecido a una herencia pero en realidad los combina.
+
+Cualquier cosa que funcione en un componente la puede colocar en un Mixin.
+
+> Lo que es html no se puede mejorar con un mixin porque para eso están los componentes.
+
+# Vue transitons y animaciones de CSS
+
+Vamos a usar CSS 3.
+
+Cuando movemos en el eje X es por fuera de la pantalla.
+
+En la documentación es Transition Effects -> Transition Classes. 
+
+Editamos el archio src/scss/main.scss
+
+```
+.move-enter-active
+```
+
+move: Es el name, enter y active son los estados.
+
+Para profundizar de animaciones más sofisticadas está el curso. Hay otro transition.
+
+# Estado centralizado, Flux y Vuex
+
+El profesor recomienda usarlo para aplicaciones de mediana o gran escala.
+
+La principal ventaja es que nos va a permitir ordenar el flujo de información para que nuestros componentes puedan compartir información y comunicarse entre ellos de manera más sencilla.
+
+Todos los componentes se van a conectar a una única fuente de información, esto quiere decir que cada vez que se actualice este store de almacenamiento van a renderizar o recomponener lo visual en los componentes.
+
+La información siempre será en un sentido desde el estado a la vista.
+
+Un buen caso de uso es cuando tenemos mucha interaccíón entre componentes padres e hijos y los que no tienen relaciones. Al ser una aplicación grande va a ser difícil de mantener los eventos que permiten la comunicación entre los componentes.
+
+> No tenemos que preocuparnos de cuándo la tenemos que utilizar, "las librerías Flux son como los anteojos, cuando as vamos a necesitar nos vamos a dar cuenta." @dan_abramov
