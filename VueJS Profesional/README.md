@@ -611,3 +611,37 @@ La información siempre será en un sentido desde el estado a la vista.
 Un buen caso de uso es cuando tenemos mucha interaccíón entre componentes padres e hijos y los que no tienen relaciones. Al ser una aplicación grande va a ser difícil de mantener los eventos que permiten la comunicación entre los componentes.
 
 > No tenemos que preocuparnos de cuándo la tenemos que utilizar, "las librerías Flux son como los anteojos, cuando as vamos a necesitar nos vamos a dar cuenta." @dan_abramov
+
+# State
+
+Instalar con:
+***npm i -S vuex***
+
+Con mapState podemos mapear los métodos y así facilitar los estados.
+
+Instalar un preset más avanzado de babel
+
+***npm i -D  babel-preset-stage-2***
+
+Instalar en el .babelrc
+
+```
+...
+    ["stage-2"]
+```
+
+***let {x,y,...z} = {x:1, y:2, a:3, b:4};***
+
+# Mutations
+
+Son las que permiten actualizar la función del estado. Funcionan similares a los eventos, de tal forma que el componente debe actualizar el estado.
+
+En el ejemplo, el componente modifica el estado que actualiza los valores y después es el estado quien propaga los valores en los componentes.
+
+Con VueTool en la pestaña de Vuex podemos ver los valores en cada cambio.
+
+En esta clase se muestra la opción para escribir una función con valores por defecto.
+
+# Getters
+
+Actúan como utilidad para acceder a propiedades del estado de manera customizada.

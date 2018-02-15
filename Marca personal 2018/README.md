@@ -145,3 +145,11 @@ Muchos trabajadores de Platzi entraron allí porque demuestran en sus artículos
 Con el curso de content marketing, se enseña cómo escribir para la web.
 
 Es de suma importancia, en el que se tenga un apartado donde hablemos de nosotros mismos y cómo contactar.
+
+***Mariano Martino*** Integrante de Platzi, publica en su blog todos los días tema referentes a tecnología.
+
+Vale la pena tener un blog personal donde manifestamos lo que pensamos.
+
+
+
+
