@@ -150,6 +150,47 @@ Es de suma importancia, en el que se tenga un apartado donde hablemos de nosotro
 
 Vale la pena tener un blog personal donde manifestamos lo que pensamos.
 
+# Cómo escribir contenido que genere valor
 
+> Leer y escribir aumenta tu coeficiente intelectual... Leer libros, lecturas largas. Escribir es un súperpoder.
 
+> ***Si tú escribes y nadie te lee, es porque no sabes escribir***
+
+En internet, las personas leen de una manera por completo. Porque si logras escribir y lees a otros, tu marca aumenta.
+
+> ***Nota***: El curso de SEO me puede ayudar mucho.
+
+Características de un buen contenido:
+- Título corto con una intención implícita, si es enseñar empezar con un ***cómo***
+- El primer párrafo debe ser un gancho poderoso. Que es el segmento que va a salir en las redes sociales, también llamado ***opengraph***. Muchas personas van a leer el título y otras solo el opengraph y con ello decidir si lo van a leer o no. Por lo que debe ser enganchador.
+- Empezar eliminando un paradigma, empezando por las razones por las que el tema no es el ideal o bien el lado negativo.
+- Usar puntos seguidos en vez de comas (¿?). Mucho más agresivo. ***No tienes que escribir largo, tienes que escribir interesante***
+- Evitar usar más de 4 líneas por párrafo.
+- Resaltar con negritas las áreas centrales.
+- Cada 3 párrafos agregar un título grande e imágenes (no más de dos por post, para no distraer de los objetivos). Es buena idea acompañarlo con un cover (como el fondo de pantalla).
+- Intenta usar los puntos de forma inteligente, (resaltar un punto de vista).
+- Es recomendable hacerlo corto.
+- Como cierre dejar un punto fuerte de motivación. Se llama Call to Action. Que cambies una perspectiva, una llamada a la acción.
+- El Hook es el párrafo de enganche.
+
+> "Escribir es un súper poder tan grande que es la forma en la que puedes cambiar el mundo, hay personas que han creado religiones a punta de escritura."
+
+Uno de los libros favoritos de Freddy es **Forastero en tierra extraña**
+
+# Cómo comprar un dominio
+
+- Comprar dominios con ***namecheap***
+- Usar .com
+- whois.sc/dominio: Para obtener información del dueño del dominio
+
+En namecheap: 
+- WhoisGuard es para proteger los datos de dominio. 
+- Entre más lejos contrates (años) el dominio es más probable que google le dé más rank.
+- ICAN: Es la organización que regula los dominios de internet. Ellos tienen una ley en la que los datos de registro de dominio deben ser públicos y verídicos. Los dominios están asociados a las actividades que tu hagas.
+- Redirect Domain: Redireccione a otra url.
+- Redirect Email: Donde un correo de con el dominio redireccione a un gmail aunque es recomendable usar google.
+- Parking Page: Que el dominio está parqueado, mensaje de namecheap cuando no tienes nada.
+- Sell Domain: Para vender el dominio. 
+
+> No se recomienda tener el dominio y el name server (servidor) en el mismo servicio. 
 
