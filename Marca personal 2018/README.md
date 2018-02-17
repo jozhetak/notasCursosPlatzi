@@ -194,3 +194,108 @@ En namecheap:
 
 > No se recomienda tener el dominio y el name server (servidor) en el mismo servicio. 
 
+# Uso de Google Suites y mail corporativo
+
+Google tiene un servicio llamado Google Suite con el que puedes configurar tu dominio y obtener cuentas de correo y documentos compartidos. 
+
+***Colocar de 2 a 9 personas***
+
+Los primeros 15 días son gratuitos, el resto se paga.
+
+También se puede comprar desde namecheap, en Advance DNS. Aunque se recomienda usar google.
+
+> "Los profesionales pagan, los profesionales usan software. Los profesionales pagan por AWS, por su dominio, hosting y mail. Los profesionales tienen Platzi... La verdad es que siempre vamos a tener excusas para no pagar por las cosas que ofrecemos, pero piensa en esto: ***tú quieres ser una persona profesional, ¿sabes qué es un profesional? Una persona al cual le pagan por su trabajo. Si tu eres profesional tienes que tratar al resto de las cosas que usas como profesionales*** O si no, ***¿qué derecho tienes de cobrar por lo que haces?***".
+
+# Tips para escribir bien:
+
+- Responder una pregunta: Rápido, ya habrá espacio para profundizar.
+- Tener un buen título.
+- Facilitar que te encuentren: En opengrahp, un atrapante primer párrafo. Haz una búsqueda de palabras claves en google trends e inclúyelas en el artículo.
+- Evitar que se vayan: Utiliza links internos que ayuden al lector a encontrar más recursos interesantes relacionados.
+- Tener buena ortografía y redacción: No escribas como hablas, no le temas al punto y seguido, leer en voz alta, leer mucho.
+
+# Por qué tener tu marca personal en YouTube
+
+- El 73% del consumo de contenido de internet es vídeo.
+- Youtube tiene el 1/3 de los usuarios de internet del mundo, aunque no necesariamente son creadores.
+- Es el segundo buscador más utilizado.
+
+> Creación de contenido de valor: Curso de Content Marketing.
+
+Caso de marca personal: [Maïder Tomasena Copywriting](https://www.youtube.com/channel/UCjeluGIwXm0srOpc5toFb3g)
+
+***nunca creas que ya todo está hecho***. Alguien lo puede hacer mejor de una forma creativa.
+
+> Hacer las cosas en el tiempo correcto es muy importante.
+
+Debes tener metas a medir, con objetivos cercanos. Al crear tendrás cero suscriptores y cero vídeos. Para empezar a recibir monetización y formar parte de los miembros de youtube necesitas 1000 suscriptores y 4000 horas de vídeos vistas. Esta es la primera meta, con ello puedes tener cierta personalización, como el linkeo.
+
+Definir, las siguientes metas y con analitics analizar las métricas. Para ello, las métricas las indican en el curso de Marketing personal.
+
+> "Youtube vale la pena para que allí inviertas en tu marca personal".
+
+# Tu portafolio es tu mejor currículum
+
+- Define un objetivo: Ten claro para qué lo estás haciendo (¿es conseguir un trabajo? ¿Es dar a conocer lo que hago?)
+- Define el medio: Tener en cuenta el medio adecuado para mostrar.
+- Haz un esquema o prototipo: Bajar a lápiz y papel, con ello ayuda a qué es mejor mostrar y qué no. Ver otros portafolios ayudan mucho para inspirarse. Hay sitios de buscar portafolios, sino otra opción es LinkedIn y luego linkearlo. Con ello ayudará a esquematizar cómo va a estar distribuido.
+- Sobre ti: Es muy importante esta sección, en inglés se llama *elevator pitch*. Quién sos, qué hacés, a qué te dedicas y en quién te quieres convertir. No es tan sencillo, es importante escribirlo contundentemente hasta que esté en una manera en que uno se sienta seguro.
+  - Transmite quién eres, fortalezas y debilidades. De no existir experiencia laboral previa definir lo que más me gusta hacer, en qué sos bueno, en qué te quieres convertir (puede sonar muy ambicioso). En algún lado contar algo específico tuyo como un hobby (de forma muy sincero, al menos 1 detalle de la personalidad).
+  - Define tus mejores aptitudes profesionales.
+
+- Trabajos: Es importante que no solo muestres los resultados, también el proceso de trabajo que implicó dicho proyecto. Para mucha experiencia, resumirlo a 4 trabajos más representativos. Uno de los Skill más valorados es que trabajar en equipo, si puedes hacer proyectos en equipo mejor. Recuerda documentar el proceso, saca muchas fotos y escribe al respecto sobre la experiencia, de tal forma que no solo tienes el resultado sino también el proceso.
+- Mantente actualizado: Es importante mantenerte actualizado, en todas las redes y tu portafolio.
+
+# Cómo llamar la atención de reclutadores
+
+> **"Tú no tienes empleo porque no sabes cómo pedir empleo."** Freddy
+
+- Creando proyectos personales.
+- Unir tu marca personal a tus proyectos y poniéndolos en tu sitio.
+- Investigando dónde quieres trabajar.
+
+> "La gran mayoría de empresas tienen dos tipos de personas, que son los que realmente te pueden contratar: Los reclutadores y los líderes".
+
+***Una propuesta de valor ayudará mucho a resaltar en las entrevistas***. Una marca es lo que nadie tiene.
+
+# Tips para entrevistas de trabajo
+
+Es ese tiempo corto en el que te debes vender muy bien.
+
+Antes de la entrevista:
+- Indaga lo que hace la empresa.
+- ¿Quién eres?
+- Revisa muy bien tu CV: Ortografía, retos, logros, fechas. Todo coherente con el puesto de trabajo.
+
+Durante de la entrevista:
+- Sé honesto.
+- Aprovecha cada momento de cada pregunta para indicar que eres el ideal para el puesto.
+- Si es grupal, espera tu turno.
+
+Lenguaje no verbal:
+- Tu actitud se demuestra.
+- Contacto visual, permanente pero no hacer sentir al recluator intimidado.
+- Grábate las muletillas.
+
+En tus respuestas:
+- Aprovecha cada intervención: Para resaltar.
+- Ordena tus ideas: Cuando se contesta con una experiencia, se debe dar contexto del entorno laboral en el que estabas. Lo que se quiere saber es cuál es tu rol y como te desempeñaste en ese equipo de trabajo.
+- Tus áreas de mejora: Aquellas fallas que fueron adversas. De esta forma el reclutador le interesa saber cómo te comportaste.
+
+Después:
+- Analiza cómo fue la entrevista y cómo se desempeñó el reclutador.
+- Sé crítico de aquellas habilidades que no conocías en pro a mejora.
+
+Sabías que:
+- Más del 50% de las vacantes no están publicadas.
+- Los software que utilizan las empresas para revisar un CV, descarta el 50% antes que las vea un reclutador. Por ello, mirar bien el CV para usar palabras clave en base a la vacante.
+
+Lo que busca un reclutador:
+- 36% Habilidades multitarea sin que afecte tu desempeño.
+- 31% Iniciativa.
+- 21% Pensamiento creativo.
+- 12% Busca algo más en el candidato.
+
+> ***"En Platzi queremos que nuestros estudiantes triunfen y consigan su mejor empleo".***
+
+
