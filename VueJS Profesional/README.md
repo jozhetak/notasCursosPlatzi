@@ -645,3 +645,9 @@ En esta clase se muestra la opción para escribir una función con valores por d
 # Getters
 
 Actúan como utilidad para acceder a propiedades del estado de manera customizada.
+
+# Actions
+
+Existen porque las Mutations son operaciones sincrónicas, quiere decir que no podemos ejecutar peticiones http dentro de una mutation porque la petición se va a terminar antes de que Vuex actualice el store de los componentes.
+
+Las acciones nos permiten escribir código asincrónico, para poder ejecutar una mutación cuando el código haya ejecutado.
