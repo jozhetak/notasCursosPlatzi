@@ -651,3 +651,36 @@ Actúan como utilidad para acceder a propiedades del estado de manera customizad
 Existen porque las Mutations son operaciones sincrónicas, quiere decir que no podemos ejecutar peticiones http dentro de una mutation porque la petición se va a terminar antes de que Vuex actualice el store de los componentes.
 
 Las acciones nos permiten escribir código asincrónico, para poder ejecutar una mutación cuando el código haya ejecutado.
+
+# Integrando a Platzi-music
+
+Instalaremos vuex y el preset de babel
+
+***npm i -S vuex***
+***npm i -D babel-preset-stage-2***
+
+Al usar computed y el store, en vez de ir nuevamente a consultar la api para obtener información de la API en trackDetail, la guarda en el store y la muestra desde el store.
+
+Cada vez que se actualiza el navegador se limpia la memoria y termina la aplicación javascript.
+
+Al usar mapActions, mapMutations, etc significa que vamos a usar dichos métodos en el código.
+
+Haciendo todo esto, la app se carga muy rápido.
+
+En el .babelrc
+{
+  "presets":[
+  ["stage-2"]
+]
+}
+
+Podemos tener un store para cada components conectados todos a un store genérico. Se recomienda usarlo en aplicaciones a gran escala.
+
+# Server Side Rendering
+
+O en español, renderizado del lado del servidor. Esto significa que podemos renderizar todo del lado del servidor en lugar del lado del cliente. Pero sería un híbrido, la primera será en el lado del servidor y el resto en el lado del cliente.
+Esto tiene sus ventajas y desventajas.
+
+Hay dos alternativas, una es nativa la provee el propio framework. El otro es Nuxt.
+
+
