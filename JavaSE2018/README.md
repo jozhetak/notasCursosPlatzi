@@ -84,3 +84,15 @@ int i = (int) d;
 ```
 
 El casteo es de menor a mayor es automático, en sentido inverso requiere un casteo.
+
+# Ejemplos de Arrays
+
+Los arrays son inmutables, las maneras de declararlos son:
+
+```
+int[] arregloInt = new int[3];
+double arregloDouble[];
+char[][] days = {{'M', 'T', 'W'}, {'M', 'T', 'W'}};
+```
+
+> Arreglos de más de 4 dimesiones ya no es una buena práctica en la proogramación. Para estos casos lo mejor es utilizar bases de datos.
