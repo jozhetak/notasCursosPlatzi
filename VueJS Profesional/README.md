@@ -683,4 +683,20 @@ Esto tiene sus ventajas y desventajas.
 
 Hay dos alternativas, una es nativa la provee el propio framework. El otro es Nuxt.
 
+# Nuxt
 
+# Deoploy a now
+
+Instalar **npm i -S serve**
+
+En package.json
+
+````
+  ...
+  "build"...
+  "start": "serve --single""
+```
+
+**npm run build**
+
+**now**
