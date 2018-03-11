@@ -174,3 +174,47 @@ Busca desafíos y cosas aparentemente imposibles:
 Los propósitos deben ser ambiciosos.
 
 > Un propósito bien planteado, ambicioso y que refleje pasión de aquello que más le importe al equipo. Es un propósito que funciona bien porque nos mantiene conectado con aquello que es importante, con la sensación de que todos estamos remando hacia el mismo lado, que estamos conectado con algo fuerte y que cuando las cosas no van bien en un proyecto, somos capaces de mantenernos a fin, de mantener la motivación que existe.
+
+# Necesidades de usuarios
+
+¿Qué necesidades y/o opo/rtunidades insatisfechas tenemos el potencial de atender?
+
+¿Quién determina si somos los adecuados para antender?: Tiene que ser algo cerca de lo que mejor sabemos hacer, que tengamos más conocimiento de la industria, la solución o el problema. Y finalmente nos tiene que apasionar que tiene que venir del propósito.
+
+Ejemplos:
+- Sacar su certificado sin tener que ir a las oficinas.
+- Ahorrar energía.
+- Aprender un nuevo idioma.
+- Proteger su hogar de robos.
+- Reducir sus costos de alimentación.
+- Pedir comida a domicilio.
+
+Podemos definir segmentos. Ejemplo, las empresas necesitan conseguir profesionales y los profesionales conseguir empresas. Si nos falta uno no tenemos nada del proyecto.
+
+En problema "huevo-gallina" En el día 1 ¿cómo hacer para convencer a las empresas que postulen proyectos y a profesionales que se postulen? Lo que se hace es hacer una pequeña mentira blanca a un grupo de usarios y una vez teniendo a ambas partes, lanzan la aplicación.
+
+Necesidades de usuarios vs necesidades reales
+x Pagar las cuentas en una app movil
+v Pagar las cuentas desde cualquier lugar
+
+x Conocer personas interesantes online
+v Conocer personas intersantes
+
+x Recibir e-mails con nuevas ofertas
+v Comprar más barto
+
+Las necesidades se mantienen iguales, son las soluciones las que cambian.
+
+No sabemos si esa necesidad realmente existe, debemos validar.
+
+**Detecta oportunidades: Las oportunidades son valor agregado para los usuarios que ellos aún no visualizan**.
+
+**Al identificar una necesidad, buscar la necesidad a produndidad**
+
+> "Si le hubiera preguntado a la gente qué quería ellos, me habría dichoque 'un caballo más rápido'" - Henry Ford
+
+¿Cómo validar necesidades de usuarios?
+
+Investigar -> Crear historias -> Sintetizar.
+
+... Se corta vídeo a 10:03
