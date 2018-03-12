@@ -2,7 +2,7 @@
 
 # LeanUX en la práctica
 
-### LeanUX vs Waterfall UX (Cascada)
+### LeanUX vs Waterfall UX (LCascada)
 
 Waterfall ("Cascada"), toma los principios de la línea de emsamblaje  en el desarrollo de software, product->UX->Analista->BackEnd->FrontEnd-> QA.... "Esto tiene sentido para el desarrollo de un producto físico pero no para el software".
 
@@ -217,4 +217,203 @@ No sabemos si esa necesidad realmente existe, debemos validar.
 
 Investigar -> Crear historias -> Sintetizar.
 
-... Se corta vídeo a 10:03
+Vídeo se corta en 10:00
+
+# Objetivos del negocio
+
+¿Cuáles son los objetivos del proyecto? ¿Qué esperamos obtener? ¿Cuál es la prioridad? ¿Por qué le estamos metiendo plata, esfuerzo y tiemo?
+
+Los objetivos satisacen una necesidad para la organización.
+
+Ejemplos:
+- Reducir el tiempo de compra en un 50%.
+- Lograr 1000 usuarios activos y recurrentes mensuales.
+- Aumentar en un 2% el uso de la bicicleta en el trabajo.
+- Vender USD$ 100000 mensuales.
+- Crecer en un 25% anual.
+- Reducir en un 50% el tráfico de llamadas al call-center.
+
+Deben ser cuantificables y medibles. No necesariamente comenzando, pero en un futuro debe ser medible.
+
+Éste es el momento de preguntarnos cómo se sustentará el proyecto. Porque si no lo definimos, al dejar de invertir tiempo el proyecto muere.
+
+Puede ser útil realizar el Business Model Canvas en esta sección.
+
+Si no tenemos referencia no podemos definir con exactitud las métricas.
+
+Al empezar lo que interesa es la tracción con los usuarios.
+
+Métodos de ingreso:
+- Tasa de comisión en las recompensas.
+- Publicidad segmentada.
+
+Independientemente de cómo planteamos los ingresos, si no tenemos tracción no podemos rentabilizarlo.
+
+Lo que sí evitar son objetivos vagos por cumplir que sean difíciles cuantificar para medir y no saber si se cumplen o no.
+
+Por ejemplo:
+- Más respeto por el medioambiente. No hay cómo medirlo.
+- Aumentar el engagement. Puede ser engañosa.
+- Tener una presencia de marca más sólida.
+- Posicionarnos como referentes. ¿Cuál es el indicador?
+- Impactar el mercado local.
+
+Los objetivos deben relacionarse con la adopción de usuarios, no son internos. A cosas que hacen los usuarios como pagarnos o nos hacen entrar plata de un método indirecto.
+
+# Motivadores
+
+¿Qué mejora entregamos a los usuarios para satisfaceeer sus necesidades? ¿De qué forma vamos a motivar a que ellos adopten nuestra solución?
+
+Ejemplos:
+- Ahorro de tiempo.
+- Ahorro de dinero.
+- Seguridad.
+
+Un motivador bien planteado va a resolver una necesidad. **Un motivador por necesidad**
+
+**Las personas ya están intentando satisfacer sus necesidades**
+
+Antes de definir los motivadores, debemos investigar **cuáles son las maneras actuales** de satisfacer dichas necesidades y qué forma nuestra idea es mejor.
+
+**La única innovación que importa es que resuelva mejor una necesidad**
+
+¿Cómo validamos los motivadores? Pues con las acciones de nuestros usuarios como por ejemplo que adopten nuestra solución.
+
+# Acciones claves
+
+Son las acciones de los usuarios.
+
+¿Qué acciones específicas de los usuarios implican conversión? ¿Cómo sabremos si estamos entregando los motivadores correctos? Medir ciertas cosas que dirán si los usuarios están contentos con el producto.
+
+Ejemplos:
+- Comprar.
+- Transportarse en bicicleta en vez de un auto.
+- Hacer pedidos en una app móvil en vez de por teléfono.
+- Aumentar el carrito con compras de último minuto.
+- Registrarse.
+- Etiquetar a amigos en las publicaciones.
+
+Las acciones pueden ser funnels o grupos de otras acciones
+
+**La acción de "comprar" en una tienda online implica**:
+- Visitar el sitio.
+- Escoger un producto.
+- Agregar al carrito.
+- Ingresar datos de pago.
+
+> Las acciones deben ser **cruciales** para que el proyecto logre traacción. Preguntarse que si esa acción deja de hacerser, el proyecto se cae. La respuesta debe ser sí.
+
+Segmentar los usuarios. Ejemplo del proyecto:
+- Dueños:
+  - Crear peril.
+  - Reportar mascotas perdidas.
+- Quien encuentra:
+  - Reportar mascotas encontradas.
+- Adoptadores:
+  - Solicitar adopción de mascotas no reclamadas.
+
+Al quitar cualquiera de esas acciones, el proyecto se tambalea.
+
+**Accione no-clave**:
+- Dar like en Facebook.
+- Descargar la app.
+- Guardar la página en favoritos.
+
+Otras acciones podrían ser relevantes o no dependiendo de los objetivos del negocio y los motivadores.
+
+**Acciones imposibles de observar**:
+- Mejorar gestión de ventas: Tú no puedes ver a alguien mejorando su gestión de ventas, puedes observar una herramienta.
+- Ser más responsables con el medio ambiente: No podemos observar a alguien botando basura. Podemos observar a alguien yendo en bicicleta, implementando energías renovables.
+- Cuidar su salud: Podemos observar a alguien dejar de fumar, ect. Pero no podemos observar a alguien cuidando su salud.
+- Comprender mejor la importancia de cuidar el agua.
+- Que la aplicación sea parte de su día a día: Eso se debería traducirse en acciones concretas. Como qué cosas queremos que hagan como login, buscar, etc.
+
+> Las acciones son el punto que observamos para saber qué está pasando con nuestros usuarios. No reemplaza el trabajo de investigación de usuarios.
+
+# Impacto esperado
+
+Es la parte del proyecto donde analizamos las metas a largo plazo.
+
+¿Cuál es el potencial del proyecto si nos va bien? ¿En qué esperamos convertirnos al largo plazo?
+
+Ejemplos:
+- Queremos ser el luggar donde los médicos buscan reviews de estudios cientíicos.
+- Quermos estimular un nuevo tipo de perfil profesional.
+- Queremos haer que el trabajo remoto sea el deafault.
+- Quermos lograr que la relación de las personas con su banco sea 100% digital.
+
+**El impacto nos permite visualizar el éxito a largo plazo** Una manera de visualizarlo mejor sería:
+
+> Si en 10 años más el New York Times le hiciera un reportaje a tu proyecto, **¿qué diría?**
+
+Como el impacto es observado por terceras partes, obtenemos un reconocimiento.
+
+**Impactos célebres**:
+- Uber está logrando que muchas personas se deshagan de su auto para movilizarse íntegramente en el servicio.
+- Tinder en muchas ciudades está logrando que las personas salgan menos a bares y clubs a conocer gente.
+- Airbnb está haciendo surgir microempresarios hoteleros que poseen y alquilan varios departamentos.
+
+**No mezcles impacto con objetivos**
+- Impacto: Largo plazo / Objetivos: Corto/mediano plazo.
+- Impacto: Observable / Objetivos: Medibles.
+- Impacto: Influencable / Objetivos: Controlables.
+
+**El impacto debe ser reflejar éxito masivo, no individual**
+
+Impactos individuales:
+- Queremos que a todos les encante nuestro producto: Ideal para un grupo de 10 personas.
+- Queremos que las personas viajen más en bicicleta: Con 1 persona ya lo estamos logrando.
+- Queremos que nuestros clientes vuelvan todos los meses: 4 o 5 clientes.
+
+**Los impactos no pasan en el nivel 1, sino cuando ya tenemos algo masivo**
+
+> El impacto también debe ser motivante para el equipo y relevante a la propuesta de valor.
+
+**Impactos aburridos y genéricos**:
+- La prensa escribirá de nosotros: Si hacemos algo impactante, la prensa podría escribir de nosotros pero no vale colocarlo en el scope canvas.
+- Nos llamarán a dar charlas.
+- Ganaremos un concurso de emprendimiento.
+- Levantaremos inversión.
+
+Pon atención a los impactos no esperados y trabaja desde ya para evitarlos.
+
+Ejemplo del proyecto de impacto no esperados:
+- Aumento en robo de perros.
+- Tráfico de recompensas por la motivación solo la recompensa.
+
+# Métricas y KPIS
+
+Son los puntos de observación para validar el resto del canvas.
+
+¿Cómo sabemos que los objetivos se están cumpliendo? ¿Dónde medimos? ¿Cómo medimos?
+
+Ejemplos:
+- Recurrencia de uso.
+- Tiempo para completar una tarea.
+- Funnel completado.
+- Número de peticiones de soporte.
+- SUS (System Usability Scale). Medir usabilidad.
+- NPS (Net Promoter Score). Medir satisfacción de usuarios.
+
+Para el proyecto:
+- Cantidad de reencuentros.
+- Cantidad de adopciones.
+- Tasa de efectividad.
+- $$ en recompensas procesadas: Para reconocer si es rentable el negocio.
+
+> Las métricas son comportamiento expresados en datos.
+
+La importancia de medir: No puedes engañarte. Tepermite actuar. Te permite proyectar. **Si lo lograstes, lo lograste. Si no, no lo lograste**.
+
+Encuentra tu métrica. ¿Cuál es tu KPI o métrica más importante?
+
+KPI: Esto es un indicador clave de rendimiento de performance.
+
+En NPS (Net Promoter Score): Es esa evaluación a usuarios de 1 a 10 si recomendaría la aplicación:
+- 1-6: Detractores.
+- 7-8: Neutrales.
+- 9-10: Promotores.
+
+SUS (System Usability Scale): Se describe como una métrica de usabilidad.
+
+Se corta en 12:05.
