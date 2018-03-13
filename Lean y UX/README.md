@@ -443,8 +443,7 @@ Reducir costos (dinero y tiempo) de un prototipo:
   - Adaptar la fidelidad (qué tan real puede mostrarse). Las personas somos buenas rellenando espacios en blanco.
   - Primero la hipótesis, luego el prototipo: Validation Onion te ayuda a aislar la capa que necistas prototipar. Recuerda que la validation Onion va desde adentro hacia afuera.
 
-> Escoge usuarios potenciales y cuéntales del producto como si ya existiera para obtener un FeedBack.
-
+> Escoge usuarios potenciales y cuéntales del producto como si ya existiera para obtener un FeedBack. Crea un anuncio ficticio en Facebook o Twitter presentando el producto. Enlaza a una landing page ficticia en launchrock o Wix.
 
 - Prototipando propuestas de valor.
 **Prototipar antes de prototipar**: Las cosas intangibles no requieren nada antes de validarlas. Una vez que ya empezamos a construir el prototipo es más fácil reconsiderar que cambiar por lo que es bueno profundizar en esta parte.
@@ -453,3 +452,170 @@ Reducir costos (dinero y tiempo) de un prototipo:
 - Prototipando servicios.
 
 ... Se corta el vídeo en 11:18 minutos
+
+# ¿Qué sigue después del scope canvas?
+
+- Mantenlo siempre visible: Donde tú y tu equipo estén trabajando, esto generará un refuerzo inconsciente.
+- Revísenlo y actualícenlo periódicamente: Cada més, dos meses, etc.
+  - Nuevos objetivos y métricas de negocio.
+  - Nuevas necesidades de usuario.
+  - Refinamiento de motivadores.
+  - Feedback de medición de Acciones.
+  - Actualización del impacto.
+-   Revíselo y actualícenlo periódicamente.
+- Expándalo a proyectos "hermanos", "padres" e "hijos."
+
+### Cultura LeanUX
+**Requisito 1: Valor primero**
+- Optimiza para maximizar el valor agregado.
+- Compite por valor, no por costo.
+- Privilegia el valor de largo plazo por sobre el beneficio inmediato.
+
+**Requisito 2: Personas sobre procesos**. 
+- No te encariñes demasiado con la métrica o la certiicación.
+- Mantente dolorosamente cerca de tus usuarios.
+
+**Requisito 3: Que todos diseñen**.
+- Un buen diseño ocurre como consecuencia de una cultura de colobaración.
+- Permite que todos ideen, innoven y optimicen.
+
+> En las empresas innovadoras, todos innovan. Todos diseñan. El liderazgo positivo es el único válido.
+
+**Requisito 4: Simplifica incansablemente**.
+- Reduce complejidad, reduce pasos, reduce despercios, reduce la jerga coorporativa. **Deshaste de todo aquello que te retrase**.
+
+**Requisito 5: Obsesiónate por el feedback**
+- Sé el primero en recibir las bofetadas.
+- Mantente en la primera línea de atención a tus clientes.
+- Aprende a querer a los usuarios quejones.
+
+> Un usuario que se queja significa que le importas demasiado para que él te lo quiera decir. Porque la gran mayoría no te lo dice. Cada vez que no escuchas a tus clientes estás perdiendo oportunidades de mejora.
+
+**Requisito 6: Tu equipo lo es todo**. Necesitas un equipo de gente talentosa y la manera de hacerlo es:
+
+- Haz feliz a tu equipo.
+- Dales más de lo que piden.
+- Págales bien.
+- Crea círculos virtuosos de gente motivada.
+
+> Busca la cultura de Netflix.
+
+### 10 aprendizajes
+
+1. Casi nadie sabe por qué hace un proyecto de UX.
+
+El propósito te conecta con las razones por las que vale la pena hacerlo. No es para ajustar unas métricas, tiene que ver con generar un producto, un servicio o una meta que agregue valor desde el centro que sea capaz de mantener a la gente motivada (a la gente talentosa motivada).
+
+El propósito es el extremo opuesto de la misión/visión corporativa.
+
+Propósito:
+- Creado por todos.
+- Breve.
+- Sencillo.
+- Inspirador.
+
+Misión/visión:
+- Impuesta desde arriba.
+- Latera.
+- Llena de bullshit.
+- Monótona.
+
+> "Si están en un día en el cual no tienes ganas de ir a trabajar, la misión/visión no te va a sacar de la cama. **El propósito sí**".
+
+2. Todos creen saber todo acerca del proyecto. Y no.
+
+3. El conocimiento no fluye porque todos asumen que el resto sabe.
+
+4. La mejor manera de optimizar un proyecto es usando la complicidad.
+
+5. Las mejoras no importan si no están conectadas a una necesidad. O a una razón pra dejar lo actual.
+
+6. Todo es una hipótesis.
+
+- Todo debe ser experimentado y validad.
+- Resiste la tentación de autoengañarte (en las métricas).
+- La experiencia previa es solo eso: previa.
+
+7. Nunca jamás cierres un documento.
+
+La única versión "final" de un diseño es la de un producto muerto.
+
+8. Si el conocimiento no se queda en la organizació, no sirve.
+
+9. Las malas métricas despersonalizan los productos.
+
+10. Enamórate del problema, no de la solución (Uri Levine, Waze)
+
+# Bonus 2: Storytelliing
+
+Debe ser visual.
+
+Las historias son tremendamente poderosas para comunicar realidades, contextos y sutilezas.
+
+Creamos historias para poner un contexto de algo que queremos comunicar las necesidades de nuestros usuarios. Con temas: Contexto, Problema, Solución y Desenlace feliz. (Uno por cuadrante). Todos enfocado en cómo nuestro proyecto entra.
+
+Con baja fidelidad (muy manual) ayudará a crear un mayor conexión con el usuario.
+
+- Contexto: Explicar la situación.
+- Problema: El problema a las personas en el contexto. Donde se demuestran las necesidades de los usuarios.
+- Solución: En cómo nuesta aplicación ayuda a resolver la necesidad.
+- Desenlace feliz: En cómo con nuestra app los usuarios lograron resolver su necesidad.
+
+# Bonus 3: Técnicas de investigación de usuarios y validación de necesidades
+
+Las técnicas de las ciencias sociales nos permiten validar y descubrir necesidades y motivadores de usuarios.
+
+**Recomendaciones generales**:
+- Visita a los usuarios en su contexto.
+- Realiza observación previa.
+- Preséntate y sé claro en el objetivo de la sesión.
+- Establece rapport (sensación de empatía con el usuario contigo) y confianza.
+- Evita las loaded question (preguntas cerradas) y comunicar prejuicios. (Trata ser lo más ingenuo posible)
+- No corrijas errores. (Si las personas dicen mal una palabra o no entienden del todo algún concepto. Muchas personas mal entienden los hechos.)
+- Ofrece incentivo a los participantes. Hacer regalos (no en plata). por su participación que sea de valor para el usuario.
+- Graba audio de la sesión (con permiso de los participantes).
+- Tomas notas siempre y cuando no perturben la conversación.
+
+### Maneras de reclutar participantes
+
+Hay muchas y depende del tipo de usuarios al que quieras contactar.
+
+- Contacto directo.
+- Lanzamiento de campaña.
+- Empresas especializadas en reclutamiento.
+
+### Técnica 1: Entrevistas
+
+- Feedback en proundidad.
+- Capturar subjetividad.
+- Conversaciones más personales.
+
+**Entrevistas semi-estructuradas**
+
+Sigue un checklist de preguntas predefinidas. Se toleran las desviaciones.
+
+**Entrevista abierta**
+
+Se hacen preguntas introductorias y se deja fluir la conversación. Para estos casos es preferible entrevistar solo a un usuario ya que dos o más, las opiniones pueden contrarestarse.
+
+### Técnica 2: Obserción no participante (shadowing)
+
+Acompañar a una persona en una rutina diaria, en su trabajo, vida diaria, vacaciones. Tratando de enterferir lo menos posible, haciendo preguntas.
+
+Indicada para:
+- Comprender contextos.
+- Detectar problemas escondidos.
+- Insights incoscientes.
+
+### Técnica 3: Focus Group
+
+Indicada para:
+- Recopilar opiniones rápidamente.
+- Co-creación con usuarios.
+- Lluvia de ideas.
+
+Recomendaciones:
+- Convoca máximo a 3 personas por sesión.
+- Modera para asegurarte que todos participen.
+- Evita la monopolización de las conversaciones.
+- Ofrece comida y bebidas.
