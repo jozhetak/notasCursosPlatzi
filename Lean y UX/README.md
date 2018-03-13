@@ -417,3 +417,39 @@ En NPS (Net Promoter Score): Es esa evaluación a usuarios de 1 a 10 si recomend
 SUS (System Usability Scale): Se describe como una métrica de usabilidad.
 
 Se corta en 12:05.
+
+# Métrica digitales
+
+- Google Analytics: Para medir acciones de usuario.
+  - Demografía, intereses y uso tecnológico: Horas del día y semanas que nos ayuden a entender el contexto de los usuarios.
+  - Secciones más visitadas: Comprender patrones de conducta y puntos de posible confusión (como por ejemplo que pasen mucho tiempo en una página).
+  - Términos de búsqueda: Refleja el modelo mental de tus visitantes y las expectativas con las cuales llegan a tu sitio. ¿Qué le están preguntando a Google que llegan a nuestro sitio?
+
+> Un funnel es una secuencia de pasos para completar una acción.
+
+Si se caen muchos los usuarios en una parte del funnel afectarán en gran medida la acción del usuario. 
+
+- Mixpanel: Realiza A/B Test para resolver controversias y apoyar decsiones de diseño. Este test consiste en probar dos versiones del mismo producto y saber cuál es el que recibe mejor respuesta. Esto ayuda a solventar controversias en el equipo. Con esta herramienta podemos segmetar acciones claves según nuestras necesidades.
+
+# Prototipado
+
+- Amplía tu concepto de prototipo: Modelo o muestra de un producto hecho para realizar pruebas, se parece al producto real.
+  - Prueba de concepto: Se recrea funcionalidad, no necesariamente diseño. Airbn buscaron de puerta en puerta qué usuarios querían alquilar departamentos.
+  - Estudio de forma / Prototipo visual: Se recrea diseño, no funcionalidad.
+  - Prototipo UX: Se recrea lo necesario para obtener insights de usuarios.
+  - Prototipo funcional: Funciona y se ve como el diseño final.
+
+Reducir costos (dinero y tiempo) de un prototipo:
+  - Adaptar la fidelidad (qué tan real puede mostrarse). Las personas somos buenas rellenando espacios en blanco.
+  - Primero la hipótesis, luego el prototipo: Validation Onion te ayuda a aislar la capa que necistas prototipar. Recuerda que la validation Onion va desde adentro hacia afuera.
+
+> Escoge usuarios potenciales y cuéntales del producto como si ya existiera para obtener un FeedBack.
+
+
+- Prototipando propuestas de valor.
+**Prototipar antes de prototipar**: Las cosas intangibles no requieren nada antes de validarlas. Una vez que ya empezamos a construir el prototipo es más fácil reconsiderar que cambiar por lo que es bueno profundizar en esta parte.
+
+- Prototipos UX.
+- Prototipando servicios.
+
+... Se corta el vídeo en 11:18 minutos
