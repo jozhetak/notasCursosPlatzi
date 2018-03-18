@@ -108,4 +108,87 @@ Pues aquí se muestra cómo crear aplicaciones jejeje
 
 # Microservicios
 
+# Tolchain o herramientas de Cloud Foundry
+
+El corazón de la creación de aplicaciones es catalogo.
+
+Las conexiones del Dashboard son las conexciones con las otras opciones del catálogo.
+
+# DevOps en Cloud Foundry
+
+Laboratorio DevOps: Es un servicio de CloundFoundry.
+
+DevOps son las conexiones entre la producción y desarrollo.
+
+Se puede usar Slack para la comunicación en el equipo.
+
+El toolchain es el conjunto de herramientas que ayudan a DevOps.
+
+Continuos Delivery: Así se llama el servicio para DevOps en IBM Cloud.
+
+En Delivery pipeline se utiliza Jetkins.
+
+# Delivery Pipeline
+
+Podemos agregar otro stage (pilar) Podemos desplegar a otro espacion (desarrollo, producción, etc.)
+
+Modificando el nombre para realizar un desplieque en desarrollo antes de llevar a producción.
+
+Desde Delivery podemos modificar el script de despligue de "cf push".
+
+Podemos agregar otras herramientas, oprimiendo "Add Tools". Son herrmientas de terceros, libres o bien propietarias.
+
+# Docker y Kubernetes
+
+> Contenedores: La siguiente frontera. Kubernetes es un orquestador de contenedores.
+
+# Instalación de pre requisitos de un espacio en IBM Cloud
+
+Prerequisitos:
+- Tener cuenta IBM Cloud.
+- Instalar Docker y kubernetes en nuestra máquina.
+- Instalar CLI (bx).
+
+Procedimientos:
+
+```
+bx login -u correo@gmail.com
+  // Ingresar Password
+
+bx plugin repo-plugins // Desplegar todos los plugins disponibes
+bx plugin install IBM-Containers
+bx plugin install container-registry
+bx plugin install container-service
+
+```
+
+Container registry: Registro privado de los contenedores que pudieras estar desplegando sobre IBM Cloud.
+
+En el Dashboard entramos en Containers in Kubernetes Clusters y Crear.
+
+En la versión gratuita estaremos compartido. Con la versión de pago tenemos la opción de dedicado (hardware).
+
+Tenemos 1 worker, 2 cpus y 4 GB de Ram.
+
+# Configuración del ambiente de trabajo, instalación de Plugin
+
+Tendremos IP pública e IP privada.
+
+En la opción "Access" tendremos el tutorial de **bx cli** para kubernetes.
+
+```
+bx login -a https://api.ng.bluemix.net
+-> Email
+-> Password
+-> Escoger un espacio de trabajo
+bx target --cf
+-> Organización
+-> Espacio de trabajo
+bx cs region-set us-south
+bx cs cluster-config ibmcloudplatzi // Nombre de nuestro ambiente
+// En este punto nos da una varaible de entorno que tenemos que seteaer en nuestra máquina.
+kubectl get nodes // Conocer los nodos que se están ejecutando
+kubectl proxy // Para inicializar un servidor de forma local las aplicaciones desplegadas en kubernetes.
+```
+
 
