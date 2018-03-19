@@ -191,4 +191,81 @@ kubectl get nodes // Conocer los nodos que se están ejecutando
 kubectl proxy // Para inicializar un servidor de forma local las aplicaciones desplegadas en kubernetes.
 ```
 
+# Ejecución de clusters en líneas de comando
 
+> La ventaja de usar kubernetes es que se puede escalar de forma horizontal.
+
+Desde el Docker Hub obtenemos una imagen de MongoDB
+
+```
+// Para desplegar MongoDB
+kubectl run mongo --image=mongo --port=27017
+kubectl expose deployment mongo --type=NodePort
+
+// Para desplegar app web
+kubectl run mytmp --image=kavisuresh/employee --port=80
+kubectl expose deployment mytmp --type=NodePort --port=80 --target-port=8888
+
+// Obtener los pod generado por la aplicación
+kubectl get pod
+
+// Inicializar el servicio de kubernetes, ingresando en el localhost podemos ver los datos del mismo.
+kubectl proxy
+```
+
+# Despliegue de aplicaciones en el web cluster
+
+> Un worker es una imagen virtual y dentro se pueden desplegar múltipes contenedores.
+
+> Nota: Para acceder a las aplicaciones utilizamos la IP pública. Entramos en **console** para obtener dicha ip. Luego entramos en kubernetes de localhost para conocer los puertos.
+
+Con la aplicación ejemplo, se muestra cómo desde la aplicación se guardan los datos en la base de datos.
+
+# Réplicas de clusters
+
+Esto es para escalar de forma horizontal las aplicaciones. Con HPA podemos escalar la aplicación. Podemos setear que cuando se consuma cierta cantidad de CPU haga una réplica y llegado a un punto eliminar las réplica.
+
+```
+kubectl run -i --tty load-generator7 --image=busybox /bin/sh
+
+// Simula una carga masiva
+while true;do wget -q -O- http://php-apache3.default.svc.cluster.local; done
+
+Ver el comportamiento de los pod
+kubectl get pods
+
+// Ver la carga y réplicas
+kubectl get hpa
+```
+**hpa** -> Horizontal Pod Autoscale
+
+# Creación de un cluster de Kubernetes seguro en IBM Cloud
+
+Las imágenes las podemos obtener desde Docker Hub
+
+```
+bx cr namespace-add ibmcloudplatzi
+```
+
+En console.bluemix.net
+
+Entramos en Continuos Delivery incializándolo con un template.
+
+El que vamos a usar es **Develop a Kubernetes app**. Para conectar con el espacio de trabajo debemos ingresar un API Key, para generarla debemos:
+
+Entrar en Managmen -> Security -> Platform Api Key.
+
+Se recomienda copiarlo y descargarlo.
+
+**Image Registry Namespace** -> El que creamos: ibmcloudplatzi
+**Bluemix APIKet**: El que generamos
+**Cluster Name**: Si nos olvidamos el nombre de nuestro cluster, `bx cs clusters` que es ibmcloudplatzi.
+
+La secuencia de pasos que va hacer es:
+- Compilado.
+- Análisis de vulnerabilidad y DevOps.
+- Deploy.
+
+# Entrega contínua IBM Cloud
+
+Este es el mismo pipeline de los otros templates.
