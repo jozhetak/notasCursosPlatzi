@@ -269,3 +269,96 @@ La secuencia de pasos que va hacer es:
 # Entrega contínua IBM Cloud
 
 Este es el mismo pipeline de los otros templates.
+
+# Containers registry
+
+Nos va a permitir construir y almacenar contenedores de Docker en IBM Cloud,
+
+```
+// Enlistar todos los namespace registrado en IBM Cloud
+bx cr namespace-list
+
+// Enlistar las imágenes en el container registry
+bx cr image-list
+
+// Obtener phpinfo de docker hub
+docker pull cfortier/phpinfo
+
+// Registrar la imagen en IBM Cloud
+// Aquí cortaron el vídeo
+docker push registry.eu-de.bluemix.net/ibmcloudplatzi/phpinfo:latest
+
+// Ver las imágenes de docker
+doker images
+
+kubectl run phpinfo --image=registry.eu-de.bluemix.net/ibmcloudplatzi/info --port=80
+
+// Ver status de los pod
+kubectl get pods
+
+// Deploy
+kubectl expose deployment phpinfo --port=80 --type=NodePort
+
+// Inicializar el Dashboard de kubernetes
+kubectl proxy
+```
+
+Para acceder a la aplicación debemos entrar en worker para obtener la dirección ip pública, y el puerto lo obtenemos directamente del dashboard de kubernetes.
+
+> Todo esto que vimos es para el despliegue de microservicios de con kubernetes.
+
+En las opciones del dashboard de worker en registry aparecen los registros de las imágenes.
+
+# Introducción a la economía de las APIs usando IBM Cloud API Connect
+
+Una **API** es una forma de integración entre dos sistemas sin que importar el lenguaje en el que están construidos puede comunicarse en un mismo lenguaje. Es una forma en que servicios y productos se comunican entre sí a través de una interfaz documentada.
+
+**Economía de APIs** Es la rentabilidad que puede aportar el dato de la API a través de la organización. Esto puede tener un costo. El proveedor de API puede garantizar la disponibilidad a consumidores.
+
+Un marketplace es el portal del desarrollador. Donde la persona se suscribe a un plan para consumir el recurso.
+
+> "Si hay alguna API que me parece muy intersante, fabulosa, responde a las necesidades que yo estoy planteando. Pues efectivamente yo pueda ratearla" Erika Chacón.
+
+> 'Al menos el 80% de las organizaciones están en proceso de transformarse digitalmente y la agilidad des clave; el desarrollo de APIs es un medio importante en esa transformación'
+
+**IBM API Connect**:
+- Crear, depurar y desplegar APIs de alta escalabilidad y seguras.
+- Crear y gestionar portales que permitan a desarrolladores descubrir y consumir APIs.
+- Gestionar la seguridad y el gobierno de las APIs.
+- Potenciar la economía de APIs ofreciendo catálogos con productos.
+
+# Introducción a IBM Api Connect
+
+Componentes de IBM Api Connect:
+- Portal del Desarrollador.
+- API Manager: Dashboard para el manejo de las APIs.
+- API Gateway: Refuerza cualquier política de seguridad.
+- Entorno de desarrollo: Developer Toolkit.
+
+Conceptos claves:
+- Catálogos: Son productos de API, para consultar las APIs, con la posibilidad de probarlos en línea.
+- Productos: Con un cliendID y un clientSecret podemos consumir el producto.
+- Planes: Si son planes ilimitados o limitados, por un pago mensual. Podemos tantos planes como sean necesarios para nuestros productos.
+- Estándar: Swagger 2.0
+- Mensajes: JSON/XML
+- Protocolos: SOAP/REST
+
+Para empezar entrar en https://console.bluemix.net/ y entrar en **API Connect** Para crear las APIS.
+
+# Creación de APIS usando IBM API Connect
+
+El servicio gratuito es hasta 50000 API CALLS/ mes. Pero si supera los 30 días sin actividad la API será borrada.
+
+Los productos son los objetos donde nos podemos suscribir para poder consumir los recursos de api.
+
+Approvalas: Gestionar las mismas de las soluciones en API que yo esté proveyendo.
+
+Settings: Configuraciones del portal de desarrollo. Aquí se debe activar el portal del desarrollador. Es donde el proveedor muestra el servicio con una url. Este portal viene preconficurado y cada vez que desarrollo un API va aparecer acá.
+
+Para crear una API entrar en **>>** y luego en draft. Podemos usar OAuth2, importar API a través de URL. También hay un ejemplo de OpenAPI para obtener un ejemplo que hace obtener el clima de tres días en adelante. Tenemos modo visual y por código.
+
+# Continuando con la creación de APIs usando IBM API Connect
+
+Change setup para cambiar el producto en el test.
+
+Con el portal del desarrollador tenemos una manera de presentar nuestras APIs con la opción de ser valoradas y monetizadas.
