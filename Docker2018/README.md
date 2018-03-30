@@ -133,4 +133,67 @@ docker images -q --no-func -f dangling=true | xargs docker rmi
 // Eliminar contenedores parados (cuando sale contenedores none)
 docker rm $(docker ps -a -q)
 
+# Plugins: Funcionalidad añadida y algún plugin interesante
+
+Tipos:
+- Autenticación: Sobre servicios o contenedores. Para la creación y acceso de contenedores.
+- Red: Usar redes específicas.
+- Filesystem: Volúmenes, almacenamiento de datos.
+
+Métodos de instalación:
+- Desde Docker Store.
+- Desde fuentes del desarrollador.
+
+
+> El tema de los plugin es más complicado. **Usar solo si es necesario**
+
+Instalar el plugin de ejemplo del profesor, que es un servicio de almacenamiento.
+
+```
+docker plugin install store/hedving/hedving-volumme:v-1.0
+```
+
+Otro plugin interesante es para trabajar ficheros en forma local los almacenamiento de filesystem.
+
+# Protocolo HTTP, órdenes y mensajes de estado
+
+- HTTP funciona en el puerto 80.
+- El cliente envía un URI (archivo) al servidor y éste devuelve una respuesta.
+- Métodos HTTP:
+  - GET: Conseguir un recurso.
+  - PUT: Crear un recurso.
+  - POST: ?
+  - DELETE: Borrar un recurso.
+- Símbolos de estado:
+  - 404: Es una página que no se ha encontrado.
+  - 200: Todo va bien.
+  - 5xx: Error en el servidor.
+  - 3xx: ?
+
+# Qué es un API REST y buenas práctivas en su diseño
+
+Hay otros modelos como GraphQL.
+
+REST -> Representional, State, Transfer. Esto es que un estado en el servidor se le transfiere al cliente en una ruta URI.
+
+Ejemplo: "/usuario/1"
+
+Buenas prácticas:
+- PUT: Crear el recurso.
+- Delete: Eliminar el recurso.
+- POST: Modificar el recurso.
+- GET: Conseguir un recurso.
+
+REST no es tanto un protocolo sino una convención. En todos volviendo código estados de HTTP Status Code.
+
+
+
+Buenas prácticas:
+- PUT: Crear el recurso.
+- Delete: Eliminar el recurso.
+- POST: Modificar el recurso.
+- GET: Conseguir un recurso.
+
+REST no es tanto un protocolo sino una convención. En todos volviendo código estados de HTTP Status Code.
+
 
