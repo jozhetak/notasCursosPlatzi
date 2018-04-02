@@ -196,4 +196,64 @@ Buenas prácticas:
 
 REST no es tanto un protocolo sino una convención. En todos volviendo código estados de HTTP Status Code.
 
+# Implementando una API Rest en Python y ejecutándolo
+
+Sericio: -> Datos: Fechas y nombre de hitos.
+Microframework: -> Usaremos Hug.
+Test: Serivcios web siempre deben probarse.
+
+> Un servicio web que no es testeado es un servicio que no sirve.
+
+Los puertos e IPs son los elementos más importantes en la configuración.
+
+*Las clases parece no estar completa*
+
+# Aislando microservicios en contenedores
+
+Dockerfile: Definiendo infraestructura por software. Mini-lenguaje para creación sistemática imágenes de contenedores.
+
+Las órdenes dependen del SO, se escriben en mayúsculas. Cada grupo crea capas, tener en cuenta que las imágenes deben ser lo más compacta posible.
+
+Con **EXPOSE** podemos exponer un puerto al exterior. El resto está aislado.
+
+1 Contenedor debe contener un solo proceso o servicio en particular.
+
+- FROM: Definir la imagen a usar.
+- WORKDIR: Definir el directorio del trabajo.
+- ADD: Tomar los ficheros y copiarlos a la imagen terminando en "./"
+- RUN: Correr un comando.
+- CMD: Comando a ejecutar sin crear una capa.
+- EXPOSE: Indicar el puerto a ejecutar.
+
+> Con la opción de "-t" tendremos el output de la terminal.
+
+# Puertos y cómo configurarlos
+
+El puerto 80 es el puerto por defecto por el protocolo http para servir servicios web.
+
+Para ello (Debemos hacer "EXPOSE 80"):
+```
+docker run --rm -it -p8000:80 -v $PWD/data:/src/data jjmerelo/platziws0
+```
+
+Para implementar variables de entorno en un Dockerfile
+
+```
+ENV PORT 80
+EXPOSE $PORT
+CMD hug -P $PORT -f main.py
+```
+
+Nota: Hug es la aplicación que se utiliza para servir servicios en el curso.
+
+Para servir, en la terminal:
+```
+export PORT=3332
+docker run --rm -it -p8000:$PORT -e PORT=$PORT -v $PWD/data:/src/data jjmerelo/platziws0
+```
+
+Podemos hacer que una API retorne un StatusCode 200 OK para demostrar una conección.
+
+# Invocando contenedores
+
 
