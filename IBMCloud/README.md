@@ -362,3 +362,99 @@ Para crear una API entrar en **>>** y luego en draft. Podemos usar OAuth2, impor
 Change setup para cambiar el producto en el test.
 
 Con el portal del desarrollador tenemos una manera de presentar nuestras APIs con la opción de ser valoradas y monetizadas.
+
+# Habilitar la gestión de APIs en Aplicaciones Cloud Foundry
+
+Con API Managment podemos gestionar las aplicaciones creadas. Podemos manejar authenticación y rate limit. Es decir, hace las funciones de API Gateway.
+
+A su vez, podemos hacer que consuma la autenticación de alguna red social.
+
+Todo esto es desde console.bluemix.net
+
+Para correrlo en localhost debemos crear un archivo llamado vcap-loca.json
+
+```
+// En la sección de runtime tenemos los datos para interactuar con las credeciales
+// Insertamos aquí
+```
+
+**npm i** // Para correr la aplicación
+**node app** // Para correr la aplicación
+
+Nota: Esta aplicación está hecha en node. Y la aplación ya está desplegada en CloudFoundry.
+
+# Conociendo los elementos de despliegue de aplicaciones a IBM Cloud
+
+¿Cómo podemos desarrollar apps en IBM Cloud?
+1. Build-from-the-scratch: Construirla desde cero.
+  - Runtimes: Diferentes lenguajes para construir aplicaciones, su acelerador es el hellow world de su respectiva aplicación con su respectiva url.
+  - Boilerplates: Es un contenedor con su runtime y preconfigurados contenedores con servicios como bases de datos, watson, etc. Y otros servicios configurados.
+2. Bring-your-own-app: Es una aplicación nativa en la nube. Utilizando CLI para publicar. Pudiendo publicar desde GitHub  con un archivo y un botón de despliegue. Que al darle clic se generará un runtime para correr la aplicación desde GitHub.
+
+[Botón de despliegue](http://console.bluemix.net/docs/services/ContinuousDelivery/deploy_button.html#deploy-button)
+
+# Conociendo los aceleradores boilerplates
+
+Boilerpates en español: Contenedores de aplicación.
+
+Podemos generar aplicaciones para móviles, usando Node.js podemos generar un starter de una base de datos no relacional.
+
+Usando **bx login --sso** Podemos loguearnos con una contraseña generada por la página.
+
+Con estos aceleradores tenemos ya las preconfiguraciones y empezar a editar desde allí.
+
+# Desplegando aplicaciones cloud native
+
+Esto es para desplegar aplicaciones que ya tenemos creadas.
+
+Para ello crear un archivo llamado **manifest.yml**
+
+```
+declared-services:
+  insights-wheather-weatherinsights:
+    label: weatherinsights
+    plan: Free-v2
+applications:
+- services:
+  - insights-weather-weatherinsigths
+  name: insights-weahter-prueba-platzi-2018
+  host: insights-weather-prueba-plati-2018
+  memory: 256M
+```
+
+weatherinsigths es un servicio de API que nos da el clima por ciudad.
+
+En consola
+```
+bx cf create-service weatherinsights Free-v2 insights-weather-prueba-platzi-service
+bx cf push <<x2, una para subir el manifest y el otro para desplegar la aplicació>>
+```
+
+Si queremos usar un repositorio existente desde GitHub, en la parte inferior podemos configurar ello.
+
+Esto a su vez, levanta un servicio.
+
+# Introducción a la computación cognitiva
+
+Computación de cognitiva: Estamos hablando de redes neuronales artificiales. Esto ayuda para Machine Learning.
+
+> "Cuando hablamos de contexto nos referimos al contexto de la persona en cómo interactuar para usarlo de la manera más adecuada".
+
+La interacción con watson es a través de APIs. Con los Demos podemos tener un fork para el desarrollo inicial de la aplicación.
+
+# Conociendo los servicios de Watson en IBM Cloud
+
+- Conversation: Armado de conversaciones con contexto.
+- Discovery: Descubrimiento de datos desde diferentes fuentes de información.
+- Language Translator: Traductor de texto.
+- Natural Language Classifier: Clasificador de lenguaje.
+- Speech to Text: Tradutor de voz a texto.
+- Tone Analizer: Tono con el que una persona nos está hablando.
+- Personality Insights: Identificar personalidades.
+- Visual recognition: Identificar objetos dentro de un contexto.
+- Knowledge Studio (no lite): Poder hacer modelos personalizados para armar una propia API.
+
+> Todos los servicios los consumimos a través de APIs.
+
+Las APIs tienen una demo de la cual podemos hacer un fork. La respuesta es en formato JSON.
+
