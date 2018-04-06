@@ -162,7 +162,7 @@ Otro plugin interesante es para trabajar ficheros en forma local los almacenamie
 - Métodos HTTP:
   - GET: Conseguir un recurso.
   - PUT: Crear un recurso.
-  - POST: ?
+  - POST: Actualizar un recurso.
   - DELETE: Borrar un recurso.
 - Símbolos de estado:
   - 404: Es una página que no se ha encontrado.
@@ -256,4 +256,175 @@ Podemos hacer que una API retorne un StatusCode 200 OK para demostrar una conecc
 
 # Invocando contenedores
 
+Con la opción "-d" es para instanciar el contenedor en una opción desplegada.
 
+```
+docker run --rm -dit -p8000:80 -v $PWD/data:/src/data jjmerelo/platziws0
+
+// Para obtener el log
+docker attach <<id del contenedor>>
+
+// Ingresar dentro del contenedor
+doker exec -it <<id del contenedor>> bash
+
+// Parar el contenedor
+docker stop <<id del contenedor>>
+
+// Asignar nombre
+docker run --rm -dit -p8000:80 -v $PWD/data:/src/data --name nombre-contenedor jjmerelo/platziws0
+
+```
+
+> Bash no necesariamente estará en todos los contenedores.
+
+# ENTRYPOINT y CMD
+
+Con **CMD** solo podemos ejecutar un solo comando.
+
+Con **ENTRYPOINT** son todos los añadidos al comando.
+
+```
+// Correr contenedor en la red definido en el código ejecutado en python
+
+// Dockerfile
+FROM python:3
+
+WORDIR /src
+
+ADD status.py requeriments.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
+
+RUN rm requirements.txt
+
+ENTRYPOINT ["./status.py"]
+
+
+// Correr el contenedor
+docker run --net=host --rm -it jjmerelo/platzistatus 2 (el 2 lo interpreta como un argumento de entrada al código con ENTRYPOINT)
+```
+
+# Trabajando con datos: Volúmenes
+
+docker run --rm -v <<directorio-local>>:<<directrio-contenedor>> -p8000:8000 -it jjmerelo/platziws1
+
+> Todo lo que corresponde a la izquierda de los dos puntos es nuestro host y todo a la derecha es el contenedor.
+
+Con ese volumen instanciado podemos modificar el archivo, pero para que haga efecto debemos reiniciar el contenedor.
+
+# Instalación de Docker Compose
+
+> Al instalar Docker en Windows y MacOs ya tienen instalado docker-compose.
+
+> Para conectarse a vagrant usar **vagrant ssh**
+
+Para instalar:
+```
+sudo curl -L https://github.com/docker/compose/releases/download/1.19.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+
+// uname -s -> Dice el sistema operativo
+// uname -m -> La arquitectura
+
+En pocas palabras, va a bajar un fichero dependiendo del sistema operativo y la arquitectura que dispongamos.
+
+// Dar permisos de ejecución
+sudo chmod +x /usr/local/bin/docker-compose
+
+// Ejecutar
+docker-compose
+```
+
+# Componiendo servicios con docker-compose
+
+Describe diferentes servicios y cómo se conectan entre ellos.
+
+> No es tanto para llevar aplicaciones a producción, porque para ello existen herramientas como Docker swarm y para más complejas kubernetes.
+
+Se utiliza para trabajar entornos de pruebas y entornos de desarrollo. No se utiliza para escalar ni para monitorizar.
+
+Docker compose trabaja con servicios (usando Dockerfile) y también con volúmenes. Para que diferentes contenedores puedan compartir entre sí datos y volúmenes de datos.
+
+También podemos conectar puertos unos con otros para desplegar conexciones más seguras.
+
+Podemos hacer contenedores de datos, bases de datos, logs de aplicaciones que funcionen independientemente.
+
+Tendremos dos contenedores, uno con los servicios y otro con los datos.
+
+```
+// Dockerfile que recibe datos
+FROM busybox
+WORKDIR /data
+VOLUME /data
+COPY hitos.json .
+
+// Dockerfile que emite el srvicio
+FROM python:3
+WORKDIR /src
+ADD main.py requirements.txt ./
+RUN pip install --no-cache-dir -r <<...>>
+RUN mkdir /src/Hitos
+ADD Hitos/Hitos.py Hitos
+RUN rm requirements.txt
+EXPOSE 8000
+CMD ["gunicorn", "--bind", <<...>>]
+```
+
+busybox -> Es una imagen de linux ligero pero con muchos ficheros.
+
+docker-compose.yml
+```
+version: '2'
+
+services:
+  data:
+    build: data
+  web:
+    build: .
+    ports:
+      - "8000" // 8000:8000
+    volumenes_from: // Vamos a cargar un volumen que se llama **data** 
+      - data:ro // ro es readoblet
+```
+
+docker-compose up // Para correr los contenedores
+docker-compose ps // Ver los servicios corriendo con docker-compose
+
+// Probar el servicio
+curl http://localhost:32770/status
+
+> Una vez que empiezas a usar docker-compose se te va hacer muy fácil para crear entornos de desarrollo y de pruebas sin necesidad de hacer escalado y despliegue en la nube.
+
+# Usando docker stack deploy
+
+Cuando estamos desplegando un swarm estamos obligados a usar la versión 3
+
+```
+version: '3'
+
+services:
+  data:
+    image:jjmerelo/platzidata
+    volumes:
+      - data-vol:/data
+  web:
+    image:jjmirelo/platziws0
+    ports:
+      - "8001:80"
+    volumes:
+      - data-vol:/data
+
+volumes:
+  data-vol:
+```
+
+En este caso no se hace la construción a través de un Dockerfile, sino que tenemos que tener la imagen ya construida.
+
+docker swarm init
+docker stack deploy -c docker-compose.yml platzi-0 // Estamos usando una suborden de docker, en este caso lo estamos creando en swarm
+
+docker stack ls // Mostrar los servicios desplegados. Es prácticamente la misma funcionalidad de docker-compose pero estamos haciendo algo mucho más potente. Estamos desplegando un swarm y éste puede estar funcionando en diferentes ordenadores, en la nube y en muchos sitios diferentes.
+
+Con Docker podemos hacer despliegue de aplicaciones de forma fácil, eficiente y muy potentes.
+
+# Creando paquetes de red
+
+docker network ls 
