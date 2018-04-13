@@ -143,8 +143,75 @@ El método GET es para obtener un recurso
 
 El método POST normalmente lo vamos a encontrar en formularios que nos permiten hacer ingreso de datos, como formularios de registro o de inicio de sesión. El método POST es un método que nos permite enviar información hacia una aplicación.
 
-El método PUT se usa para subir archivos hacia una aplicación, como imágenes o archivos de escaneo.
+El método PUT se usa para subir archivos hacia una aplicación, como imágenes o archivos de escaneo. Esto es de forma binaria, ejemplo imágenes o diversos archivos.
 
 El método DELETE se usa para eliminar información del servidor de archivos.
 
-El método TRACE y el método TRACK se usan para hacer debug, no debe usarse en entornos de producción.
+El método TRACE y el método TRACK se usan para hacer debug, no debe usarse en entornos de producción. Si por error se deja activo, podemos tener inforación de las versiones de tecnologías. 
+
+> Las aplicaciones en PHP tienen a ser más sencillas de vulnerar a otros.
+
+El método CONNECT sirve para la autenticación de usuarios por un puerto.
+
+Con BurpSuite podemos saber con qué metodos y el nombre de las variables que se envía.
+
+Usando **user_token** podemos evita que se hagan múltiples ataques de fuerza bruta por cliente a usuario y contraseña. Sirve como id de usuario.
+
+> Los que hacen las aplicaciones para conectarse con los servidores es a través de puentes (que tienden a ser más seguros) pero éstos son vulnerables.
+
+### Repaso de uso
+
+Para el uso, utilizamos metasploitable usuario:"user", password:"user".
+
+Una vez entrado, buscamos la ip y nos conectamos a ella. Dentro de la misma podemos tener acceso a las configuraciones de distintas vulnerabilidades dispuestas a ser explotadas.
+
+> Un proxy es para que todas las solicitudes se envíen hacia un equipo y de allí se envíen hacia internet. Lo que hacemos con **BurpSuite** es enviar toda la información a ese software y luego de allí pasarlo a internet.
+
+En BurpSuite, entrar en la configuración de firefox configurar manualmente el proxy usamos el localhost:8080 (que es el que usan todos los httproxy) marcar **Use this proxy server for all protocols** Porque hay aplicaciones que utilizan protocolos https.
+
+> En BurpSuite el user-agent es la información del navegador. En la cookie estará la variable de dificultad y la de id de sesión de usuario.
+
+En **HTTP history** tendremos el historial de peticiones http. En la opción de Response, el apartado de **Server** nos va a decir si el servicor que nos respondió es un equipo, uno virtualizado o bien un balanceador. El elemento **Expires** es la fecha de expiración de la cookie.
+
+> Sabiendo la versión del servidor de respuesta podemos estar al tanto de los fallos de seguridad.
+
+> Debemos ocultar completamente las tecnologías y versiones para que no se haga uso indebido de ellos. (Desactivar TRACE y TRACK).
+
+# Código de error HTTP
+
+- 200: OK.
+- 300: Informarción del servidor.
+- 400: Error en la aplicación cliente.
+- 500: Error en el servidor.
+
+> Si intentamos una autenticación incorrecta seremos redireccionados a la página de authenticación.
+
+# Proxy HTTP
+
+> Es importante saber usar distintas herramientas porque siempre nos vamos a encontrar con compartiamientos distintos.
+
+- Burp Suite: Pensada para análisis de seguridad, pero a diferenia de ZAP es de pago. Cuando se cancela aparace la pestaña **Scanner** quien automatiza ciertas funciones, pero éstas se pueden hacer manualmente. En la versión gratuita no se pueden guardar sesiones. La parte más importante es la de Intruder, donde podemos ingresar carateres aleatorios o a través de diferentes listas para saber el comportamiento de las aplicaciones de forma automatizada que nos ahorrará mucho tiempo durante el análisis. Su principal característica es que está orientado a experimentos, donde podemos hacer nuestras propias extensiones o bien descargarlas.
+- Fiddler: No está orientado a seguridad sino al desarrollo web, para hacer debug. Está orientado a tecnologías .NET. Va a interpretar información que viaja en binario, como las de skype. Podemos hacer simulaciones para detectar fallas.
+- ZAP Proxy: Desarrollado por OWASP. Parte de la base de paros pero enfocado a seguridad. Lo primero que preguntará es si queremos guardar la información de la sesión. Hay análisis que duran semanas. Podemos definir que cada que carguemos un formulario ingrese datos de forma automática. Nos permite generar reportes. Explorar a profundidad sitios web. Está la opción de **Fuzz** para ingresar ciertas cadenas.
+- Paroz Proxy: Es el más sencillo de todos. Es útil cuando analizamos tecnologías como flash. Ya que la información no será modificada y se mantendrá binaria. Toda la información de la sesión de trabajo se elimina.
+- Charlse Proxy: Es de pago, pero nos va a ayudar mucho a revisar aplicaciones móviles. Tiene precargado User-Agent para que haga solicitudes de un client distinto al que estamos utilizando. Ejemplo que nuestra aplicaciones use aplicaciones para móviles, tablets o navegadores. Muy bien una entidad bancaria puede tener vulnerabilidades en un navegador en particular.
+
+# Explorando una aplicación con NMAP
+
+> Hay una opción de NMAP en entorno gráfico pero por terminal hay más opciones. Los puertos son como puertas de acceso de los usuarios al servidor.
+
+- Puerto 80 -> HTTP (Información en texto claro)
+- Puerto 443 -> HTTPS (Información cifrada)
+
+nmap -> Puedes ayudarnos a detectar vulnerabilidades.
+
+npmap -A 192.168.1.23
+-A -> Todas las opciones controladas.
+Dirección -> Es la dirección ip de la aplicación, puede ser también un dominio.
+
+Con el comando anterior podemos ver los puertos abiertos y las vulnerabiliades que existen.
+
+Resultados del análisis:
+- Tiene habilitado el puerto 80 -> El cual nos indica que podemos hacer solicitudes HTTP.
+  - Nos da información del servidor que ejecuta la aplicación. No siempre esta información es correcta porque es un banner. Algunos desarrolladores modifican este banner para confundir a los atacantes.
+- Mediante un análisis probabilísticos define el SO.
