@@ -17,6 +17,7 @@ El desarrollo del proyecto es uno que es el "el más utilizado por freelance y c
 ### Entonces, ¿qué es "Agile"?
 
 - Es una metodología de administración de proyectos.
+Las historias de usuario se van a realizar según sea su puntaj
   - Pequeñas entregas funcionales.
   - Minimizando problemas y defectos.
   - Ciclos de trabajo.
@@ -361,3 +362,257 @@ Consiste en que las entregas van a ser incrementales:
 - Actualizar siempre técnicamente: En cada una de las iteraicones usar tecnologías actuales y versiones estables.
 
 > Agile usa el lema "divide y vencerás": Mientras pequeños sean los porciones de código o las tareas que estamos realizando. Más fácil podemos avanzar.
+
+# MVP (Minimum Valuable Product) y métricas financieras
+
+Es esa base de features que no se puede prescindir porque son la base del negocio.
+
+Esto ayuda a conocer qué es lo mínimo que tendrá la aplicación.
+
+Es una base fundamental de código que no podemos prescindir.
+
+MVP del proyecto del curso:
+  - Catálogo
+  - Precios
+  - ¿Quién está comprando? (Login o API de terceros)
+  - Carrito
+  - Checkout (Pago/Envío)
+
+Otro Epic:
+```
+Project: eComPlatzi(ECP)
+Issue Type: Epic
+Epic Name: Crear el sistema de Login
+Symmary: Un formulario que acepte "correo" y "contraseña" de nuestros usuarios finales
+Desciption:
+C.A.
+
+Tener un formulario que tenga un par de campos:
+  - Correo
+  - Contraseña
+
+Un botón para iniciar sesión y una opción para registrarse.
+
+Priority: Highest (porque es una de las historias de usuario).
+```
+
+> Cada uno de los Epic representa un item del MVP en nuestro primer release. Los banners y campañas publicitarias van más allá de nuestro MVP.
+
+
+
+Desde un punto de vista financiero:
+- Feature 1 - Banners promocionales:
+  Ganancia: 5k USD - costo: 4k USD = 1k neto
+
+- Feature 2 - Campaña de Marketing.
+  Ganancia: 3k USD - Costo :1k USD = 2k neto
+
+- Feature 3 - Perfil de usuario.
+  Ganancia: 1k USD - Costo: 0.5k USD = 0.5k neto
+
+ROI del feature 2
+ROI: Ganancia - Costo / costo = 3k-1k/1k = 200%
+
+Esto quiere decir que adicional a nuestro MVP tendremos una fuerte ganancia si sabemos hacerlo.
+
+Para ello nuestro Epic deben ser pequeños.
+
+Debemos definir cuáles son los features que dan valor a la aplicación y priorizar.
+
+# Inteligencia emocional
+
+Soft-Skills (habilidades blandas) -> Son todas aquellas habilidades del ser humano que no son matemáticamente medible y no tienen alto impacto en la parte tecnologíca pero sí en el equipo.
+
+Esto se basa en la inteligencia emocional que a su vez se basa en el coeficiente emocional quien ayuda a sociabilizar y liderar equipos.
+
+Esto es la inteligencia emocional para el trabajo en equipo y liderazgo:
+
+- Auto-conocimiento: Poder apreciarnos a nosotros como seres humanos.
+  - Conocimiento del ser: De nuestras habilidades y lo que somos capaces de hacer.
+  - Apreciación: Que tenemos para nosotros mismos.
+- Auto-administración: No solo de la parte técnica sino también como equipo y poder hacer liderazgo efectivo.
+  - Adaptaptabilidad a cambios
+  - Motivación a ser mejor
+- Conocimiento social: El mismo auto-conocimiento de la sociedad
+  - Conocimiento de organización del entorno.
+- Habilidades sociales:
+  - Liderazgo
+  - Trabajo en equipo
+
+# Liderzgo adaptativo y colaborativo
+
+El liderazgo no es una persona que está delegando responsabilidades.
+
+El líder es el que acompaña y que no manda.
+
+- El equipo lo es **TODO**, cada uno es un experto en un área.
+- Mentalidad colectiva. (Algo que salió bien o mal no es culpa de una persona)
+- Colaboración Stand-Up: Qué hice ayer y qué hizo hoy. Con opiniones sobre la mesa.
+- Modelo Tuckman: Equipo "sin líder": Todos son líderes.
+
+> En Agile buscamos crear una cultura de cambio, una cultura de experimentación, que el equipo sea lo más cómodo posible. Iteraciones corto con features cortos.
+
+# ¿Qué es SCRUM? ¿Cómo funciona?
+
+- Es un framework de Agile.
+- 3 pilares fundamentales:
+  - Transpararencia: Todos los miembros tienen acceso a toda la información.
+  - Inspección: Todos pueden inspeccionar el trabajo de otros.
+  - Adaptabilidad: A los cambios que se puedan presentar en el mundo del desarrollo.
+- Simple de entender.
+
+**Roles de SCRUM**
+- Bussines(Negocio) -> $
+- Product Owner -> Experto en el negocio
+- SCRUM Master -> Coordinador del equipo
+- SCRUM Team -> Devs, Diseñadores, QA, etc. DevOps.
+
+**SCRUM en 30 segundos**
+1. Product Owner crea una lista de tareas priorizadas: Mientras más alta sea la prioridad más arriba estará en el Backlog.
+2. Equipo toma una porción de tareas de la parte más alta.
+3. El equipo inicia sprint (2-4 semanas)
+4. SCRUM Master mantiene a todos enfocados para terminar las tareas tomadas del backlog
+5. Trabajo mostrable y presentable al cliente
+6. Revisión y retrospectiva por el SCRUM Master y decir qué fue lo que estuvo bien, qué estuvo mal, qué se puede mejorar, qué se debe cambiar.
+
+Todo ese ciclo es un sprint. Luego se toman las siguientes tareas más altas en el backlog.
+
+**Valores**
+- Foco: Todos trabajamos en una meta en común y todo se cumpla en el tiempo establecido.
+- Valor: Todos nos apoyamos para tener recursos tanto humanos como técnicos.
+- Apertura: Todos trabajamos dentro del equipo tendremos feedback para mejorar.
+- Compromiso: Todos estamos trabajando para una meta.
+- Respeto: Trabajamos por un bien común así que todos somos responsables de los resultados, restando en todos.
+
+**Vamos a usar Trello**
+
+Tablero: Platzi SCRUM aCommerc
+
+Columnas:
+- Product Backlog
+- En progreso
+- Terminado
+- Release 1
+
+Tarjetas:
+- T01: Crear Landing Page
+- T02: Crear catálogo de productos
+- T03: Crear Log In
+- T04: Crear carrito de compra
+- T05: Crear checkout page
+
+Si al hacer retrospectiva no hay conformidad con los resultados, ej T02, se regresa al backlog y se utiliza las dos tareas siguientes para hacer el siguiente sprint.
+
+> Cualquier miembro del equipo puede ser el SCRUM Master si demuestra tener las habilidades necesarias.
+
+# Kanban
+
+Es una de las tecnologías más usadas después de SCRUM. Es más visual.
+
+Está más enfocado a historias que a Epic.
+
+Los sprint se llaman ciclos de trabajo.
+
+Reduce ciclos e historias para hacer menos releases pero más contínuos.
+
+**Precios de Kanban**
+
+- Flujo de trabajo muy visual en tarjetas.
+- Limite de WIP. La menor cantidad posible de historias.
+- Flujo administrable.
+-
+
+Los sprint se llaman ciclos de trabajo.
+
+Reduce ciclos e historias para hacer menos releases pero más contínuos.
+
+**Precios de Kanban**
+
+- Flujo de trabajo muy visual en tarjetas.
+- Limite de WIP. La menor cantidad posible de historias.
+- Flujo administrable.
+- Poceso más definido. Historias de usuario más completas en el menor tempo posible.
+- Mejora contínua significativamente. 
+
+Al backlog se le llama contenedor de historias
+
+El tablero de KANBAN:
+- TO-DO
+- In progress: Fases:
+  - Análisis: 2 historias
+  - Diseño: 3 historias
+  - Desarrollo: 4 historias
+  - Pruebas: 2 historias
+- Done: Aquí interviene el product owner
+
+Para usar KANBAN en Trello:
+- Backlog
+- TO-DO
+- In progress
+- Done.
+
+KANBAN es una alternativa a SCRUM.
+
+# XP
+
+XP -> Extreme Programing
+
+Está enfocado al desarrollo del producto como las pruebas.
+
+Es el desarrollo llevado al extremo.
+
+Prácticas:
+- Planeasción: Cómo formar el equipo y definir los roles.
+- Releass pequeños: 1 a 2 semanas máximas para una iteración.
+- Methapor: Traducir temas técnicos para que los clientes nos entienda.
+- Diseño simple: Todos los requerimientos funcionales y no funcionales para entregar lo mínimo que el cliente necesita.
+- TDD (Test-Driven Development): Se hace "fallar primero". Se realiza la prueba unitaria antes de tener el bloque de código. Cuando se tenga se irá testeando hasta aproblarlo.
+- Pair Programming: Dos personas se sienten a un desarrollo. Cambiando cada cierto tiempo.
+- Refactorización: Generar una factorización lo más cómo posible como lowerCamelCase. Que todos estemos en sintonía con el código.
+- Código colectivo: Cualquier persona pueda conocer y participar en cualquier parte del código.
+- Integración contínua: Toda la construcción de código se haga de manera automática como Jetkins etc.
+- Marcha sostenible: Un traking más sostenible con el desarrollador. Saber qué se ha completado y qué falta.
+- Todo el equipo junto: No hay equipos remotos ni en distintas oficinas.
+- Estándares de código: Integrar las reglas de estándar. Usar linters.
+
+
+**Roles**
+- Coach: Coordina el equipo y hace las parejas a lo largo de las iteraciones.
+- Product Owner: Persona asignada por el negocio.
+- Programador.
+- Tester.
+- Monitor.
+
+Es un poco más complicada de llevar a cabo. Porque necesitamos un equipo muy experimentado. Los productos que se entregan con XP son eficiente, alto performance y seguridad.
+
+# Cierre de curso
+
+Twitteer [@danivegamx](https://twitter.com/osmandi).
+
+# Estima tiempos de historias de usuario
+
+Identificar los issues como [front], [back], [diseño], etc.
+
+Primera semana el diseño
+Segunda semana desarrollo
+Tercera semana el testing
+Cuarta semana para aplicar resultados del testing
+
+Hay herramientas de estimación de proyectos.
+
+# Hacer historias de usuario para un epic
+
+Esto es para aplicar Agile en Trello
+
+Listas:
+- Product Blacklog
+- En progreso
+- Code review
+- QA
+...
+
+Se hace la tarjeta: EPICXX-Crear el checkout del sistema de eComPlatzi. Y en ella colocar todo el checklist del criterio de aceptación.
+
+> Las historias de usario se hacen en base a la cantidad de miembros de equipo.
+
+Las historias de usuario se agregan como otras tarjetas.
