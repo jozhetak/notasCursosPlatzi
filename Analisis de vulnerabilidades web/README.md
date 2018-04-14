@@ -215,3 +215,35 @@ Resultados del análisis:
 - Tiene habilitado el puerto 80 -> El cual nos indica que podemos hacer solicitudes HTTP.
   - Nos da información del servidor que ejecuta la aplicación. No siempre esta información es correcta porque es un banner. Algunos desarrolladores modifican este banner para confundir a los atacantes.
 - Mediante un análisis probabilísticos define el SO.
+
+# Exploración de una aplicación web con http proxy
+
+Aplicaciones para exploración de una aplicación web:
+- Nmap
+- Proxys HTTP
+- Exploración manual (navegación)
+- Spidering
+
+> Cuando hacemos un análisis de vulnerabilidades web lo primero que hacemos es la navegación: Detectar funcionalidades, formularios, servidores de archivos, servicios externos, pasarelas de pago. Para ello navegar con nuestra aplicación.
+
+Aquí interceptamos la información con BurpSuite en el login de dvwa, la información de login se encuentra en texto claro. Si un usuario estuviese conectado a nuestra red, podría ver nuestras credenciales.
+
+La aplicación envía también un user_token que sirve para identificar el cliente.
+
+Navegamos por toda la aplicación para detectar todos los posibles puntos de entrada.
+
+Anotamos todas las rutas que tienen formularios para auditarlos luego. Así como también rutas para subir archivos.
+
+Algunas veces vamos a ver que a parte de las respuestas de los formularios las aplicaciones incluyen variables de control que pueden ser utilizadas para identificar al usuario, reducir el número de peticiones, etc. Ejemplo también detectar si usamos una versión móvil, tablet o pc.
+
+Si ponemos detalle a la navegación veremos el enrutado y recursos que se están descargando y localizar rutas de archivos como los de bootstrap para buscar vulnerabilidades públicas que afecten a esos frameworkds específicos.
+
+Detectar también los puntos de entrada de archivos "?variableOFile.pgp"
+
+**Spidering** A partir de una ruta que haya interceptado el proxy intercepte otras rutas por default como /images, /files, etc. Para ello, entrar en target veremos los archivos y directorios interceptados.
+
+Para hacer el Spidering de forma automatizada, hacemos click contrario en la url y luego en **Add to scope**. Le decimos al proxy "agrega esta url al alcance del proxy". De esta forma detectamos nuevas rutas a esa url. 
+
+En la pestaña de scope, tenemos unas secciones de **Exclude from scope** Las magic paths o magic url hace rutas grandes rutas pequeña. Las agreamos para evitar que se ejecute la acción y nos cierre la sesión. Ejemplo: logout, logoff, exit, signout.
+
+Vamos al tap Spider y click en **Spider poused**. Allí podríamos ingresar directamente valores, puesto que se detiene cuando hay que ingresar variables. En la opción imposible, el user_token evitará que hagamos más peticiones fallidas.
